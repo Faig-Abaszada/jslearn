@@ -2,10 +2,19 @@
 
       Section 1: Introduction
 
--[ ] 1.Why You Should Take This Course
--[ ] 2.Why JavaScipt is amazing?
--[ ] 3.Setting up Your Environment 
- 
+-[x] 1.Why You Should Take This Course
+  * projects: todolist, quizapp,
+    realtimeChat, weatherapp, UIlibrary
+-[x] 2.Why JavaScipt is amazing?
+  * JS originally created to add interactivity to websites
+  * when you are comfortable with working 
+    with JS in the browser , you can start   
+    to use it for back end development
+-[x] 3.Setting up Your Environment 
+-[x] 4.Course Files
+  * https://github.com/iamshaunjp/modern-javascript
+  
+
       Section 2: JavaScript Basics
  
 -[ ] 5.Adding JavaScript to a Web Page
