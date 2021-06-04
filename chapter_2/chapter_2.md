@@ -19,3 +19,22 @@
             JavaScript is a loosely typed language, meaning you 
             don't have to specify what type of information will 
             be stored in a variable in advance. ... 
+
+* concatenate - string + string
+* string methods and properties 
+    * property : length character counter 
+    * methods : toLowerCase, toUpperCase ....
+    
+            Function is a snippet of code 
+            which performs some kind of specific task.
+            Method is just a function that is associated
+            with a particular object or data type.
+
+* argument - indexOf('@'); - @ is argument 
+ 
+
+
+
+
+
+
