@@ -72,7 +72,12 @@
 
 
         Booleans & Comparisons
-* true vs false
+* true vs false 
+* comparisons :
+    * == : beraberdirse
+    * != : berbaer deyilse
+    * .>, < : boyuk vs kicik
+    * .>=, <= : boyuk ve breaber, kicik ve beraber
   
         Loose vs Strict Comparison
 
