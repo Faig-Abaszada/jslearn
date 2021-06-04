@@ -79,11 +79,19 @@
     * .>, < : boyuk vs kicik
     * .>=, <= : boyuk ve breaber, kicik ve beraber
   
+
         Loose vs Strict Comparison
 
+* == : (different types can still be equal) this is loose comparison, bosh muqayise
+        bunun ucun 5 == '5' eynidir halbuki biri num biri
+        stringdir
+* === : (different types can not be equal) this is strict comparison
+
+       
         Type Conversion
 
-
+* Number(array) 
+* typeof array // output is data type 
 
 
 
