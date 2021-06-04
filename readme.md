@@ -17,15 +17,15 @@
 
       Section 2: JavaScript Basics
  
--[ ] 5.Adding JavaScript to a Web Page
--[ ] 6.The Browser Console
--[ ] 7.Variables, Constants & Comments
--[ ] 8.Data Types at a Glance
--[ ] 9.Strings
--[ ] 10.Common String Methods
--[ ] 11.Numbers
--[ ] 12.Template Strings
--[ ] 13.Arrays
+-[x] 5.Adding JavaScript to a Web Page
+-[x] 6.The Browser Console
+-[x] 7.Variables, Constants & Comments
+-[x] 8.Data Types at a Glance
+-[x] 9.Strings
+-[x] 10.Common String Methods
+-[x] 11.Numbers
+-[x] 12.Template Strings
+-[x] 13.Arrays
 -[ ] 14.Null & Undefined
 -[ ] 15.Booleans & Comparisons
 -[ ] 16.Loose vs Strict Comparison
