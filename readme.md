@@ -27,9 +27,9 @@
 -[x] 12.Template Strings
 -[x] 13.Arrays
 -[x] 14.Null & Undefined
--[ ] 15.Booleans & Comparisons
--[ ] 16.Loose vs Strict Comparison
--[ ] 17.Type Conversion
+-[x] 15.Booleans & Comparisons
+-[x] 16.Loose vs Strict Comparison
+-[x] 17.Type Conversion
 
       Section 3: Control Flow Basics
 

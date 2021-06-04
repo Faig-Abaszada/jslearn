@@ -92,6 +92,14 @@
 
 * Number(array) 
 * typeof array // output is data type 
+* String(50)
+* Boolean(100) // true positive nums is true 
+* Boolean(0) // false minus nums is false       
+* Boolean('0') // true cunki length var     
+* Boolean('') // false cunki length yoxdur string boshdur     
 
 
-
+        this is all explicit type conversion
+        (bunların hepsi açık tip dönüştürme)
+        There is also something called implicit type conversion
+        (hemcinin ustu qapali tip donudturme var)
