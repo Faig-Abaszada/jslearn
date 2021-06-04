@@ -65,6 +65,11 @@
     
 
         Null & Undefined
+* null === zero || null + 3 = 3
+* null : niye lazim ola biler? meselen form input-da
+    submit-den sonra inputlarin icini tezmilemek isteye 
+    bilerik bu vaxt input.value = null deye bilerik
+
 
         Booleans & Comparisons
   

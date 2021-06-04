@@ -26,7 +26,7 @@
 -[x] 11.Numbers
 -[x] 12.Template Strings
 -[x] 13.Arrays
--[ ] 14.Null & Undefined
+-[x] 14.Null & Undefined
 -[ ] 15.Booleans & Comparisons
 -[ ] 16.Loose vs Strict Comparison
 -[ ] 17.Type Conversion
