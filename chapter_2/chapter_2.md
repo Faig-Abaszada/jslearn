@@ -23,8 +23,12 @@
 * concatenate - string + string
 * string methods and properties 
     * property : length character counter 
-    * methods : toLowerCase, toUpperCase ....
-    
+    * methods : toLowerCase, toUpperCase .... ,
+      * lasIndexOf('n') - find index of n 
+      * slice(start position, end number) araliqda olan characterleri cixardir
+      * substr(start position, how much character long )  
+      * replace('m', 'w') change first n with w   
+
             Function is a snippet of code 
             which performs some kind of specific task.
             Method is just a function that is associated
@@ -32,7 +36,41 @@
 
 * argument - indexOf('@'); - @ is argument 
  
+        number
+  
+* math operators : +- ,/* ,** ,%, ++--, +=, -=
+* order of operration - B I D M A S 
+                        (Brackets, Indices, Division/Multiplication, Addition/Subtraction)
+* NaN : Not a Number 
+* concatenate : string + number + string ... (but best way temp string)
 
+        Template String
+  
+* `the blog called ${title}` title is var 
+* `<h1>${title}</h1> <p>${paragraph content}</p>`
+  
+        Arrays
+
+* JS is zero based language
+* ['word','word','word ']
+* array methods : 
+    * join(',') stringe cevirib vergul ile ayirir
+    * indexOf('arraydeki string') - index deyerini verecek
+    * concat(['word','word ']) - arraye yazdigimiz arrayle birlesdirir concat edir
+    * push('word') - alters original value - original deyeri deyisdirir. 
+                    (hansiki bu deyeri atmisiq onun )
+                    buna gorede destructive method adlanir.
+      push
+
+    
+
+        Null & Undefined
+
+        Booleans & Comparisons
+  
+        Loose vs Strict Comparison
+
+        Type Conversion
 
 
 
