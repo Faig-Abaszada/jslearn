@@ -12,12 +12,24 @@
 
 <script>
     // null || we set that is empty var
-    let myName = null;
-    console.log(myName);
+    // let myName = null;
+    // console.log(myName);
 
     // undefined || automaticily set that is empty var
-    let myAge;
-    console.log(myAge);
+    // let myAge;
+    // console.log(myAge);
+
+    let heroes = ['Kadir Koymen','Mustafa Namoglu','Faik Abaszada'];
+
+    let result = heroes.push('ali');
+
+    console.log(result);
+    // output 4-dur cunku push yeni array yaradir ve elave etdiyinizide icine qoyur ve YENI arrayi gosterir
+
+    let result2 = heroes.pop();
+
+    console.log(result2);
+    // output ali-dir cunku pop arrayden sildigi deyeri gosterir son elave etdiyimiz
 </script>
 </body>
 </html>
