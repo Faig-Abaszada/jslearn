@@ -72,6 +72,7 @@
 
 
         Booleans & Comparisons
+* true vs false
   
         Loose vs Strict Comparison
 
