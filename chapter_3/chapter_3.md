@@ -74,4 +74,10 @@ Section 3: Control Flow Basics
 
      Switch Statements
 
+* break qoyulmazsa true olandan deyerden sonrakilarda true olub ekrana yazilar.
+* switch case-ler strict equalitydir eynen === 3 beraber kimi data tipleride eyni olmalidir
+
+
+
+
      Variables & Block Scope

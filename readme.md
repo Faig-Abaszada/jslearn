@@ -42,7 +42,7 @@
 -[x] 24.Logical Operators
 -[x] 25.Logical NOT
 -[x] 26.Break & Continue
--[ ] 27.Switch Statements
+-[x] 27.Switch Statements
 -[ ] 28.Variables & Block Scope
 
       Section 4: Functions & Methods
