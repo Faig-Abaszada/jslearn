@@ -47,8 +47,8 @@
 
       Section 4: Functions & Methods
 
--[ ] 29.What are Functions?
--[ ] 30.Function Declarations & Expressions
+-[x] 29.What are Functions?
+-[x] 30.Function Declarations & Expressions
 -[ ] 31.Arguments & Parameters
 -[ ] 32.Returning Values
 -[ ] 33.Arrow Functions
