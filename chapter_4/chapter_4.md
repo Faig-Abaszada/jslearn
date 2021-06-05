@@ -21,7 +21,8 @@ Section 4: Functions & Methods
         teyin etsekde en bashlarda bux funki cagira bilirik.
 
         * hoisting works with function declaration but i doesn't work with function expressions (variable attached funcs)
-
+        * AMA BUNUNLAR BELE FUNC DECLARE MESLEHET DEYIL
+  
 
     Arguments & Parameters
     
