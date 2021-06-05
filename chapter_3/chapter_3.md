@@ -52,7 +52,14 @@ Section 3: Control Flow Basics
 * 2ci shertde false ise 
 * else { blok execute olunur}
 
+
      Logical Operators
+
+* or = || - condition true olmasi ucun en az biri true olmalidir
+* and = && - condition true olmasi ucun ikiside true olmaldiri adi ustunde bu ve bu
+
+
+
 
      Logical NOT
 
