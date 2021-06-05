@@ -47,6 +47,11 @@ Section 3: Control Flow Basics
 
      Else & Else If
 
+* 1ci shert false ise
+* 2ci else if shert oxunur
+* 2ci shertde false ise 
+* else { blok execute olunur}
+
      Logical Operators
 
      Logical NOT
