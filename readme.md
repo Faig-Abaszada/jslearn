@@ -33,7 +33,7 @@
 
       Section 3: Control Flow Basics
 
--[ ] 18.What is Control Flow?
+-[x] 18.What is Control Flow?
 -[ ] 19.For Loops
 -[ ] 20.While Loops
 -[ ] 21.Do While Loops
