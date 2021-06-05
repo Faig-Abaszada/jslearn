@@ -35,7 +35,7 @@
 
 -[x] 18.What is Control Flow?
 -[x] 19.For Loops
--[ ] 20.While Loops
+-[x] 20.While Loops
 -[ ] 21.Do While Loops
 -[ ] 22.If Statements
 -[ ] 23.Else & Else If

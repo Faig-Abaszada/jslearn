@@ -22,20 +22,22 @@ Section 3: Control Flow Basics
     
     
      While Loops
+
 * same with loop
 * only difference is syntax
 * while loop - once loopdan kendarda counter deyisken yaradilmalidir.
 * code block-un icinde sonda i++ yazirirq
 
 
-
-
-
-
-
-
-
      Do While Loops
+
+* sometimes you want the code to run at least one even condition is false
+* do-dan sonra while shertin yerine yetririlib davam edib etmyeceyine qerar verir ama false oldugunda bele code block en az bir defe calisir
+*  
+
+
+
+
 
      If Statements
 
