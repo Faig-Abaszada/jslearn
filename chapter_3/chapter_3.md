@@ -9,6 +9,7 @@ Section 3: Control Flow Basics
 
      For Loops
 
+* Loop belli shertler daxilinde code blokunun calishdirmaqdir dondurmekdir
 * semicolon dont need
 * {} - code block
 * let i = 0 - like counter how many times we run the code inside the loop
@@ -33,13 +34,16 @@ Section 3: Control Flow Basics
 
 * sometimes you want the code to run at least one even condition is false
 * do-dan sonra while shertin yerine yetririlib davam edib etmyeceyine qerar verir ama false oldugunda bele code block en az bir defe calisir
-*  
-
-
 
 
 
      If Statements
+
+* conditional statements
+* we check a condition and if condition is true we execute code block
+* code block execute once 
+* condition is true code block execute
+     
 
      Else & Else If
 
