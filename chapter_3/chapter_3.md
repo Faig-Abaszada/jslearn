@@ -19,7 +19,21 @@ Section 3: Control Flow Basics
 * cycling through array as iteration
 * each iteration is one cycle through
 * code block bir defe calishmasi bir iteration data-dir  
+    
+    
      While Loops
+* same with loop
+* only difference is syntax
+* while loop - once loopdan kendarda counter deyisken yaradilmalidir.
+* code block-un icinde sonda i++ yazirirq
+
+
+
+
+
+
+
+
 
      Do While Loops
 
