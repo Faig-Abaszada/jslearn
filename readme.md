@@ -39,7 +39,7 @@
 -[x] 21.Do While Loops
 -[x] 22.If Statements
 -[x] 23.Else & Else If
--[ ] 24.Logical Operators
+-[x] 24.Logical Operators
 -[ ] 25.Logical NOT
 -[ ] 26.Break & Continue
 -[ ] 27.Switch Statements
