@@ -34,7 +34,7 @@
       Section 3: Control Flow Basics
 
 -[x] 18.What is Control Flow?
--[ ] 19.For Loops
+-[x] 19.For Loops
 -[ ] 20.While Loops
 -[ ] 21.Do While Loops
 -[ ] 22.If Statements
