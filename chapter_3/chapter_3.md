@@ -63,8 +63,15 @@ Section 3: Control Flow Basics
 
 * (!) - !condition - condition false ise code block chalishar normalda true olarsa code block chalishardi indi ise eksine olur 
 
+
      Break & Continue
  
+* break - breaking loop || out of loop
+* 
+
+
+
+
      Switch Statements
 
      Variables & Block Scope

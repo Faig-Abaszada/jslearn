@@ -40,8 +40,8 @@
 -[x] 22.If Statements
 -[x] 23.Else & Else If
 -[x] 24.Logical Operators
--[ ] 25.Logical NOT
--[ ] 26.Break & Continue
+-[x] 25.Logical NOT
+-[x] 26.Break & Continue
 -[ ] 27.Switch Statements
 -[ ] 28.Variables & Block Scope
 
