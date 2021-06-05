@@ -43,7 +43,7 @@
 -[x] 25.Logical NOT
 -[x] 26.Break & Continue
 -[x] 27.Switch Statements
--[ ] 28.Variables & Block Scope
+-[x] 28.Variables & Block Scope
 
       Section 4: Functions & Methods
 

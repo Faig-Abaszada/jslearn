@@ -81,3 +81,17 @@ Section 3: Control Flow Basics
 
 
      Variables & Block Scope
+
+* block level scope with variables
+* global scope - her hansi code block icinde olmayandadir
+* globalda ve code block icinde eyni adda deyisken yaratmaq olar
+* localda - code block daxilinde yaradilmis deyiskeni globalda istifade ede bilmirik.
+* global ve 1ci code blocklarinda eyni adda deyisken olarsa 1ci code block icinde diger 2ci code block olarsa 1ci code blocun deyiskenini oxuyacaq, yani bir ustdeki code blockun deyiskenini gorecek 
+
+        VAR variable ignores scope
+
+
+
+
+
+
