@@ -67,7 +67,7 @@ Section 3: Control Flow Basics
      Break & Continue
  
 * break - breaking loop || out of loop
-* 
+* continue - ozunden sonraki her sheyi ignore edir.  continue verilen  deyer true oldusa continue loop-u basha dondurur ve qaldigi yerden davam etdirir
 
 
 
