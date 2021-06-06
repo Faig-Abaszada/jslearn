@@ -52,3 +52,25 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
 
     
     Primitive vs Reference Types
+
+* Promitive Types: 
+    * numbers, strings, booleans, null, undefined, symbols
+* Reference Types
+    * all type of objects
+
+* Stack vs Heap : chapter_5 dolderinde sekillerde var
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
