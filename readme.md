@@ -60,11 +60,11 @@
  
 -[x] 37.Objects at a Glance
 -[x] 38.Creating an Object Literal
--[ ] 39.Adding Methods
--[ ] 40.'this' Keyword
--[ ] 41.Objects in Arrays
--[ ] 42.Math Object
--[ ] 43.Primitive vs Reference Types
+-[x] 39.Adding Methods
+-[x] 40.'this' Keyword
+-[x] 41.Objects in Arrays
+-[x] 42.Math Object
+-[x] 43.Primitive vs Reference Types
 
       Section 6: The Document Object Model
 
