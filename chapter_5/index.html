@@ -16,16 +16,21 @@
 // object daxilinde teyin olunub
 // istifade etdiyimiz metodlarda bu shekilde onceden
 // object daxilinde teyin olunmush funskiyalardir
-
+// regular function uses in object not arrow function
 let user = {
     name: 'Faik Abaszada',
+    blogs: ['5 rule for self taughter', '10 things to make money'],
     login: function () {
         console.log(this.name);
+    },
+    logBlogs: function () {
+        this.blogs.forEach(blog => {
+            console.log(blog)
+        })
     }
 };
-
-user.login();
-
+// user.login();
+user.logBlogs();
 
 
 
