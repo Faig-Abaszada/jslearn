@@ -29,7 +29,14 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
     
     'this' Keyword
 
-* 
+* this.name = access to object's inside variables 
+* global-da console.log(this) : gorersenki en ustde olan global
+  object olan window-u consola yazdi
+* object icinde verersek hemin objecti ve icindekileri bize verecekdir.
+
+
+
+
 
     
     Objects in Arrays
