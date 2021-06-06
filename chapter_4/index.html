@@ -9,10 +9,23 @@
 <script>
 
 
+// parameter vs arguments vs default parameters
 
+// const speak = function (name = 'luigi', time = 'night') {
+//     console.log(`good ${time} ${name}`);
+// };
+// speak('Faik');
 
+// returning values
+// function returned oldu ve ve gelen deyeri globalda deyishkene teyin etdik ve globalda
+// rahat istifade ede bilerik
+const calcArea = function (radius) {
+    let area = 3.14 * radius**2;
+    return area;
+}
 
-
+const area = calcArea(5);
+console.log(area);
 
 
 

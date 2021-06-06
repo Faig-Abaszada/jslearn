@@ -25,7 +25,21 @@ Section 4: Functions & Methods
   
 
     Arguments & Parameters
+
+* function(name) - name is parameters, name burada eslinde bir local deyishkendir.
+* speak('Faik') - Faik is Argument
+* function(name= 'faik') - default deyer vermek olur
+* return
     
+
+
+
+
+
+
+
+
+
     Returning Values
     
     Arrow Functions

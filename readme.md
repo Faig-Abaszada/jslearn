@@ -49,8 +49,8 @@
 
 -[x] 29.What are Functions?
 -[x] 30.Function Declarations & Expressions
--[ ] 31.Arguments & Parameters
--[ ] 32.Returning Values
+-[x] 31.Arguments & Parameters
+-[x] 32.Returning Values
 -[ ] 33.Arrow Functions
 -[ ] 34.Functions vs Methods
 -[ ] 35.Foreach Method & Callbacks
