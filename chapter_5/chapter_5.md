@@ -22,14 +22,15 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
 * yazdigimiz objectin type-na bax : log- typeof usersObj
 
 
-
-
-
-
-
     Adding Methods
+
+* Methods vs Objects : understanding the methods how to ceate methods
+
     
     'this' Keyword
+
+* 
+
     
     Objects in Arrays
     
