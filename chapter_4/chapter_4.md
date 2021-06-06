@@ -35,6 +35,8 @@ Section 4: Functions & Methods
     Returning Values
 
 * return
+* function deyeri globalda istifade edilecekse globalda deyisken yaradilib onun icinde cagrilmalidir
+
 
 
     Arrow Functions
@@ -45,6 +47,7 @@ Section 4: Functions & Methods
   ve return-de yazmiriq 
 * main difference regular vs arrow functions is : "this" keyword
     
+
     Functions vs Methods
     
     Foreach Method & Callbacks
