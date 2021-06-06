@@ -54,12 +54,12 @@
 -[x] 33.Arrow Functions
 -[x] 34.Functions vs Methods
 -[x] 35.Foreach Method & Callbacks
--[ ] 36.Callback Functions in Action
+-[x] 36.Callback Functions in Action
 
       Section 5: Object Literals
  
--[ ] 37.Objects at a Glance
--[ ] 38.Creating an Object Literal
+-[x] 37.Objects at a Glance
+-[x] 38.Creating an Object Literal
 -[ ] 39.Adding Methods
 -[ ] 40.'this' Keyword
 -[ ] 41.Objects in Arrays

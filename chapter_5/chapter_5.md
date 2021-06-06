@@ -12,9 +12,21 @@ Section 5: Object Literals
 
     Creating an Object Literal
 
-* 
+* name : 'Faik' - name is key , string is value
+* object yaradib consola yazdiq ve en altda (__proto__) -nu gorduk 
+  bu Object Oriented Programming dersinde olacaq.
+* objecte erishmek veya deyerini deyismek ucun deyishken.key demeke kifayetdir  
+* var.key or var[index]   yani noqte ve [] ile keyi ala bilirik veya deyishe bilirik.
+* meslehetli yol dote notaion-dir ama occasionally(ara-sira) []-lazim ola biler
+hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
+* yazdigimiz objectin type-na bax : log- typeof usersObj
 
-    
+
+
+
+
+
+
     Adding Methods
     
     'this' Keyword
