@@ -33,9 +33,10 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
 * global-da console.log(this) : gorersenki en ustde olan global
   object olan window-u consola yazdi
 * object icinde verersek hemin objecti ve icindekileri bize verecekdir.
-
-
-
+* this keyword arrow function icinde ferqli dvaranir: globaldaki kimi ishleyir 
+    "this" buna gorede regular func yazmaq lazimdir object icindeki objecte yonlensin 
+* object icinde login: function(){} veya login() {} yazila biler
+        
 
 
     
