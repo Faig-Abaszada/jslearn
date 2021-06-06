@@ -40,11 +40,15 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
 
     Objects in Arrays
 
-*  let user = { blogs : [ {} , {} , {} ] }
+* let user = { blogs : [ {} , {} , {} ] }
 
 
-
-    
     Math Object
+
+* Math operators have several properties and methods
+* log - Math to see all
+* round - down vs up , floor - down, ceil - up, trunc - cut point part
+* Math.random
+
     
     Primitive vs Reference Types
