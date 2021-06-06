@@ -61,6 +61,17 @@ Section 4: Functions & Methods
 * CallBack Functions : function-a argument olaraq deyer gonderirirkk bu string 
   veya number ola biler ama biz argument olaraq Funksiya gonderikse bu CallBack 
   adlanir
+* forEach : metod for loop kimidir .
+* forEach : metod bir callback func argumenti gozleyir.
+* forEach : her bir array icini gezir ve her biri ucun callback func-i calishdirir.
+* foreEach icindeki callback func muxtelif parameterler alir.
+* forEach Callback-in aldigi birinci parameter eslide array icindeki elementleri
+  bir bir gezdiyi ucun hemin array elementini istifade etmek ucun icine alir.
+* Index forEach icindeki callback func ikinci parameter olaraq elementin index deyerinide alir
+* CallBack functionu basqa yerde yazib bunun icindede cagira bilersen.
 
-    
+
     Callback Functions in Action
+
+
+* 

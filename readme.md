@@ -52,8 +52,8 @@
 -[x] 31.Arguments & Parameters
 -[x] 32.Returning Values
 -[x] 33.Arrow Functions
--[ ] 34.Functions vs Methods
--[ ] 35.Foreach Method & Callbacks
+-[x] 34.Functions vs Methods
+-[x] 35.Foreach Method & Callbacks
 -[ ] 36.Callback Functions in Action
 
       Section 5: Object Literals
