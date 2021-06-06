@@ -59,8 +59,13 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
     * all type of objects
 
 * Stack vs Heap : chapter_5 dolderinde sekillerde var
-
-
+* Primitive Data types : When we make copies of primitive values like strings 
+and numbers we make a new copy of the value on the stack
+* Reference Types : When we try to make a copy of 
+a refence type, we only make a copy of the pointer 
+  on the stack which points to the same data on the heap
+  we dont make a copy of actual data , so when we then change 
+  the copies , also original value changing. 
 
 
 
