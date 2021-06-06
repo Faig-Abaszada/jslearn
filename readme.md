@@ -51,7 +51,7 @@
 -[x] 30.Function Declarations & Expressions
 -[x] 31.Arguments & Parameters
 -[x] 32.Returning Values
--[ ] 33.Arrow Functions
+-[x] 33.Arrow Functions
 -[ ] 34.Functions vs Methods
 -[ ] 35.Foreach Method & Callbacks
 -[ ] 36.Callback Functions in Action

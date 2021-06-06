@@ -49,7 +49,18 @@ Section 4: Functions & Methods
     
 
     Functions vs Methods
-    
+
+* methods is just a function
+* value.method() - metodlarin cagirish usulu bashqadir sadece. (noqte ile)
+* methods are functions but they are functions which are associated with an object or data type.
+* novbeti object derslerindde metodlari yaratmaga baxacagiq.  
+
+
     Foreach Method & Callbacks
+
+* CallBack Functions : function-a argument olaraq deyer gonderirirkk bu string 
+  veya number ola biler ama biz argument olaraq Funksiya gonderikse bu CallBack 
+  adlanir
+
     
     Callback Functions in Action
