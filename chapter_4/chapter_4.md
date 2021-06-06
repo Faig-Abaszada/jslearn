@@ -29,20 +29,21 @@ Section 4: Functions & Methods
 * function(name) - name is parameters, name burada eslinde bir local deyishkendir.
 * speak('Faik') - Faik is Argument
 * function(name= 'faik') - default deyer vermek olur
-* return
+* 
     
-
-
-
-
-
-
-
-
 
     Returning Values
-    
+
+* return
+
+
     Arrow Functions
+
+* without function keyword : var name = () => {}
+* bir parameter olduqda moterizleride qoymaya bilerik
+* bir setr return var ise bu zaman curly bracket ehtiyacida yoxdur
+  ve return-de yazmiriq 
+* main difference regular vs arrow functions is : "this" keyword
     
     Functions vs Methods
     

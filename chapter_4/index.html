@@ -19,19 +19,23 @@
 // returning values
 // function returned oldu ve ve gelen deyeri globalda deyishkene teyin etdik ve globalda
 // rahat istifade ede bilerik
-const calcArea = function (radius) {
-    let area = 3.14 * radius**2;
-    return area;
-}
+// const calcArea = function (radius) {
+//     let area = 3.14 * radius**2;
+//     return area;
+// }
+//
+// const area = calcArea(5);
+// console.log(area);
+//
+
+
+    // const calcArea = (radius) => {
+    //     return 3.14 * radius**2;
+    // }
+const calcArea = radius =>  3.14 * radius**2;
 
 const area = calcArea(5);
 console.log(area);
-
-
-
-
-
-
 
 
 
