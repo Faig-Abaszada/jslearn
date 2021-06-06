@@ -36,11 +36,14 @@ hansiki deyishken ile key-o cagirsaq var.[deyiskenAdi]
 * this keyword arrow function icinde ferqli dvaranir: globaldaki kimi ishleyir 
     "this" buna gorede regular func yazmaq lazimdir object icindeki objecte yonlensin 
 * object icinde login: function(){} veya login() {} yazila biler
-        
 
 
-    
     Objects in Arrays
+
+*  let user = { blogs : [ {} , {} , {} ] }
+
+
+
     
     Math Object
     

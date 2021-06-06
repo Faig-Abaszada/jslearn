@@ -19,7 +19,10 @@
 // regular function uses in object not arrow function
 let user = {
     name: 'Faik Abaszada',
-    blogs: ['5 rule for self taughter', '10 things to make money'],
+    blogs: [
+        { title: '5 rule for self taughter' , likes: 30},
+        { title: '10 things to make money', likes: 50}
+    ],
     login: function () {
         console.log(this.name);
     },
