@@ -77,15 +77,18 @@ ve bizim html documenti onun icinde yerlesdirir.
         * add style to element : title.style.color = 'red';
             * title.style.backgroundColor - camelCase olmalidir
     
-
-
- 
-
-
+* en yaxshi usul novbeti dersde!!!! (class verib class ile stillendirmek bir basha style yazmaq yox)
 
 
     Adding & Removing Classes
         
+* classList -  grabbedTitle.classList -> icinde olan classlari verecek.
+* grabbedTitle.classList.add('error);  -> classlar arasina yeni class elave etdik
+* grabbedTitle.classList.remove('error); -> silir.
+
+
+
+
     
     Parents, Children & Siblings
         
