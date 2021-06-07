@@ -9,16 +9,29 @@
 </head>
 <body>
 
+<div>
+    <p>Hello guys!</p>
+    <p>Hello guys!</p>
+    <p>Hello guys!</p>
+    <p>Hello guys!</p>
+</div>
 
-
-
+<div class="content">
+    <p>this is the content</p>
+</div>
 
 
 <script>
 
+const paras = document.querySelectorAll('p');
 
+paras.forEach(para => {
+    para.innerText += ' and nice men!'
+    console.log(para);
+})
 
-
+const div = document.querySelector('div.content');
+div.innerHTML += `<p>Hello guys often!</p>`;
 
 
 

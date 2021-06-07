@@ -52,7 +52,7 @@ ve bizim html documenti onun icinde yerlesdirir.
     Adding & Changing Page Content
 
 * innerText - property , p.innerText = ''  to change , p.innerText += ''
-* 
+* innerHTML - icine umumu =, veya elave += ede bilersen
 
         
     
