@@ -19,7 +19,7 @@ ve bizim html documenti onun icinde yerlesdirir.
 * h1 - icindeki text ise text node adlanir digerleri element node
 
 
-    The Query Selector
+    The Query Selector || we can use forEach perfect! || DOM methods 
     
 * Quering the Dom 
 * document.querySelector('p') - 1ci p tagini sececek. digerlerini ignor edir.
@@ -35,12 +35,25 @@ ve bizim html documenti onun icinde yerlesdirir.
 * En Yaxshi seciciler : querySelector('div.className') ve querySelectorAll()  
 
 
+    Other Ways to Query the DOM || we can't use forEach
 
+* document.getElementById('idName') - single element
+* document.getElementsByClassName('className') - 
+    * plural elements.
+    * HTML collection olaraq consolda yazildi.
+    * querySelectAll istifade edende biz nodeList meselesini gorduk bu ikisi eyni gorunur ama eyni deyil.
+    * NodeList-deki kimi dot notation ve [] istifade ede bilirk htmlCollection uzerinde ama 
+    * ama ForEach istifade ede bilmirik.
+* document.getElementsByTagName('p') - 
+    * plural elements
+    * dot notation ve [] istifde etmek olur
+    
 
-    Other Ways to Query the DOM
-    
-    
     Adding & Changing Page Content
+
+* innerText - property , p.innerText = ''  to change , p.innerText += ''
+* 
+
         
     
     Getting & Setting Attributes

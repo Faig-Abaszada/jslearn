@@ -71,7 +71,7 @@
 -[x] 44.Interacting with the Browser
 -[x] 45.The DOM Explained
 -[x] 46.The Query Selector
--[ ] 47.Other Ways to Query the DOM
+-[x] 47.Other Ways to Query the DOM
 -[ ] 48.Adding & Changing Page Content
 -[ ] 49.Getting & Setting Attributes
 -[ ] 50.Changing CSS Styles
