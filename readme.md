@@ -68,9 +68,9 @@
 
       Section 6: The Document Object Model
 
--[ ] 44.Interacting with the Browser
--[ ] 45.The DOM Explained
--[ ] 46.The Query Selector
+-[x] 44.Interacting with the Browser
+-[x] 45.The DOM Explained
+-[x] 46.The Query Selector
 -[ ] 47.Other Ways to Query the DOM
 -[ ] 48.Adding & Changing Page Content
 -[ ] 49.Getting & Setting Attributes
