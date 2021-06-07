@@ -53,7 +53,8 @@ ve bizim html documenti onun icinde yerlesdirir.
 
 * innerText - property , p.innerText = ''  to change , p.innerText += ''
 * innerHTML - icine umumu =, veya elave += ede bilersen
-
+* array-deki insanlari nece browsere yazariq?
+    * 
         
     
     Getting & Setting Attributes
