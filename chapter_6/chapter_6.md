@@ -98,12 +98,28 @@ ve bizim html documenti onun icinde yerlesdirir.
 
     Parents, Children & Siblings
     
-* 
-    
-    
+* a node tree is a visual representation of the DOM and it represents our HTML Page.
+* same level nodes is siblings. - that is one type relationship. 
+    eyni sevidyyede olan meselen div- icinde h1, p, ul vardir icinde olanlar siblingsdir
+* bashqa relationshiplerde var parent ve children   
+* bir parent icindeki children-lari nece sece bilerik ? :
+    * grabbedParent.children -> buz bize html Collection verer (foreEach ist etmek olmur)
+    * HTML Collection-u array-a nece cevire bilerik ist etmek ucun
+        * Array.from(grabbedParent.children) ->  [] icinde bize elementleri verecekdir 
+        * Array.from - destructive deyil yani yeni value dondurur  yani  grabbedParent.children -> helede HTML Collectiondur 
     Event Basics (click events)
-        
-    
+        * forEach - Array.from(grabbedParent.children).forEach()
+* bir children-in parentini nece sece bilerik? :
+        * grabbedChild.parentElement
+* sibling relationship :    
+        * grabbedChild.nextElementSibling -> children sonraki tag veya elemeti secir
+        * grabbedChild.previousElementSibling -> childrenden evvelki tag veya elementi secir
+* title.nextElementSibling.parentElement.children -> childan sonrakinin parentinin icindekiler :)))
+
+
+
+
+
     Creating & Removing Elements
     
     
