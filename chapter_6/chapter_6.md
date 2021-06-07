@@ -65,8 +65,25 @@ ve bizim html documenti onun icinde yerlesdirir.
 
     
     Changing CSS Styles
+
+* title.setAttribute('style', 'margin: 50px') - bu
+    usul ile biz movcud style-i overwrite style edirik 
+  ama bunu biz istemirik
+    * grabbedTitle.style - i consolda biz boyuk css properties- goruruk ama eksereiyyetinin ici boshdur
+        ama axtarsaq ashagi scroll etsek doldurdumuz style elementini dolu gore bilerik
+    * eyer elementle orange vermishikse : grabbedTitle.style.color -> orange gorerik
+    * 2 type styling:
+        * overwrite all stylies : title.setAttribute('style', 'color: red');
+        * add style to element : title.style.color = 'red';
+            * title.style.backgroundColor - camelCase olmalidir
     
-    
+
+
+ 
+
+
+
+
     Adding & Removing Classes
         
     
