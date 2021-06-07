@@ -86,12 +86,18 @@ ve bizim html documenti onun icinde yerlesdirir.
 * grabbedTitle.classList.add('error);  -> classlar arasina yeni class elave etdik
 * grabbedTitle.classList.remove('error); -> silir.
 
+* her bir p elementinin icinde success varsa succes yoxsa error clasi versin elemente vere rengide ona gore deyishsin
 
-
-
+* innerText vs textContent diffrence is : consola yazdirib baxmaq yaxshidir.
+    * innerText - visible olanlari gosteriri (eyer h1 icinde 
+      display none olan bir element varsa onu gostermir cunki gorsenmir)
+    * textContent - invisible elementleride verir
+    
     
     Parents, Children & Siblings
-        
+    
+* 
+    
     
     Event Basics (click events)
         

@@ -40,16 +40,34 @@
 
 <!--<h1 style="color: red">Helloo</h1>-->
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, expedita!
-</p>
+<!--<p>-->
+<!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, expedita!-->
+<!--</p>-->
 
+<div>
+    <p>lorem <span style="display: none">error</span></p>
+    <p>lorem error</p>
+    <p>lorem success</p>
+    <p>lorem error</p>
+    <p>lorem error</p>
+    <p>lorem error</p>
+    <p>lorem success</p>
+    <p>lorem error</p>
+</div>
 
 <script>
+    const paras = document.querySelectorAll('p');
+    paras.forEach((para) => {
+        if (para.textContent.includes('error')) {
+            para.classList.add('error');
+        } else if (para.textContent.includes('success')) {
+            para.classList.add('success');
+        }
+    })
 
-    const content = document.querySelector('p');
-
-    content.classList.add('success');
+    // const content = document.querySelector('p');
+    //
+    // content.classList.add('success');
 
 
     // const title = document.querySelector('h1');
