@@ -44,28 +44,47 @@
 <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, expedita!-->
 <!--</p>-->
 <h1 class="title">DOM Document Object Model</h1>
-<div>
-    <p>lorem <span style="display: none">error</span></p>
-    <p>lorem error</p>
-    <p>lorem success</p>
-    <p>lorem error</p>
-    <p>lorem error</p>
-    <p>lorem error</p>
-    <p>lorem success</p>
-    <p>lorem error</p>
-</div>
+<!--<div>-->
+<!--    <p>lorem <span style="display: none">error</span></p>-->
+<!--    <p>lorem error</p>-->
+<!--    <p>lorem success</p>-->
+<!--    <p>lorem error</p>-->
+<!--    <p>lorem error</p>-->
+<!--    <p>lorem error</p>-->
+<!--    <p>lorem success</p>-->
+<!--    <p>lorem error</p>-->
+<!--</div>-->
+
+<ul>
+    <li>upwork</li>
+    <li>gym</li>
+    <li>piano</li>
+    <li>travel</li>
+</ul>
 
 <script>
-    const paras = document.querySelectorAll('p');
-    paras.forEach((para) => {
-        if (para.textContent.includes('error')) {
-            para.classList.add('error');
-        } else if (para.textContent.includes('success')) {
-            para.classList.add('success');
-        }
+    const items = document.querySelectorAll('li');
+    items.forEach(item => {
+        item.addEventListener('click', e => {
+            // console.log('item clicked');
+            // console.log(e);
+            // console.log(e.target); // bu
+            // console.log(item); // ve bu eynidir
+            e.target.style.textDecoration = 'line-through';
+        })
     })
-    const title = document.querySelector('.title');
-    title.classList.toggle('test');
+
+
+    // const paras = document.querySelectorAll('p');
+    // paras.forEach((para) => {
+    //     if (para.textContent.includes('error')) {
+    //         para.classList.add('error');
+    //     } else if (para.textContent.includes('success')) {
+    //         para.classList.add('success');
+    //     }
+    // })
+    // const title = document.querySelector('.title');
+    // title.classList.toggle('test');
 
     // const content = document.querySelector('p');
     //

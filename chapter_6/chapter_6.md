@@ -117,10 +117,17 @@ ve bizim html documenti onun icinde yerlesdirir.
 * title.nextElementSibling.parentElement.children -> childan sonrakinin parentinin icindekiler :)))
 
 
+    Event Basics (click events)
 
+* button.addEventListeners('click', () => { } )
+* burada click event ateshlendikde callback funskiya bize avttomatik "event"- objecti verir.
+* bu event tetbiq edildiyi elementin butun melumatlarina sahib olru ve event.filanInfo deyib baxa bilerik consolda 
+* bu event browser terefinden yaradilir
 
 
     Creating & Removing Elements
+
+* 
     
     
     Event Bubbling (and delegation)
