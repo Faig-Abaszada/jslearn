@@ -43,7 +43,7 @@
 <!--<p>-->
 <!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, expedita!-->
 <!--</p>-->
-
+<h1 class="title">DOM Document Object Model</h1>
 <div>
     <p>lorem <span style="display: none">error</span></p>
     <p>lorem error</p>
@@ -64,6 +64,8 @@
             para.classList.add('success');
         }
     })
+    const title = document.querySelector('.title');
+    title.classList.toggle('test');
 
     // const content = document.querySelector('p');
     //

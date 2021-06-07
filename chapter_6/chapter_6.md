@@ -93,7 +93,9 @@ ve bizim html documenti onun icinde yerlesdirir.
       display none olan bir element varsa onu gostermir cunki gorsenmir)
     * textContent - invisible elementleride verir
     
+* classList.toggle()  - birinci tetbiqinde add edir ikincide ise remove 
     
+
     Parents, Children & Siblings
     
 * 
