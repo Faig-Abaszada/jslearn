@@ -151,6 +151,24 @@ ve bizim html documenti onun icinde yerlesdirir.
 * test ucun ul li elementlerin ikisinde eventListener verib li-ni calishdirin ve ul-ninde calishdigini goreceksen.
 * eyer bubbling olmagini istemezsek method istifade ede bilerik:
     * e.stopPropagation(); -> stop the event bubbling up from this point
+    
+* Delegation - event delegation ile event bubbling yaxindan elaqelidir.
+* eyer ul icinde cox li tag olarsa event listener hamisina tetbiq olunur bizim kodumuzda
+    ama bu bizim sehifesinin performansina ciddi tesir edecekdir ve yaxshi praktika deyil bu.
+* hemcinin buttonla  yeni li-lar elave  etdikde bu event listenerler bunlara tesir etmir.
+
+* li-larin clicklene bilmesinin en yaxsi yolu : 
+    * tek bir eventListener biz UL-ye elave etsek  e.target bize li verecek ama niye?
+        * cunki dedikki biz elemente click etdiyimizde hemin element becomes event
+        ve bubbling sayesinde li-kliklendiyinde bubling olub Parente qalxir ve 
+          baxirki eventListener var yoxsa yox bizde eventListeneri UL-ye vermishik
+          bu halda ul callback calishir hansi birinci clicklenibse onu bize verir.
+
+
+
+
+
+
 
 
     More DOM Events
