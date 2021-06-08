@@ -127,8 +127,16 @@ ve bizim html documenti onun icinde yerlesdirir.
 
     Creating & Removing Elements
 
-* 
-    
+* grabbedElement.remove()
+* document.createElement('li') - li tag yaradilmasi string icinde her defe <li> yaratmaqdansa
+* ul.append(li); - elave edilme    
+* ul.prepend(li) - evvele insert edir
+* amma lakin ancaq biz yeni yaradilmish li-lere click edib remove ede bilmirik: 
+    * cunki biz artiq kohne li-lere eventlistnerler elave etmishik ama sonradan gelenlere bu proses tetbiq edilmir
+
+
+
+
     
     Event Bubbling (and delegation)
         
