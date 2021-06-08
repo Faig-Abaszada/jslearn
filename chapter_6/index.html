@@ -85,6 +85,7 @@
             // console.log(e.target); // bu
             // console.log(item); // ve bu eynidir
             // e.target.style.textDecoration = 'line-through';
+            e.stopPropagation();
             e.target.remove();
         })
     })

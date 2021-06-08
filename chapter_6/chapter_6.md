@@ -134,13 +134,25 @@ ve bizim html documenti onun icinde yerlesdirir.
 * amma lakin ancaq biz yeni yaradilmish li-lere click edib remove ede bilmirik: 
     * cunki biz artiq kohne li-lere eventlistnerler elave etmishik ama sonradan gelenlere bu proses tetbiq edilmir
 
-
-
-
     
     Event Bubbling (and delegation)
-        
-    
+
+* browserde biz bri elemente click etdikde hemin element event target olur
+* bu bash verdikde JS baxirki biz bu elemente eventListener vermishik ya yox.
+* eyer vermisihkse bizim callback func chalishir. 
+* ve ve ve!!! bu bu event yuxari yani parentine qaxlir( bubble up)
+* ve buradada JS baxirki bu PARENT-dede eventListener tetbiq etmishik ya yox.
+    * eyer parent-edede evenlistener vermishikse bu zaman buradaki callback chalishir
+        sonra ise yenede bir ust parent-e YENIDEN baxir.
+* ve bu olay EVENT BUBBLING adlanir.
+* bunlari bilmek vacib idi cunki eyer ul li elementlerine ikisinede eventListener
+    vermishikse bu zaman li-a click etdiyimizde ul-nin eventListener-ide ishe dushecek
+
+* test ucun ul li elementlerin ikisinde eventListener verib li-ni calishdirin ve ul-ninde calishdigini goreceksen.
+* eyer bubbling olmagini istemezsek method istifade ede bilerik:
+    * e.stopPropagation(); -> stop the event bubbling up from this point
+
+
     More DOM Events
         
     
