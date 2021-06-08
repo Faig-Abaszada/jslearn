@@ -183,5 +183,6 @@ ve bizim html documenti onun icinde yerlesdirir.
 * SCROLL - addEventListener('wheel') -> pageY = yuxaridan ashagi getdiyi pixel
   (10px ashagi geldinse pageY= 10px yani 10px yuxarida qaldi)
     
+  
     Building a Popup
         
