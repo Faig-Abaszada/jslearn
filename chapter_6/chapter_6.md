@@ -173,13 +173,12 @@ ve bizim html documenti onun icinde yerlesdirir.
     *  bunun ucun consola e yazsaq  propertylerde tagName - i gorerik
     * bu tagNAme ile biz if()  condition yazib  kliklenen li-dirse action et yoxsa etme deye bilerik
     * if(e.target.tagName === 'LI') {}
-
-
-
-
-
+    
 
     More DOM Events
+
+* COPY - addEventListener('copy') -> element copy olundugunda callback calishir.
+* MOUSEMOVE - addEventListener('mousemove') -> offSetX = from the left px, offSetY = from the top px
         
     
     Building a Popup

@@ -13,6 +13,11 @@
         .success {
             background-color: aquamarine;
         }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
     </style>
 </head>
 <body>
@@ -55,27 +60,35 @@
 <!--    <p>lorem error</p>-->
 <!--</div>-->
 
-<ul>
-    <li>upwork</li>
-    <li>gym</li>
-    <li>piano</li>
-    <li>travel</li>
-</ul>
+<!--<ul>-->
+<!--    <li>upwork</li>-->
+<!--    <li>gym</li>-->
+<!--    <li>piano</li>-->
+<!--    <li>travel</li>-->
+<!--</ul>-->
 
-<button>add new todo</button>
+<!--<button>add new todod</button> -->
+
+<div class="box"></div>
 
 <script>
-    const ul = document.querySelector('ul');
-    const button = document.querySelector('button');
-
-    button.addEventListener('click', () => {
-        // ul.innerHTML += '<li>newtodo</li>';
-        // -> bu shekilde yaratdiq li tag ama basqa yoluda var
-        const li = document.createElement('li');
-        li.textContent = 'something new todo';
-        // ul.append(li);
-        ul.prepend(li);
+    const box = document.querySelector('.box');
+    box.addEventListener('mousemove', e => {
+        box.textContent = `x pos - ${e.offsetX} y pos - ${e.offsetY}`
     })
+
+
+    // const ul = document.querySelector('ul');
+    // const button = document.querySelector('button');
+    //
+    // button.addEventListener('click', () => {
+    //     // ul.innerHTML += '<li>newtodo</li>';
+    //     // -> bu shekilde yaratdiq li tag ama basqa yoluda var
+    //     const li = document.createElement('li');
+    //     li.textContent = 'something new todo';
+    //     // ul.append(li);
+    //     ul.prepend(li);
+    // })
 
     // const items = document.querySelectorAll('li');
     // items.forEach(item => {
@@ -89,11 +102,11 @@
     //         e.target.remove();
     //     })
     // })
-    ul.addEventListener('click', (e) => {
-        if (e.target.tagName === 'LI') {
-            e.target.remove();
-        }
-    })
+    // ul.addEventListener('click', (e) => {
+    //     if (e.target.tagName === 'LI') {
+    //         e.target.remove();
+    //     }
+    // })
 
 
     // const paras = document.querySelectorAll('p');
