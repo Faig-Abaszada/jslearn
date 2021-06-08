@@ -176,6 +176,7 @@ ve bizim html documenti onun icinde yerlesdirir.
     
 
     More DOM Events
+* all - https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events
 
 * COPY - addEventListener('copy') -> element copy olundugunda callback calishir.
 * MOUSEMOVE - addEventListener('mousemove') -> offSetX = from the left px, offSetY = from the top px
