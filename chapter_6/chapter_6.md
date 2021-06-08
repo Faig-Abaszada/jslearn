@@ -179,7 +179,8 @@ ve bizim html documenti onun icinde yerlesdirir.
 
 * COPY - addEventListener('copy') -> element copy olundugunda callback calishir.
 * MOUSEMOVE - addEventListener('mousemove') -> offSetX = from the left px, offSetY = from the top px
-        
+* SCROLL - addEventListener('wheel') -> pageY = yuxaridan ashagi getdiyi pixel
+  (10px ashagi geldinse pageY= 10px yani 10px yuxarida qaldi)
     
     Building a Popup
         
