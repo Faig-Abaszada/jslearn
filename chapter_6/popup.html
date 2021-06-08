@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chapter_6_popUp</title>
+    <style>
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: crimson;
+            color: white;
+            border: 0;
+            padding: 6px 10px;
+        }
+        .popup-wrapper {
+            background-color: rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .popup {
+            font-family: Arial;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: white;
+            position: relative;
+        }
+        .popup-close {
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            cursor: pointer;
+        }
+        .popup a {
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            padding: 6px 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<button>click me</button>
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup-close">x</div>
+        <div class="popup-content">
+            <h2>Ninja Sale!</h2>
+            <p>50% off all ninja clothing!</p>
+            <a href="#">view clothing</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const button = document.querySelector('button');
+    const popup = document.querySelector('.popup-wrapper');
+    const close = document.querySelector('.popup-close');
+
+    button.addEventListener('click', e => {
+        popup.style.display = 'block';
+    })
+    close.addEventListener('click', e => {
+        popup.style.display = 'none';
+    })
+    popup.addEventListener('click', e => {
+        console.log(e);
+        if (e.target.className == 'popup-wrapper') {
+            popup.style.display = 'none';
+
+        }
+        //eyer className wrapperdirse bagla yoxsa popda ne ise ish gorur klik edir
+    })
+
+
+
+
+
+</script>
+</body>
+</html>
