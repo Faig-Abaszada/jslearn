@@ -164,7 +164,15 @@ ve bizim html documenti onun icinde yerlesdirir.
           baxirki eventListener var yoxsa yox bizde eventListeneri UL-ye vermishik
           bu halda ul callback calishir hansi birinci clicklenibse onu bize verir.
 
-
+* summary: ul icinde he rhansi li-a klik etdiyimzde onun eventi bubbles up olub ul-ye gedir ve ul-nin callback
+  -i calishir. ve hansi li tag calishdigi goruruk cunki hansi birinci cklik olunub bize event onu verir.
+  
+* ama ama ama biz eventList-i ul-ye veridyimiz ucun llerin kenarina klick etmis
+    olsa bize ul-nin ozunu ve icindede butun lileri verecek ama bunu istemirik 
+  biz sadece li-lerin klikini isteyirik.
+    *  bunun ucun consola e yazsaq  propertylerde tagName - i gorerik
+    * bu tagNAme ile biz if()  condition yazib  kliklenen li-dirse action et yoxsa etme deye bilerik
+    * if(e.target.tagName === 'LI') {}
 
 
 
