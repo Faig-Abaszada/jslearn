@@ -72,16 +72,16 @@
 -[x] 45.The DOM Explained
 -[x] 46.The Query Selector
 -[x] 47.Other Ways to Query the DOM
--[ ] 48.Adding & Changing Page Content
--[ ] 49.Getting & Setting Attributes
--[ ] 50.Changing CSS Styles
--[ ] 51.Adding & Removing Classes
--[ ] 52.Parents, Children & Siblings
--[ ] 53.Event Basics (click events)
--[ ] 54.Creating & Removing Elements
--[ ] 55.Event Bubbling (and delegation)
--[ ] 56.More DOM Events
--[ ] 57.Building a Popup
+-[x] 48.Adding & Changing Page Content
+-[x] 49.Getting & Setting Attributes
+-[x] 50.Changing CSS Styles
+-[x] 51.Adding & Removing Classes
+-[x] 52.Parents, Children & Siblings
+-[x] 53.Event Basics (click events)
+-[x] 54.Creating & Removing Elements
+-[x] 55.Event Bubbling (and delegation)
+-[x] 56.More DOM Events
+-[x] 57.Building a Popup
 
       Section 7: Forms & Form Events
 
