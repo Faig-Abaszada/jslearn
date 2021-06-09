@@ -52,9 +52,12 @@ Section 7: Forms & Form Events
        bize 4 verir ve yani truedir , false olanda zaten -1 verir.
     * bu o zaman istifade oluna bilerki bize index lazimdir hansiki oradan match 
         oluguni bilemk isteyende
-
-
+      
 
     Basic Form Validation
+
+*
+
+
         
     Keyboard Events
