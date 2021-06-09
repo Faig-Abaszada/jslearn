@@ -56,8 +56,11 @@ Section 7: Forms & Form Events
 
     Basic Form Validation
 
-*
+* yeni .html faylda var
 
 
-        
     Keyboard Events
+
+* KEYUP - addEventListener('keyup') - bize eslinde hansi key basildini verir.
+* // console.log(e);
+  // output KeyboardEvent Object meslen hansi key basildi filan
