@@ -29,8 +29,15 @@ form.addEventListener('submit', (e) => {
     console.log(form.username.value + 'hello');
 })
 
+// testting RegEx
+const username = 'shaun';
+// const pattern = /[a-z]{6,]/; // bu halda baslangic ve bitis vermirik icinde ortasinda varsa true dondece
+const pattern = /^[a-z]{4,}$/;
 
-
+const result = pattern.test(username);
+console.log(result)
+// output false , cunki shaun 6 herfli deyil.
+// username -> shaun8736437 olsa bele true donecek cunki
 
 
 

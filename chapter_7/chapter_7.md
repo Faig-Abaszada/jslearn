@@ -37,8 +37,11 @@ Section 7: Forms & Form Events
         
     Testing RegEx Patterns
 
-* 
-
+* pattern.test('username') -> boolean dondurur.
+    * test method - RegEx methodudur.
+    * /[a-z]{6,]/ -> shaun-u versek ama shaun76376723 olsa beel yene true donur
+        cunki esas icinde shaun var vse. yani esas ortasinda shaun var vse
+     * bunun qabagini almaq ucun  ^hsdh$ -etmeliyik
 
         
     Basic Form Validation
