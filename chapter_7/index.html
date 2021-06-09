@@ -30,14 +30,18 @@ form.addEventListener('submit', (e) => {
 })
 
 // testting RegEx
-const username = 'shaun';
+const username = '3232shaun';
 // const pattern = /[a-z]{6,]/; // bu halda baslangic ve bitis vermirik icinde ortasinda varsa true dondece
-const pattern = /^[a-z]{4,}$/;
+// const pattern = /^[a-z]{4,}$/; // test metodu ucun
+const pattern = /[a-z]{4,}/; // search metodu ucun
 
-const result = pattern.test(username);
-console.log(result)
+// const result = pattern.test(username);
 // output false , cunki shaun 6 herfli deyil.
 // username -> shaun8736437 olsa bele true donecek cunki
+const result = username.search(pattern);
+// output true olanda sene ilk uygun gelen characterin indexini verir
+console.log(result)
+
 
 
 

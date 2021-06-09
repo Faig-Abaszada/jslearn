@@ -37,13 +37,24 @@ Section 7: Forms & Form Events
         
     Testing RegEx Patterns
 
-* pattern.test('username') -> boolean dondurur.
+* TEST method - pattern.test('username') -> boolean dondurur.
     * test method - RegEx methodudur.
     * /[a-z]{6,]/ -> shaun-u versek ama shaun76376723 olsa beel yene true donur
         cunki esas icinde shaun var vse. yani esas ortasinda shaun var vse
      * bunun qabagini almaq ucun  ^hsdh$ -etmeliyik
+* SEARCH method - test methodunun eksidir username.search(pattern) olaraq,
+    * ve integer dondurur. false - 1, true 0 dir.   
+        * true - sifir ne demekdir : uygun matches olursa demekki 
+            meselen username-in birinci herfi matches olduguna gore birinci indexi
+            uygun gelir ve 0 yazir
+    *  output true olanda sene ilk uygun gelen characterin indexini verir
+        uygun gelen deyerin ilk uygunlugu verilen deyerin 4cu indexinde bashlayirsa
+       bize 4 verir ve yani truedir , false olanda zaten -1 verir.
+    * bu o zaman istifade oluna bilerki bize index lazimdir hansiki oradan match 
+        oluguni bilemk isteyende
 
-        
+
+
     Basic Form Validation
         
     Keyboard Events
