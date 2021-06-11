@@ -2,8 +2,12 @@ Section 9: Array Methods
 
     Filter Method
 
-* 
-
+* NonDestructive -dir original array-i deyismir.
+* Yeni array yaradir.
+* icindeki deyer mutleq return olunmalidir.
+* nondestructive olduguna gore ve original array-i deyismediye gore bize filter
+olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
+*   
 
 
 
