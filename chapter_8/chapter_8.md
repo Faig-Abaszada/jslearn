@@ -52,6 +52,8 @@ Ninja Quiz
 * ve textContent = `` ; template strig acdiq
  cunki deyeri variabledir.
 
+* ve classListindinde d-none-i silirik cunki submit-den
+evvel bu class oldugu ucun parent div gorsenmir
 
 
 
