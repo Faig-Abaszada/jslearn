@@ -71,8 +71,10 @@ Ninja Quiz
 biz yazanda window. yazmiriq ehtiyac yoxdur globa obj olduguna gore.
 * console.log - ozu window objda store olunub
 * ve windows.console.log - ile eynidir. cunku o avtomatik basha dusulur varsayilan olur.
-* window.document.query ile document.query eynidir.
+* window.document.query
 
+* scrollTo(0,0); sehifeni yuxari asagi scroll etmek ucun
+* iki deyer alir x ve y koorninatlari pixel olaraq
 
     Intervals & Animating the Score
 
