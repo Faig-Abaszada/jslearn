@@ -79,4 +79,14 @@ biz yazanda window. yazmiriq ehtiyac yoxdur globa obj olduguna gore.
     Intervals & Animating the Score
 
 
-*
+* ve FAIZin yavas 0-dan 100-e qalxmasini etmek ucun
+    * setInterval(); - 1san verilibse her bir saniyeden bir funksiya chalishir
+    * clearInterval(); -  bu ise setIntervali-i dayandirmaq ucundu
+    * clearin calishmasi ucun kenarda olan deyeri yoxlmasi lazimdir
+
+    * her saniyeden bir output krana yazilir
+    * ve if ile yoxlanilir eyer score-a catib yoxsa yox
+    * eyer catmayibsa output uzerine +1 elave olunur.
+    * ve if de eyer artiq output === scroe beraber olarsa bu zaman clearint ishleyir
+    
+* buda bizim animasiya
