@@ -42,10 +42,15 @@ Ninja Quiz
 
 * eyer if statement true olarsa score- a 25 elave etsin
 
+* * ve score-u ekranda gostermek ucun html yazdiq
+* result div-ine d-none deyib gizletdik cunki submit olduqdan sonra gorsenmesini isteyirik
 
 
-
-  
+* parent divi class ile grabbed etdik
+* grabbed olunmus div-e yeniden querselector
+    ile icindeki spani-i grab etdik
+* ve textContent = `` ; template strig acdiq
+ cunki deyeri variabledir.
 
 
 
