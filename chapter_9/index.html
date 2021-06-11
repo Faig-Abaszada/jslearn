@@ -16,6 +16,8 @@
 
 
 <script>
+
+    // // Filter methods
 // //example 1
 // const scores = [10, 20, 30, 25, 50, 40, 5];
 //
@@ -27,20 +29,51 @@
 
 // //example 2
 
-const users = [
-    {name: 'ali', premium: true},
-    {name: 'hasan', premium: false},
-    {name: 'mia', premium: false},
-    {name: 'faik', premium: true},
-];
+// const users = [
+//     {name: 'ali', premium: true},
+//     {name: 'hasan', premium: false},
+//     {name: 'mia', premium: false},
+//     {name: 'faik', premium: true},
+// ];
+//
+// const premiumUsers = users.filter((user) => {
+//    return user.premium;
+// })
+// // // daha qisa variant :
+// // // const premiumUsers = users.filter(user =>  user.premium);
+// console.log(premiumUsers);
 
-const premiumUsers = users.filter((user) => {
-   return user.premium;
+// // MAP MEthods
+// //    Example 1
+// const prices = [20, 10, 30, 25, 15, 40, 80, 5];
+//
+// const salePrices = prices.map((price) => {
+//     return price / 2;
+// })
+// console.log(salePrices);
+
+//    Example 2
+const products = [
+    {name: 'gold star', price: 20},
+    {name: 'mushroom', price: 40},
+    {name: 'green shells', price: 30},
+    {name: 'banana skin', price: 10},
+    {name: 'red shells', price: 50}
+]
+
+const saleProducts = products.map((product) => {
+    if (product.price > 30) {
+        return { name: product.name, price: product.price / 2};
+        // bunu ede bilmerik cunki bu shekilde edersek
+        // artiq bu destructive-dir yani birbasah olaraq arrayi deyismis oluruq
+        // yani belede ede bilerik ama original fayli deysimis oluruq
+        // product.price = product.price / 2;
+        // return product;
+    } else {
+        return product;
+    }
 })
-// // daha qisa variant :
-// // const premiumUsers = users.filter(user =>  user.premium);
-console.log(premiumUsers);
-
+    console.log(saleProducts);
 
 </script>
 </body>
