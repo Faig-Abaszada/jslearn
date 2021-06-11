@@ -85,22 +85,22 @@
 
       Section 7: Forms & Form Events
 
--[ ] 58.Events Inside Forms
--[ ] 59.Submit Events
--[ ] 60.Regular Expressions
--[ ] 61.Testing RegEx Patterns
--[ ] 62.Basic Form Validation
--[ ] 63.Keyboard Events
+-[x] 58.Events Inside Forms
+-[x] 59.Submit Events
+-[x] 60.Regular Expressions
+-[x] 61.Testing RegEx Patterns
+-[x] 62.Basic Form Validation
+-[x] 63.Keyboard Events
 
       Section 8: Project - Interactive Ninja Quiz
 
--[ ] 64.Project Preview & Setup
--[ ] 65.Bootstrap Basics
--[ ] 66.HTML Template
--[ ] 67.Checking Answers
--[ ] 68.Showing the Score
--[ ] 69.The Window Object
--[ ] 70.Intervals & Animating the Score
+-[x] 64.Project Preview & Setup
+-[x] 65.Bootstrap Basics
+-[x] 66.HTML Template
+-[x] 67.Checking Answers
+-[x] 68.Showing the Score
+-[x] 69.The Window Object
+-[x] 70.Intervals & Animating the Score
 
       Section 9: Array Methods
  
