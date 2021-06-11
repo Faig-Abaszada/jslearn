@@ -24,6 +24,10 @@ Ninja Quiz
 * user cavalari array-i yazildi ve id-leri vasitesile deyerleri cagrildi
 * elimizde dogru cavablar ve user cavablari var
 
+* user cavablarini forEach-e saldiq 
+* user cavablarinda parameter olaraq indexe everdik cunki 
+    dogru cavablarla qarsilasdirmaqda bize lazimdir.
+
 
     Showing the Score
 
