@@ -9,6 +9,8 @@ form.addEventListener('submit', e => {
 
     //check asnwers
     userAnswers.forEach((answer, index) => {
+        if (answer === correctAnswers[index]) {
 
+        }
     })
 })
