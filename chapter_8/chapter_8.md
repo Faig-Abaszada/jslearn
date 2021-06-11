@@ -18,7 +18,11 @@ Ninja Quiz
 
     Checking Answers
 
-*   
+* form grabbed
+* preventDefault
+* ilkin user score yaradildi
+* user cavalari array-i yazildi ve id-leri vasitesile deyerleri cagrildi
+* elimizde dogru cavablar ve user cavablari var
 
 
     Showing the Score
