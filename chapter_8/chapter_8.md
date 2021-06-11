@@ -62,7 +62,16 @@ Ninja Quiz
 
     The Window Object
 
-*
+* submit etidyimizde scoru gormek ucun sehife en basha gelmir
+* bunun ucun windows objectine baxiriq
+* Window object - global object , mother all of the onjects
+* Elediyimiz her shey JS-de hamisi window objectinde store olunub.
+* console windows edib gormek olar
+* outerWidth ile window.outerWidth eyni sheydir amma 
+biz yazanda window. yazmiriq ehtiyac yoxdur globa obj olduguna gore.
+* console.log - ozu window objda store olunub
+* ve windows.console.log - ile eynidir. cunku o avtomatik basha dusulur varsayilan olur.
+* window.document.query ile document.query eynidir.
 
 
     Intervals & Animating the Score
