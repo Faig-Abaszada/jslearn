@@ -40,7 +40,7 @@ Ninja Quiz
     * ve index ile correct anwerdeki STRINGI alir  
   
 
-
+* eyer if statement true olarsa score- a 25 elave etsin
 
 
 
