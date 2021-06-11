@@ -8,17 +8,17 @@ Ninja Quiz
     
     Bootstrap Basics
  
-*
+* install bootstrap
 
 
     HTML Template
 
-*
+* top vs quiz section html created
 
 
     Checking Answers
 
-*
+*   
 
 
     Showing the Score
