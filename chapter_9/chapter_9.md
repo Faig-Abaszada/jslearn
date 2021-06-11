@@ -32,11 +32,28 @@ olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
 * example 2-de biz niye object yaratdiq? :
     * commentlerde yazilib
 
-
     
     Reduce Method
+
+* reduce() - different than map vs filter.
+* array-daki true olanlarin sayini return edir.
+* iki paremeter alir :
+    * birincisi iteration yani sayilacaq ve return edilecek olan reqem( number )
+    * ikincisi arraydaki itemler
+    * sayilacag deyeri ise 2ci parameter kimi reduceye veiririk callBackFunc-in
+    yanina reduce(callBack, 0)
+    * burada sayilacaq deyer 0-dir  
+
+* uzun soun qisasi aray icindeki seylerin yoxlayib nece eded olugunu bilmek ucundu.
+
+* misalcun:  mario adinda user birden cox scoru onlari toplamaq lazimdir
+   ve reduce butun arrayi gezir ve marionun utun xallarini cem edir. (example 2)
+
     
     Find Method
+
+* 
+
     
     Sort Method
     

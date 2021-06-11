@@ -52,28 +52,71 @@
 // })
 // console.log(salePrices);
 
-//    Example 2
-const products = [
-    {name: 'gold star', price: 20},
-    {name: 'mushroom', price: 40},
-    {name: 'green shells', price: 30},
-    {name: 'banana skin', price: 10},
-    {name: 'red shells', price: 50}
-]
+// //    Example 2
+// const products = [
+//     {name: 'gold star', price: 20},
+//     {name: 'mushroom', price: 40},
+//     {name: 'green shells', price: 30},
+//     {name: 'banana skin', price: 10},
+//     {name: 'red shells', price: 50}
+// ]
+//
+// const saleProducts = products.map((product) => {
+//     if (product.price > 30) {
+//         return { name: product.name, price: product.price / 2};
+//         // bunu ede bilmerik cunki bu shekilde edersek
+//         // artiq bu destructive-dir yani birbasah olaraq arrayi deyismis oluruq
+//         // yani belede ede bilerik ama original fayli deysimis oluruq
+//         // product.price = product.price / 2;
+//         // return product;
+//     } else {
+//         return product;
+//     }
+// })
+//     console.log(saleProducts);
 
-const saleProducts = products.map((product) => {
-    if (product.price > 30) {
-        return { name: product.name, price: product.price / 2};
-        // bunu ede bilmerik cunki bu shekilde edersek
-        // artiq bu destructive-dir yani birbasah olaraq arrayi deyismis oluruq
-        // yani belede ede bilerik ama original fayli deysimis oluruq
-        // product.price = product.price / 2;
-        // return product;
-    } else {
-        return product;
-    }
-})
-    console.log(saleProducts);
+
+// // Reduce METHODS
+// // example 1
+// const scores = [10, 20, 60, 40, 70, 90, 30];
+// const result = scores.reduce((acc, curr) => {
+//     if (curr > 50) {
+//         acc++;
+//     }
+//     return acc;
+// }, 0)
+//     console.log(result);
+
+// example 2
+    // mario adinda user birden cox scoru onlari toplamaq lazimdir
+    // ve reduce butun arrayi gezir ve marionun utun xallarini cem edir
+    const scores = [
+        {player: 'mario', score: 50},
+        {player: 'mario', score: 50},
+        {player: 'ali', score: 30},
+        {player: 'hasan', score: 70},
+        {player: 'faik', score: 60},
+        {player: 'mario', score: 50},
+
+    ]
+
+    const marioTotal = scores.reduce((acc, curr) => {
+        if (curr.player === 'mario') {
+            acc += curr.score;
+        }
+        return acc;
+    }, 0)
+
+    console.log(marioTotal);
+
+
+
+
+
+
+
+
+
 
 </script>
 </body>
