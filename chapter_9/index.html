@@ -87,6 +87,7 @@
 // }, 0)
 //     console.log(result);
 
+/*
 // example 2
     // mario adinda user birden cox scoru onlari toplamaq lazimdir
     // ve reduce butun arrayi gezir ve marionun utun xallarini cem edir
@@ -108,11 +109,17 @@
     }, 0)
 
     console.log(marioTotal);
+*/
 
+    // Find METHODS
+    // ilk 50den boyuk olan scoru secdi ve dayandi
+    // birinci uygun geleni secib return edir
+const scores = [10, 5, 0, 40, 60,10, 20, 70];
 
-
-
-
+const firstHighScore = scores.find((score) => {
+    return score > 50;
+})
+    console.log(firstHighScore);
 
 
 

@@ -52,7 +52,7 @@ olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
     
     Find Method
 
-* 
+* find() - birinci duz gelen deyeri secib dayandir ve hemin deyeri return edir (icinde alir)
 
     
     Sort Method
