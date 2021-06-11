@@ -7,7 +7,8 @@ Section 9: Array Methods
 * icindeki deyer mutleq return olunmalidir.
 * nondestructive olduguna gore ve original array-i deyismediye gore bize filter
 olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
-*   
+  
+* example 2-de tesevvur edekki userlerdeki premium userleri secmeliyik
 
 
 
