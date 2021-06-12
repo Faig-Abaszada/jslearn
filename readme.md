@@ -104,12 +104,12 @@
 
       Section 9: Array Methods
  
--[ ] 71.Filter Method
--[ ] 72.Map Method
--[ ] 73.Reduce Method
--[ ] 74.Find Method
--[ ] 75.Sort Method
--[ ] 76.Chaining Array Methods
+-[x] 71.Filter Method
+-[x] 72.Map Method
+-[x] 73.Reduce Method
+-[x] 74.Find Method
+-[x] 75.Sort Method
+-[x] 76.Chaining Array Methods
          
       Section 10: Project - Todo List
  
