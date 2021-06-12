@@ -52,9 +52,32 @@ olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
     
     Find Method
 
-* find() - birinci duz gelen deyeri secib dayandir ve hemin deyeri return edir (icinde alir)
+* find() - birinci duz gelen deyeri secib dayanir ve hemin deyeri return edir (icinde alir)
 
     
-    Sort Method
-    
-    Chaining Array Methods
+    Sort Method vs Reverse
+
+* reverse() - butun array itemlerini tersine dizir
+* sort() - Destructive-dir !!!! - orginal arayi deyishir.
+* sort() - hemde compare function adlanir cunki arrayedki deyerleri muqayise etmek ucun ist edirik.
+* sort() - bezen ola bilerki arraydeki itemleri elifaba sirasi ile duzmek lazimdir.
+* sort() - PARAMETERSIZ arraye verilerse numbers.sort() names.sort() - 
+    * kicikden boyuye ve elfba sirasi ile ile ise stringleri siralacaqdir.
+    * VE reqemleri siralayanda itemdeki ilk reqeme baxir ilk reqeme gore sirlaryir buna gore 5 reqemi 30-dan boyuk olaraq siralanir.
+
+* sort() parameter callBacki alir ve callBack icinde A VE B parameterleri olur :
+    * sort( (a, b) => {}) - a ve b nedir?
+   
+        * bu iki parameter qerar verirki hansi array-de birinci olacaq
+        * 2 objecti goturur ve onlara a ve b deyir a ustdeki b altdaki
+        * return olunan deyer ise -1 , 1 ve 0 olmalidir.
+        * itemin birinci olmasi ucun -1 , itemin sonra gelmesi ucun +1 , itemin yerini deyishmemesi ucun ise 0 olmalidir.
+        [5,15,10,] : [5](5-15= -10  5-10= -5) en kicik -10 , [15](15-5= 10 15-10= 5) en kicik 5, [10](10-5= 5 10-15= -5)  en kicik -5
+          [5, 10, 5]
+            * a - b  -> kicikden boyuye sirala.
+            * b - a  -> boyukden kiciye sirala.
+        bir reqemi goturur ve butun diger reqemlerden cixir  alinan menfi reqemlerin sirasina gore arraydaki reqemleri siralayir
+
+BONUS:
+* sort() - ['a', '5', 'B', 2] ->  2,5, B, a output :)
+
