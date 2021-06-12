@@ -122,20 +122,50 @@ const firstHighScore = scores.find((score) => {
     console.log(firstHighScore);
 */
 
-    // Sort METHODS
-    // example 1 - sorting strings
-    // elifba sirasi ile duzecekdir
-const names = ['faik','hasan','ali','eldos','sky'];
-names.sort();
-names.reverse();
-    console.log(names);
+//     // Sort METHODS
+//     // example 1 - sorting strings
+//     // elifba sirasi ile duzecekdir
+// const names = ['faik','hasan','ali','eldos','sky'];
+// names.sort();
+// names.reverse();
+//     console.log(names);
+//
+//     // example 2 - sorting numbers
+//     // reqemleri kicikden boyuye siralayacq.
+// const scores = [10,50,20,5,35,70,45];
+// // scores.sort();
+//     scores.sort((a,b) => b - a); // if b big b will first if a big number a will first
+//     console.log(scores);
 
-    // example 2 - sorting numbers
-    // reqemleri kicikden boyuye siralayacq.
-const scores = [10,50,20,5,35,70,45];
-scores.sort();
-    console.log(scores);
+    // example 3 - sorting objects
+    // scoru yuksek olanlari once veya bashda olmasini isteyriik.
+    const players = [
+        {name: 'mario', score: 20}, // a
+        {name: 'ali', score: 10}, // b a
+        {name: 'hasan', score: 50}, // b a
+        {name: 'faik', score: 30}, // b a
+        {name: 'eldos', score: 70}, // b a
+    ];
+    // players.sort((a, b) => {
+    //     // solution for understand
+    //     // daha yaxsi basa dusmek ucun sekilde var
+    //     if (a.score > b.score) { // a birinci gelsin !!!  a ve b menfi olsun birinci olmasi ucun
+    //         return -1;
+    //     } else if (b.score > a.score) { // b birinci gelsin !!! b ve a musbet olsun birinci olmasi ucun buradada reverse soheti var
+    //         return 1;                    //b ve a musbet olsun birinci olmasi ucun buradada reverse soheti var
+    //     } else {
+    //         return 0;
+    //     }
+    // });
+    players.sort((a, b) => {
+        // solution for real
+        // buda yuxaridaki kimi eynidir
+        // cunki b.score > a.score -dursa +numberdir ve b once gelecekdir.
+        return b.score - a.score;
+    });
 
+
+    console.log(players);
 
 
 </script>
