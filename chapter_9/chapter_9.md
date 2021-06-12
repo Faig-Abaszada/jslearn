@@ -12,6 +12,7 @@ Section 9: Array Methods
 * array icinde neleri secib ekrana yazmaq isteyirikse bu metodu ist edirik
 * NonDestructive -dir original array-i deyismir.
 * Yeni array yaradir.
+* true olanlari icine alir.  
 * icindeki deyer mutleq return olunmalidir.
 * nondestructive olduguna gore ve original array-i deyismediye gore bize filter
 olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
@@ -81,3 +82,8 @@ olunmush arraylari vermesi ucun bunu bir deyishkene atmaliyiq.
 BONUS:
 * sort() - ['a', '5', 'B', 2] ->  2,5, B, a output :)
 
+
+    Chainin Array Methods
+
+* METODLARI BIR BIRINE CHAIN EDENDE HER DEFE DEYISKEN YARATMAQ LAZIM DEYIL
+* ARDICILDA MUMKUNDUR   filter().map()  

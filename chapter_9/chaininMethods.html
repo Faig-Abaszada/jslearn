@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chapter_9 || chainin array methods</title>
+</head>
+<body>
+
+
+<script>
+const products = [
+    {name: 'gold star', price: 30},
+    {name: 'green shell', price: 10},
+    {name: 'red shell', price: 40},
+    {name: 'banana skin', price: 5},
+    {name: 'mushroom', price: 50},
+];
+
+// const filtered = products.filter(product => product.price > 20);
+// const promos = filtered.map((product) => {
+//     return `the ${product.name} is ${product.price / 2} pounds`;
+// });
+
+// QISA YOL ^
+const promos = products
+    .filter(product => product.price > 20)
+    .map((product) => {
+    return `the ${product.name} is ${product.price / 2} pounds`;
+});
+
+console.log(promos);
+/*
+- filter : true olanlari filteredde yigdiq
+- map : filtered olunmuslari update etdik
+
+*/
+</script>
+</body>
+</html>
