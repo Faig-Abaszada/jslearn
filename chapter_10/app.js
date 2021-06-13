@@ -64,6 +64,17 @@ const filterTodos = (term) => {
         .forEach((todo) => {
               todo.classList.add('filtered');
         })
+
+    // problem var idi search-dan herfi silende , classda li-den silinmirdi
+    // bunun ucun onceki kimi edirik  uygun gelmeyenlere 'add' edirkdik
+    // indi ise uygun gelenlerden classi 'remove' edirik.
+    Array.from(list.children)
+        .filter((todo) => {
+            return todo.textContent.includes(term);
+        })
+        .forEach((todo) => {
+            todo.classList.remove('filtered');
+        })
 }
 
 // keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi
