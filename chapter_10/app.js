@@ -54,7 +54,7 @@ const filterTodos = (term) => {
             // ! nida isaresi qoyduq ama niye :
             // cunki biz hansilar uygun gelmir onlara display none demek ----
             // isteyirik , uygun gelenleri ekranda goster demek istemirik ona gore
-            return !todo.textContent.includes(term);
+            return !todo.textContent.toLowerCase().includes(term);
         })
         // forEach elave etdik cunki uygun gelmeyenler bir arraydedir ---
         // ve bunlara biz filetered classi vereceyik  display none etmek ucun
@@ -72,7 +72,7 @@ const filterTodos = (term) => {
     // uygundursa ondan class-i silir cunki silmek duymeside keyup eventdir ona gore
     Array.from(list.children)
         .filter((todo) => {
-            return todo.textContent.includes(term);
+            return todo.textContent.toLowerCase().includes(term);
         })
         .forEach((todo) => {
             todo.classList.remove('filtered');
@@ -83,7 +83,7 @@ const filterTodos = (term) => {
 // callback chalishanda ise gedib inputun deyerini alib konsola yazdiq
 // keyup - inputda bir shey yazildi ama ne yazildini bilmek ucun input.value ile almaliyiq
 searchInput.addEventListener('keyup', (e) => {
-    const term = searchInput.value.trim();
+    const term = searchInput.value.trim().toLowerCase();
     filterTodos(term);
 })
 // trim() butun white space-leri silir inputda qoyulan
