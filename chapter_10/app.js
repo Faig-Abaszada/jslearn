@@ -33,8 +33,11 @@ list.addEventListener('click', (e) => {
     }
 })
 
+// burada ul icindeki hansi li-leri gostermek lazimdir hansilari yox
+//
 const filterTodos = (term) => {
-    console.log(term);
+    // bu bize html collection verdi ama biz bunun uzerinde foreach ede bilmirik
+    // console.log(list.children);
 }
 
 // keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi
