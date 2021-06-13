@@ -15,6 +15,7 @@
 
 <script>
 
+    /*
 const now = new Date();
 console.log(now);
 
@@ -33,6 +34,32 @@ console.log(now.getTime());
 console.log(now.toDateString());
 console.log(now.toTimeString());
 console.log(now.toLocaleString());
+    */
+
+    const before = new Date('May 1 2021 19:36:03');
+    const now = new Date();
+
+    // now.getTime = 1970den indiye qeder
+    // before.getTime = 1970den 13maya qeder
+    console.log(now.getTime(), before.getTime());
+
+    // bunu etmekle indi elimizde ferq var ama millisecondlarladir
+    const diff = now.getTime() - before.getTime();
+    console.log(diff);
+
+    // millisecond to minutes
+    const mins = Math.round(diff / 1000 / 60);
+    console.log(mins);
+
+    // minutes to hours
+    const hours = Math.round(mins / 60);
+    console.log(hours);
+
+    // hours to days
+    const days = Math.round(hours / 60);
+    console.log(days);
+
+
 
 
 

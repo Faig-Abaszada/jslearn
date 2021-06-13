@@ -28,7 +28,16 @@ Section 11: Dates & Times
 
     Timestamps & Comparisons
 
-*
+* blogun yazildigi vaxt 
+* ve indiki vaxt
+    * 1970-den indiye qeder vaxtdan : milliseconddan
+    * 1970-den blogun yazildi vaxta olan : millisocundu 
+    * cixanda yerde qalan millisecond ise artiq 
+        indiki vaxt ile blogun vaxti arasinda olan milliseconddur.
+    * bunlari aya saata cevirende avtomatik blogun yazildigi vaxti
+        hemise dugun real gore bilerik.
+
+
 
 
     Building a Digital Clock
