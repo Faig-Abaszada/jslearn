@@ -25,6 +25,11 @@ addForm.addEventListener('submit', (e) => {
         addForm.reset();
     }
 })
+list.addEventListener('click', (e) => {
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
+    }
+})
 
 // trim() butun white space-leri silir inputda qoyulan
 
