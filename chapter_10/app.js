@@ -42,8 +42,16 @@ const filterTodos = (term) => {
     // array icine ceke bildik
     // ve artiq proto-sunda istifade ede bileceyimiz metodlara baxa bilerik.
     // bunlarda biri bize lazim olan filter
-    console.log(Array.from(list.children));
+    // console.log(Array.from(list.children));
 
+    Array.from(list.children)
+        //birada to do : her bir li tagdir
+        .filter((todo) => {
+            // li icinde span olsada textcontent yenede ishleyir
+            // console.log(t odo.textContent);
+            // return true;
+            return todo.textContent.includes(term);
+        })
 }
 
 // keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi
