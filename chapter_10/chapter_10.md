@@ -3,15 +3,20 @@ Section 10: Project - Todo List
 
     Project Preview and Setup
 
+* bootstrap vs fontawesome
+
+    
+    HTML & CSS Template
+
+* from github
+
+    
+    Adding Todos
+
 * 
 
 
 
-
-    
-    HTML & CSS Template
-    
-    Adding Todos
     
     Deleting Todos
     
