@@ -56,6 +56,14 @@ const filterTodos = (term) => {
             // isteyirik , uygun gelenleri ekranda goster demek istemirik ona gore
             return !todo.textContent.includes(term);
         })
+        // forEach elave etdik cunki uygun gelmeyenler bir arraydedir ---
+        // ve bunlara biz filetered classi vereceyik  display none etmek ucun
+        // inspect edib gore bilerikki search-da ile uygun gelemeyen  ---
+        // array item-ine avtomatik class verilir
+        // ama bir problem var: search-dan herfi silende , classda li-den silinmir.
+        .forEach((todo) => {
+              todo.classList.add('filtered');
+        })
 }
 
 // keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi

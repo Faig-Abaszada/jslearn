@@ -39,3 +39,4 @@ Section 10: Project - Todo List
 // keyup - inputda bir shey yazildi ama ne yazildini bilmek ucun input.value ile almaliyiq
 
 * deyeri .value ile aldiq her callback fire olanda ama deyeri event.target ilede ala bilerik
+
