@@ -50,7 +50,11 @@ const filterTodos = (term) => {
             // li icinde span olsada textcontent yenede ishleyir
             // console.log(t odo.textContent);
             // return true;
-            return todo.textContent.includes(term);
+
+            // ! nida isaresi qoyduq ama niye :
+            // cunki biz hansilar uygun gelmir onlara display none demek ----
+            // isteyirik , uygun gelenleri ekranda goster demek istemirik ona gore
+            return !todo.textContent.includes(term);
         })
 }
 
