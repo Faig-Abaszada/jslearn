@@ -19,14 +19,11 @@ Section 11: Dates & Times
 * new Date().getMinutes() - hal hazirki deqiqe
 * new Date().getSeconds() - hal hazirki saniye
 
-* timestamps - 1 yanvar 1970-dan bu gune qeder olan milliseconds :)
+* timestamps - 12am 1 yanvar 1970-dan bu gune qeder olan milliseconds :)
     * for compare two dates 
 * new Date().toDateString() - Sun Jun 13 2021 (first part of gigantic)
 * new Date().toTimeString() -  (second part of gigantic)
 * new Date().toLocaleString() -  6/13/2021, 7:36:03 PM
-
-
-
 
 
     Timestamps & Comparisons
