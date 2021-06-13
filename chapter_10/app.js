@@ -1,6 +1,8 @@
 const addForm = document.querySelector('.add');
 // li yaratdiq ama bunu ul-nin icinde qoymaq ucun grabbed etmeliyik
 const list = document.querySelector('.todos');
+// search ucun Ferqli querying
+const searchInput = document.querySelector('.search input');
 
 /*
 eventin keanirda generateTemplate yaratdiq cunki to do html-i yazmaq
@@ -31,5 +33,16 @@ list.addEventListener('click', (e) => {
     }
 })
 
+const filterTodos = (term) => {
+    console.log(term);
+}
+
+// keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi
+// callback chalishanda ise gedib inputun deyerini alib konsola yazdiq
+// keyup - inputda bir shey yazildi ama ne yazildini bilmek ucun input.value ile almaliyiq
+searchInput.addEventListener('keyup', (e) => {
+    const term = searchInput.value.trim();
+    filterTodos(term);
+})
 // trim() butun white space-leri silir inputda qoyulan
 
