@@ -68,6 +68,8 @@ const filterTodos = (term) => {
     // problem var idi search-dan herfi silende , classda li-den silinmirdi
     // bunun ucun onceki kimi edirik  uygun gelmeyenlere 'add' edirkdik
     // indi ise uygun gelenlerden classi 'remove' edirik.
+    // bele etdik cunki her silindikce bu prosese tutulur eyer hemin li ---
+    // uygundursa ondan class-i silir cunki silmek duymeside keyup eventdir ona gore
     Array.from(list.children)
         .filter((todo) => {
             return todo.textContent.includes(term);
