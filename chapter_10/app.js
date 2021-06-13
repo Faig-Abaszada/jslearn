@@ -38,6 +38,12 @@ list.addEventListener('click', (e) => {
 const filterTodos = (term) => {
     // bu bize html collection verdi ama biz bunun uzerinde foreach ede bilmirik
     // console.log(list.children);
+    // bu yol ile ul-nin child-larini yani html collectionu -u
+    // array icine ceke bildik
+    // ve artiq proto-sunda istifade ede bileceyimiz metodlara baxa bilerik.
+    // bunlarda biri bize lazim olan filter
+    console.log(Array.from(list.children));
+
 }
 
 // keyup - inputda her nese yazilanda bir key =  bir callback chalishmasi
