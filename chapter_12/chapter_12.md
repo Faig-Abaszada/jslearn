@@ -63,10 +63,10 @@ So this is the crux of asynchronous programming, starting something now which ca
    
 
 
-
-
-
     Async Code in Action
+
+* setTimeout() - Asynchronous code example imagine
+
     
     What are HTTP Requests?
     
