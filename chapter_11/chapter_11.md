@@ -43,8 +43,19 @@ Section 11: Dates & Times
 * setInterval(funcName, neceSaniye); - sayesinde funskiya her 1sandan bir ishledi
 * ve new Date-den aldigimiz saatda ekrana innerHtml ile yazildi
 
-
+ 
     Date-fns Library
 
-*
+* https://date-fns.org/   
+* dateFns - objectine indi accessimiz var ve consola dateFns yazib gore bilerik. 
+* dateFns.isToday  ->  bize boolean verir conditionlarda ist etmek olar.
+
+* dataFns.format(time, 'MMMM')  - 4X M: Iyun - 3X M Iyn qisa olaraq verir.
+
+* date compare edende TIMESTAMPS IST EDIRDIK
+    *  dateFns.distanceInWords(now, before)
+    * timestamp-in isini gorur avtimatik 
+    * {addSuffix: true} -> age sozunu verir 
+
+* https://date-fns.org/v2.22.1/docs/format - butun numuneler vardir.
 
