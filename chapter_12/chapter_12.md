@@ -69,6 +69,21 @@ So this is the crux of asynchronous programming, starting something now which ca
 
     
     What are HTTP Requests?
+
+* blog postlarin , user data , productlarin oldugu bir databasden - yani
+xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik.
+* http ile sorgu gondermek ucun serverde olan
+  her hansi bir backendde yazilmis API endpoint olaraq taninan ( like urls) 
+  adrese request gonderirik.
+* requestden bize gelen data (response)   JSON formatinda olur.
+* https://jsonplaceholder.typicode.com/ -> to play api endpoint
+* bu api url-sini browserde linkde acsaq json formatinida melumatlari gorerik
+  
+* http request vs response(data).
+
+
+
+
     
     Making HTTP Requests (XHR)
     
