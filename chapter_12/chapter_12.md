@@ -82,10 +82,17 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 * http request vs response(data).
 
 
-
-
-    
     Making HTTP Requests (XHR)
+
+* new XMLHttpRequest(); - bizim ucun request objecti yaradir.
+    * Xml jsondan evveller ishledilirdi ama bu request object butun 
+    data novleri ile ishleyir xml, json, plaintext
+      
+* .open('GET', 'APIendpoint'); 
+* .send();
+* readyStateChange - 1 2 3 ve 4 state verir bize
+* responseText
+
     
     Response Status
     

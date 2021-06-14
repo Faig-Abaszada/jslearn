@@ -13,8 +13,46 @@
 
 
 <script>
+    const request = new XMLHttpRequest();
 
+    // readyStateChange
+    // 1 2 3 ve 4 state verir bize
+    // bu stateler requestin hansi levelde oldugunu verir
+    /*
+     bunlardan biz conditionlarda istifade ede bilerik!!!
 
+        0	UNSENT	Client has been created. open() not called yet.
+        1	OPENED	open() has been called.
+        2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+        3	LOADING	Downloading; responseText holds partial data.
+        4	DONE	The operation is complete.
+    */
+    /* consoldaki objectin icine girsek :
+        - responseText-i gorerik
+        - responseText - datanin ozudur
+    */
+    request.addEventListener('readystatechange', () =>{
+        // console.log(request, request.readyState);
+
+        // ve datani consolda gore bilerik json data novunde
+        if (request.readyState === 4){
+            console.log(request.responseText);
+        }
+    });
+
+    // open metodu
+    // iki argument verilir hansi nov request ve Adress.
+
+    // bu requestin hazirlanmasidir
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+
+    // bu gonderilmesidir
+    // ve consol-a gedib baxsan network -da todos/- click etsen metodun get
+    // ve endpointi butun gore bilersen ve response menusunda datani gore bilersen
+    // ama bunlarin nece oldugunu ne vaxt completed oldugunu veya
+    // sorgunun nece getdiyi bilmirik
+    // bunun ucun yuxarida readyStateChange sohbeti var ona bax
+    request.send();
 
 </script>
 </body>
