@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+        .clock {
+            text-align: center;
+            width: 25%;
+            margin-top: 200px;
+            font-size: 50px;
+            background-color: orange;
+        }
+    </style>
+    <title>chapter_11 || Digital Clock</title>
+</head>
+<body>
+
+<div class="clock">
+
+</div>
+
+<script>
+    const clock = document.querySelector('.clock');
+
+    // setInterval sayesinde bu funksiya cagrilir ve saat yaranmis olur.
+    // her saniye cagrilir.
+    const tick = () => {
+         const now = new Date();
+
+        const h = now.getHours();
+        const m = now.getMinutes();
+        const s = now.getSeconds();
+        // milli secodnlarida gostermek ucun bele edirik ama
+        // setInterval deyerini 100 etmeliyiiki artiq funskiya her 1 millisanyeden bir cagrilisn
+        // const ms = now.getMilliseconds();
+
+        // digital saatda vaxt nece deyishir bax
+        // console.log(h, m, s);
+
+        const html = `
+        <span>${h}</span> :
+        <span>${m}</span> :
+        <span>${s}</span>
+        `
+
+        clock.innerHTML = html;
+    }
+    // setInterval ist edirik bu funksiyanin her saniye cagrilmasi ucun
+    setInterval(tick, 1000);
+
+
+
+
+
+
+</script>
+</body>
+</html>
