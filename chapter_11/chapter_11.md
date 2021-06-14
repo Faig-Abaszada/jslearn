@@ -37,12 +37,11 @@ Section 11: Dates & Times
     * bunlari aya saata cevirende avtomatik blogun yazildigi vaxti
         hemise dugun real gore bilerik.
 
-
-
-
+      
     Building a Digital Clock
 
-*
+* setInterval(funcName, neceSaniye); - sayesinde funskiya her 1sandan bir ishledi
+* ve new Date-den aldigimiz saatda ekrana innerHtml ile yazildi
 
 
     Date-fns Library
