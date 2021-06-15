@@ -93,8 +93,12 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 * readyStateChange - 1 2 3 ve 4 state verir bize
 * responseText
 
-    
+
     Response Status
+
+* if ile 
+
+
     
     Callback Functions
     

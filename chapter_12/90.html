@@ -13,7 +13,28 @@
 
 
 <script>
+    const request = new XMLHttpRequest();
 
+    request.addEventListener('readystatechange', () =>{
+        /*
+         if ile readystate yoxlanilir ve completed oldugu gorulur
+         ve responseText konsola yazilir.
+         lakin bu sadece completed olub olmadigini yoxladi
+         error yoxsa success oldugu bilinmedi
+         misalcun: endpoint-i sehv daxil et ve konsolda error goreceksen
+         ve biz data almadiq cunku endpoint duz deyil.
+         ve nehayet bu bizim ucun kifayet deyil.
+         - cunki biz isterdikki eyer completed olubsa ve hemde data gelibse
+            consolda data aldiq yaz gelmeyibse data gelmedi problemlem var yaz.
+         -
+        */
+        if (request.readyState === 4){
+            console.log(request.responseText);
+        }
+    });
+
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todoss /');
+    request.send();
 
 
 </script>
