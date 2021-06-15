@@ -26,14 +26,24 @@
          ve nehayet bu bizim ucun kifayet deyil.
          - cunki biz isterdikki eyer completed olubsa ve hemde data gelibse
             consolda data aldiq yaz gelmeyibse data gelmedi problemlem var yaz.
-         -
+         - bunu test etmek ucun consola hemde request-in ozunu yaziriq
+         - ve yenede endpointi sehv daxil etdik ve consolda yazilari oxusaq
+            gorerikki error 404 yazilib  ve hemcinin responseText-i gormuruk
+            cunki url sehvdi ve data gelmeyib.
+         - biz requestin ozunude ekrana yazmishdiq buna gore
+            XMLHttpRequest objectide var.
+         - XMLHttpRequest objectini acsaq status kodunu 404 goererik ve
+            ResponseText ise {}- olaraq boshdir
+         - beleki readystate request gonderildi filan ama error veya success cavab
+         geldi menlik deyil deyir. error gelsede readystate 4 olur cunki neticedede
+         errorda bir cavabdir deyirki men prosesi tamamaldim ama cavab ne olur olsun.
         */
         if (request.readyState === 4){
-            console.log(request.responseText);
+            console.log(request, request.responseText);
         }
     });
 
-    request.open('GET', 'https://jsonplaceholder.typicode.com/todoss /');
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todoss/');
     request.send();
 
 
