@@ -114,7 +114,11 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 * ama biz bu datalari sehifede gostermek ucun onlara accessimiz olmalidir 
 buna gore biz json icindeki stringleri js objectine cevirmeliyik.
 * JSON.parse ile json stringini js objectlerine
-  cevirdik  
+  cevirdik 
+* parse sayesinde js objectlerini cycle edib ekrana yaza bilerik.
+
+* todos.json json fayli yaradiriq.
+* js objdan ferqi key ve value  double quote icinde olmagidir 
     
 
 
