@@ -96,12 +96,13 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 
     Response Status
 
-* if ile 
+* izah commentlerde
 
 
     Callback Functions
 
-*
+* izah commentlerde
+* Async Code yoxladyaq. // 1 2 3 4 Callback fired
 
 
     
