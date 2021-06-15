@@ -99,8 +99,11 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 * if ile 
 
 
-    
     Callback Functions
+
+*
+
+
     
     JSON Data
     

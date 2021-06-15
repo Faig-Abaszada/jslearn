@@ -13,7 +13,45 @@
 
 
 <script>
+    /*
+        - onceki kodun tamamini arrow function icinde yerlesdirdik
+        - code indi daha reusable-dir
+        - getTodo icinde callback verdikden sonra parameter olaraq callback
+        veririk
+        -
+    */
+    const getTodos = (callback) => {
+        const request = new XMLHttpRequest();
 
+        request.addEventListener('readystatechange', () =>{
+            if (request.readyState === 4 && request.status === 200){
+                /*
+                  - ve consol.log birbasa vermekdense callback()-i cagirdiq
+                  - ama problem vardki error ve successdedee eyni deyer ile
+                    callback cagrilir ama biz call back ayri mesajlar ile
+                    calishmasini isteyirik.
+                  - bunun ucun en ashagida callback functiona
+                   iki parameter veririrk - err ve data
+
+                */
+                // console.log(request, request.responseText);
+                callback(undefined, request.responseText);
+            }
+            else if (request.readyState === 4) {
+                // console.log('problem var');
+                callback(request.responseText, undefined);
+            }
+        });
+        request.open('GET', 'https://jsonplaceholder.typicode.com/todoss/');
+        request.send();
+    }
+    /*
+        - getTodos icinde Callback func argumentini verdik
+        - err 1ci , data 2ci cunki networka request atanda adeten bele olur.
+    */
+    getTodos((err, data) => {
+        console.log('callback fired');
+    });
 
 
 </script>
