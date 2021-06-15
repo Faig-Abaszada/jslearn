@@ -104,10 +104,23 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 * izah commentlerde
 * Async Code yoxladyaq. // 1 2 3 4 Callback fired
 
-
     
     JSON Data
+    JS Object Notation (beacuse like objects)
+
+* json faylina baxdigimizda JS objecti kimi gorunur ama ele deyil onlar stringdir
+* json zaten string olmalidir cunki browser datani server ile deyishende 
+    bu text formatinda olmalidir. buna gore json ist edirik.
+* ama biz bu datalari sehifede gostermek ucun onlara accessimiz olmalidir 
+buna gore biz json icindeki stringleri js objectine cevirmeliyik.
+* JSON.parse ile json stringini js objectlerine
+  cevirdik  
     
+
+
+
+
+
     Callback Hell
     
     Promise Basics
