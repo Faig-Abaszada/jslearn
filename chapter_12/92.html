@@ -31,7 +31,8 @@
                 callback('could not fetch data', undefined);
             }
         });
-        request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+        // ve internal jsondan datani cekdik ve js objectine cevirib ekrana yazdiq
+        request.open('GET', 'todos.json');
         request.send();
     }
     getTodos((err, data) => {

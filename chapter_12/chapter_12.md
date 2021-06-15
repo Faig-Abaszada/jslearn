@@ -119,11 +119,9 @@ buna gore biz json icindeki stringleri js objectine cevirmeliyik.
 
 * todos.json json fayli yaradiriq.
 * js objdan ferqi key ve value  double quote icinde olmagidir 
+
+     * It's a way of transferring data between server and client.
     
-
-
-
-
 
     Callback Hell
     
