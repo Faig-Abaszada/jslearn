@@ -37,9 +37,26 @@
          - beleki readystate request gonderildi filan ama error veya success cavab
          geldi menlik deyil deyir. error gelsede readystate 4 olur cunki neticedede
          errorda bir cavabdir deyirki men prosesi tamamaldim ama cavab ne olur olsun.
+
+         - HTTP response status codes :
+            - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+            - 404 -error not found, 200 -success, 500 -server error
+
+         - && request.status === 200 - yazdiqdan sonra state completeddirse ve
+            status 200-dirse yani data gelibse consolda yaz, eyer data yoxdursa
+            artiq consolda erroru gosterecek requesti-XMLHttp objectini yazmayacaq.
+
+          - artiq datanin gelib gelmediyini bu shekilde yoxlaya bilirkk
         */
-        if (request.readyState === 4){
+        if (request.readyState === 4 && request.status === 200){
             console.log(request, request.responseText);
+        }
+        /*
+        - else if-de demek isteyirkki okey data gelmedi amma gelmediyini
+            bilmek ucun bunu ekarana yazaqki problem var!!!
+         */
+        else if (request.readyState === 4) {
+            console.log('problem var');
         }
     });
 
