@@ -51,7 +51,7 @@
                 callback('could not fetch data', undefined);
             }
         });
-        request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
+        request.open('GET', 'https://jsonplaceholder.typicode.com/todoss/');
         request.send();
     }
     /*
@@ -59,7 +59,22 @@
         - err 1ci , data 2ci cunki networka request atanda adeten bele olur.
     */
     getTodos((err, data) => {
-        console.log(err, data);
+        console.log('callback Fired')
+        // console.log(err, data);
+        /*
+            - undefined - false , string veya nese true olduguna gore
+            contion ede bilerik
+
+            - 1cidirse err-dir , 2cididrse datadir
+            - 1cidirse 1cini ekrana yaz
+                2ci dirse 2cini
+         */
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(data);
+        }
+
     });
 
 
