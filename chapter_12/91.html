@@ -32,17 +32,26 @@
                     calishmasini isteyirik.
                   - bunun ucun en ashagida callback functiona
                    iki parameter veririrk - err ve data
-
+                  - burada undefined ve data girdik cunki iki parameter vermishdik
+                    iki argumentde verib cagirmaliyiq yoxsa algilamaz.
+                  - ve eyer 200durse yani data gelibse bu zamana  bu callback
+                    calishacaq ve data parameterine responseText- gedecek
+                    ve getTodos icindede bu datani artiq consola yazmish olacagiq
                 */
                 // console.log(request, request.responseText);
                 callback(undefined, request.responseText);
             }
             else if (request.readyState === 4) {
+                /*
+                 - ve burada hemcunin eyerstatus 200 olmayibsa bu callback
+                    calisacaq ve errorada problem var mesaji vermish olacaq
+                    dataya ise undifened
+                */
                 // console.log('problem var');
-                callback(request.responseText, undefined);
+                callback('could not fetch data', undefined);
             }
         });
-        request.open('GET', 'https://jsonplaceholder.typicode.com/todoss/');
+        request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');
         request.send();
     }
     /*
@@ -50,7 +59,7 @@
         - err 1ci , data 2ci cunki networka request atanda adeten bele olur.
     */
     getTodos((err, data) => {
-        console.log('callback fired');
+        console.log(err, data);
     });
 
 
