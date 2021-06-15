@@ -100,6 +100,7 @@ xarici serverden datani browsere ggetirmek ucun HTTP request-den istifade edirik
 
 
     Callback Functions
+    argument olaraq verilen arrow function callback funciondir ve asynchrone-dir
 
 * izah commentlerde
 * Async Code yoxladyaq. // 1 2 3 4 Callback fired
