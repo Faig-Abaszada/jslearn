@@ -141,7 +141,8 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
     Promise Basics
 
 * resolve, reject, .then, .catch
-*
+* callback hell etdik ve gorunush yaxsi deyil maintainable deyil ve pilleken kimi pis gorunusu oldu. 
+* 
 
 
     
