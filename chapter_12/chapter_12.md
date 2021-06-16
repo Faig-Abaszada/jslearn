@@ -140,6 +140,9 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 
     Promise Basics
 
+* resolve, reject, .then, .catch
+*
+
 
     
     
