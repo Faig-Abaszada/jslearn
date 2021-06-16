@@ -11,7 +11,8 @@
 
 <script>
 
-    const getTodos = (callback) => {
+    // resource parameter verdik cunki endpinti bu vasiteyle verilecek artiq
+    const getTodos = ( resource , callback) => {
         const request = new XMLHttpRequest();
 
         request.addEventListener('readystatechange', () =>{
@@ -23,16 +24,35 @@
                 callback('could not fetch data', undefined);
             }
         });
-        request.open('GET', 'todos.json');
+        request.open('GET', resource);
         request.send();
     }
-    getTodos((err, data) => {
-        console.log('callback Fired')
-        if (err) {
-            console.log(err);
-        } else {
+
+    /*
+      - ve resource patametere qarshiliq argument olaraq endpoint veririk
+        callbacin evveline.
+    */
+    getTodos( 'todos/faik.json' ,(err, data) => {
+        console.log('1st callback Fired')
+            /*
+             - 1ci ucun requestden data geldikden sonra 2ci sonra 3cu , gozleye gozleye
+                requestler getsin biri data ile done olduqdan sonra digeri reuqest olsun
+             - bunun ucun burada datanin geldiyini anlayiriq ve bundan
+                istifade ede bilerik cunku 2cu request ne vaxt olsun sualinin cavabi
+                data geldikdedir.
+             - ich iche callback istifade etmek callback hell adlanir
+             - ne vaxtki birden cox datani fetch etmek istedikde bu yol istifade edilir
+             - ama bu calback in callback in callback yaxsi gorsenmir
+            */
+        console.log(data);
+        getTodos( 'todos/hasan.json' ,(err, data) => {
+            console.log('2nd callback Fired')
             console.log(data);
-        }
+            getTodos( 'todos/ali.json' ,(err, data) => {
+                console.log('3rd callback Fired')
+                console.log(data);
+            });
+        });
     });
 
 
