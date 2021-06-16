@@ -65,13 +65,39 @@
              -
             */
             // if success fetching data resolve calishsin
-            resolve('some data');
+            // resolve('some data');
             // if error fetching data reject calishsin
-            reject('have error');
+            reject('you have error');
         });
     }
 
-    getSomething();
+    /*
+     - resolve -> call olundusa .then calissin ve icinde verilen
+     argumentde out olur ve then-a gelir.
+     - reject  -> call olundusa  ikinci err olan arrow function calissin.
+     - xulase .then( ()=>{}, ()=>{} ) - iki arrow func
+            - birinci success
+            - ikinci error
+     - .then icindeki argument olraq iki callBack Function olur
+
+     - ve ve ve !!! then metoduda 2 argument vermek qarisiq gorunur buna hell:::
+     - .catch()  metodu var
+    */
+
+    // // ikili argumentli
+    // getSomething().then((data)=>{
+    //     console.log(data);
+    // }, (err) => {
+    //     console.log(err);
+    // })
+
+    // erroru catch edir.
+    // resolve alanda then reject alanda catch fired olur.
+    getSomething().then((data)=>{
+        console.log(data);
+    }). catch((err) => {
+        console.log(err);
+    });
 
 
 

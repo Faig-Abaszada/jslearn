@@ -144,6 +144,8 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 * callback hell etdik ve gorunush yaxsi deyil maintainable deyil ve pilleken kimi pis gorunusu oldu. 
 * new Promise()
 * new PRomise((resolve, reject) => {})
+* resolve -> call olundusa .then calissin
+* reject  -> call olundusa .catch calissin ve ya ikinci arrow function calissin.
 
 
     
