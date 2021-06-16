@@ -125,6 +125,9 @@ buna gore biz json icindeki stringleri js objectine cevirmeliyik.
     
 
     Callback Hell
+
+* 
+
     
     Promise Basics
     
