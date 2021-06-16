@@ -126,7 +126,10 @@ buna gore biz json icindeki stringleri js objectine cevirmeliyik.
 
     Callback Hell
 
-* 
+* biz datani bir addresden aldiq, eyer bir nece adresee alsaq nece olacaq?
+    * 3 daxili json fayli var
+    * 1ci ucun requestden data geldikden sonra 2ci sonra 3cu , gozleye gozleye 
+      requestler getsin biri data ile done olduqdan sonra digeri reuqest olsun
 
     
     Promise Basics
