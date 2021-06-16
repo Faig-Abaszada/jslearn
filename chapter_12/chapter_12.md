@@ -135,9 +135,12 @@ buna gore biz json icindeki stringleri js objectine cevirmeliyik.
 
 *  nesting callback within callback, within callback callback hell adlanir 
 ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
-   
+* messy, unmaintainable, and it's just not a good idea. very baddd!!!
+
 
     Promise Basics
+
+
     
     
     Chaining Promises
