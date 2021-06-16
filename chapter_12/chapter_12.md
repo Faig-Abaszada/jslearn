@@ -148,9 +148,16 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 * reject  -> call olundusa .catch calissin ve ya ikinci arrow function calissin.
 
 
-    
-    
     Chaining Promises
+
+* evvelki ssnari kimi eyer 3 endpoint var ise
+  callback-daki kimi promisisle nece ede bilerik ?
+* return funcName() 
+* catch ise bir defe yazilir sonda ve butun retunler ucun ishleyir.
+* hansi endpointde errror var ise onun adi consolda yazilir.
+
+
+
     
     The Fetch API
     
