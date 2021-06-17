@@ -13,9 +13,27 @@
 
 
 <script>
+    const getTodos = async () => {
+        const response = await fetch('todos/faik.json');
+        const data =  await response.json();
 
+        return data;
+    }
+    /*
+     - custom error  - eyer async func icinde reject etmek istediyimiz
+     promis varsa  mesleen json icinde invalid nese varsa ve onu reject
+     etmek isteyirikse .catch()  ile edirik
+     misalcun error json icinde syntax xetasi ola biler.
+    */
+    getTodos().then(data => {
+        console.log(data);
+    }).catch(err => {
+        // err.message bize msg verer.
+        // syntax errordursa reject response.json()-dan gelir
+        // ve async promise return edir ve catch olunur.
 
-
+        console.log(err.message);
+    });
 </script>
 </body>
 </html>
