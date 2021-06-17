@@ -32,10 +32,23 @@
         veya resolve olma
        ve network error olarsada ozu reject edecekdir
 
+      - ve eyer endpoint dogru olarsada bu zaman konsolda status kodu 200 gorerik
+      - ama biz consolda object icind datani gormuruk niye ?
+            -  proto-nu expand et
+                - burada "json" - metodunu goruruk
+                  bunu  response objecti uzerinde ist edib datani alacagiq.
+                - json() metodu datani getirib parse edir eynen JSON.parse kimi
     */
     fetch('todos/faiks.json').then( response => {
         // resolved
         console.log('resolved: ',response);
+        // bu metod bize datani getirir eynen JSON.parse kimi
+        // const data = response.json(); -> JSON.parse()-da  deyishkene atmishdiq
+        // ama burada bu shekilde islemir cunki ----
+        // bu promise return etmelidir ona gore
+        //  ( JSON.parse() ile sonra biz resolve icinde return edirdik
+        // burdada retun etmeliyik
+        return  response.json();
     }).catch( err => {
         // rejected
         console.log('rejected: ', err);
