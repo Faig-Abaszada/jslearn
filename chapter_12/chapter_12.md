@@ -187,3 +187,6 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
     
     
     Throwing & Catching Errors
+
+* .catch()
+* throw new Error();
