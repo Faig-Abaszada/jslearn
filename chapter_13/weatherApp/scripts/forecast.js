@@ -18,9 +18,18 @@ const getCity = async (city) => {
     const response = await fetch(base + query);
     const data = await  response.json();
 
-    console.log(data);
+    // console.log(data);
     // output olaraq birden cox objectin consola yazildigini
     // goruruk bize lazim olan 1cidir cunki digerleri ozunden atdigi sheherlerdir
-}
+    // console.log(data[0]);
 
-getCity('baku');
+    return data[0];
+
+}
+// ve burada bize lazim olan shey keydir, consolda objecti acsaq key deyerini  goererik
+getCity('baku')
+    .then((data) => {
+        console.log(data);
+    }).catch((err) => {
+    console.log(err)
+});
