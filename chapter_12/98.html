@@ -29,6 +29,18 @@
      - ama fetch()- den gelen error ise resolve edilir
       yani .then() icinde qalir success olaraq.
       yani eyer daxil etdiyimiz endpoint yanlish ise bele olur.
+
+     - ama ma ma !!!! problem var problem fetch()-in problemi olsada
+        catch bize guya problem reponse.json()-dadir deyir yani json icinde
+        hansisa xeta var deyir ama ahalbuki sadece fetch icinde endpoint yanlishdir
+        json faylinda ise bir problem yoxdur . bunun sebebi
+            - sebebi cunki fetch helede resoolving olunur ve  helede
+            bize response verir ve bu responsada .json() metodu verildikde
+            ve responsda valid olmadigina gore
+            yani tapilmadigina gore response.json()-unda etdiyi shey  sadece bezi
+            error vermekdir ona gore syntaxda problem olgunu yazir
+            halbuki ortada  hec json fayli yoxdur
+
     */
     getTodos().then(data => {
         console.log(data);
