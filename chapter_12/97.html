@@ -42,10 +42,23 @@
      - dushune bilerikki getTodos blocking code-dur ama unutmayaqki bunlari biz
      async funksiya icinde teyin edirik ozluyunde bu non blockingdir.
      - ve resonsu consola yazdiq , consolda artiq response object var
+     - ama datamiz object icinde yoxdru buna gore .json() ist etmeliyik
+     - ve xatirlayaqki .json() metodumuz ozu asyncdir ve ozu promise return edir.
+     -
     */
+    /*
+      ve
+     */
     const getTodos = async () => {
         const response = await fetch('todos/faik.json');
-        console.log(response);
+        // console.log(response);
+
+        /*
+         - json qarshisinada await yazdiq cunki ne vaxt
+          promise resolved oldu onda deyiskene atsin
+         */
+        const data =  await response.json();
+        console.log(data);
     }
     const test = getTodos();
     console.log(test);
