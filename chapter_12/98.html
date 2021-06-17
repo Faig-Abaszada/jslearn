@@ -13,8 +13,21 @@
 
 
 <script>
+    /*
+    - YANLISh !!! errora gore bezi manula checking yazacagiq
+    - eyer response status kodumuz 200 deyilse oz erromuzu gosterekki
+       oz yalanci syntax erroru vermesin.
+    - haradaki oz erorumuzu yazmaq isteyirkk new Error Syntax-indan ist edirik.
+   */
     const getTodos = async () => {
         const response = await fetch('todos/faiks.json');
+
+        // ve eyer bu if blocu calisharsa .catch() artiq bunu gostereckdir
+        if (response.status !== 200) {
+            throw new Error('endpoint yanlishdir!!!!');
+        }
+
+        // yox eyer problem .json()-dadirsa normal catch calishacaqdir.
         const data =  await response.json();
 
         return data;
@@ -40,8 +53,8 @@
             yani tapilmadigina gore response.json()-unda etdiyi shey  sadece bezi
             error vermekdir ona gore syntaxda problem olgunu yazir
             halbuki ortada  hec json fayli yoxdur
-
     */
+
     getTodos().then(data => {
         console.log(data);
     }).catch(err => {
