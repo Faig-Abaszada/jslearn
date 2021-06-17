@@ -176,10 +176,13 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
     Async & Await
 
 * makes readable way of chain promises 
-* 
+* async bize ne qazandirdi? 
+    - birincisi butun asinxron funkiyazimizi bir funskiya icinde yazmis olduq
+      ve harda ne vaxt istesek cagira bilerik 
+    - ikincisi non blockingdir 
+    - daha yaxsi oxunaqli gorunur.
 
-
-
+!!!! ama kohne browser versionlar bunu desteklemir.
 
     
     
