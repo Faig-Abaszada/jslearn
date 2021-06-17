@@ -14,7 +14,7 @@
 
 <script>
     const getTodos = async () => {
-        const response = await fetch('todos/faik.json');
+        const response = await fetch('todos/faiks.json');
         const data =  await response.json();
 
         return data;
@@ -24,14 +24,16 @@
      promis varsa  mesleen json icinde invalid nese varsa ve onu reject
      etmek isteyirikse .catch()  ile edirik
      misalcun error json icinde syntax xetasi ola biler.
+     - response.json()-dan gelen error zamani reject olunur yani
+      async promise return edir ve catch olunur.
+     - ama fetch()- den gelen error ise resolve edilir
+      yani .then() icinde qalir success olaraq.
+      yani eyer daxil etdiyimiz endpoint yanlish ise bele olur.
     */
     getTodos().then(data => {
         console.log(data);
     }).catch(err => {
         // err.message bize msg verer.
-        // syntax errordursa reject response.json()-dan gelir
-        // ve async promise return edir ve catch olunur.
-
         console.log(err.message);
     });
 </script>
