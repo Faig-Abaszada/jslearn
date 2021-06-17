@@ -173,8 +173,14 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 4. .then ile datani aldiq.
 
 
-
     Async & Await
+
+* makes readable way of chain promises 
+* 
+
+
+
+
     
     
     Throwing & Catching Errors

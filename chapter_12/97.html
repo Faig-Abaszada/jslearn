@@ -13,16 +13,42 @@
 
 
 <script>
-    fetch('todos/faik.json').then( response => {
-        console.log('resolved: ',response);
-        return  response.json();
-    }).then((data) => {
-        console.log(data);
-    }).catch( err => {
-        console.log('rejected: ', err);
-    })
+    // fetch API  return reposne.json filan yaxsidir callback funksiyalardan
+    // ama birden cox promise chaining edende cox pis gorunur.
+    // buna care olaraq async await ist edeceyik
 
+    // fetch('todos/faik.json').then( response => {
+    //     console.log('resolved: ',response);
+    //     return  response.json();
+    // }).then((data) => {
+    //     console.log(data);
+    // }).catch( err => {
+    //     console.log('rejected: ', err);
+    // })
 
+    /*
+     - const getTodos = async () => {} - bu asynchrone func adlanir
+       bu funskiya icinde ne olmasindan asili olmayaraq  cagrildiginda
+       promise return edir.
+    */
+    // const getTodos = async () => {}
+    // console.log(getTodos());
+
+    /*
+     - NE vaxtki async await istifade edirik fetch sonunda .then() istifade etmirik
+     - evezinde const = response await yaziriq.
+     - fetch() promise return edir ve await keyword deyeri deyiskene atmaqda stop edir
+     - nevaxtki promise resolved oldu deyer deyiskene atilir.
+     - dushune bilerikki getTodos blocking code-dur ama unutmayaqki bunlari biz
+     async funksiya icinde teyin edirik ozluyunde bu non blockingdir.
+     - ve resonsu consola yazdiq , consolda artiq response object var
+    */
+    const getTodos = async () => {
+        const response = await fetch('todos/faik.json');
+        console.log(response);
+    }
+    const test = getTodos();
+    console.log(test);
 
 </script>
 </body>
