@@ -56,13 +56,35 @@
         /*
          - json qarshisinada await yazdiq cunki ne vaxt
           promise resolved oldu onda deyiskene atsin
+         - data-ni return etmek ucun return data deyirik ve funskiyadan kenar
+         then .catch islerini gorub datani elde edirik
          */
+
+        /*
+          - bunlar sayesinde defelerle fetch etsekde biri bitmemish digerine kecmir
+         biri bitir digeri baslayir blockin code sheklinde  ve bu hal cox yaxsidir
+          - ama cagrildiginda artiq non blocking dir funskiyamiz
+         */
+        // const response = await fetch('todos/faik.json');
+        // const data =  await response.json();
+        // const response = await fetch('todos/faik.json');
+        // const data =  await response.json();
+
         const data =  await response.json();
-        console.log(data);
+        return data;
     }
+    // const test = getTodos();
+    // console.log(test);
+
+    /*
+     - nevaxtki biz getTodos-u cagiranda biz data-ni almiriq
+     - cunki async promise return edir. consola cagirib yazsaq promise
+     verdiyini gorerik. cunki resolve  ve reject olunmasi ucun vaxt aparacaq.
+     -
+    */
+    // getTodos();
     const test = getTodos();
     console.log(test);
-
 </script>
 </body>
 </html>
