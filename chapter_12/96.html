@@ -39,7 +39,7 @@
                   bunu  response objecti uzerinde ist edib datani alacagiq.
                 - json() metodu datani getirib parse edir eynen JSON.parse kimi
     */
-    fetch('todos/faiks.json').then( response => {
+    fetch('todos/faik.json').then( response => {
         // resolved
         console.log('resolved: ',response);
         // bu metod bize datani getirir eynen JSON.parse kimi
@@ -49,6 +49,8 @@
         //  ( JSON.parse() ile sonra biz resolve icinde return edirdik
         // burdada retun etmeliyik
         return  response.json();
+    }).then((data) => {
+        console.log(data);
     }).catch( err => {
         // rejected
         console.log('rejected: ', err);

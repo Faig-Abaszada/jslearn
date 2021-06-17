@@ -167,9 +167,10 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 * fetch() bize promise return edir
   promise return edib deyirdi : resolve veya reject   
 
-* 1. fetchin data return response
-    
-
+1. Fetch data
+2. take Response
+3. return response.json ( returns promise !!)    
+4. .then ile datani aldiq.
 
 
 
