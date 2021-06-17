@@ -14,6 +14,33 @@
 
 <script>
 
+    /*
+     - fetch() bize promise return edir
+     promise return edib deyirdi : resolve veya reject
+     - endpoint sehvdirse indi
+     catch olunub err-ni yaacagini dusunuruk ama
+     ele deyil consolda baxsaq reloved olundugunu yani then-in calishdigini
+     gorerik.
+     niye?
+        - cunki catch() - yalniz network errorlarinda calisir.
+        misalcun offline-iq veya api-a acces ede bilmirik
+        - buradada resource-da herf seffinde reject olunmur
+        - evezinde resolve olunub response aliriq.
+        - consolda objecti acib baxsaq status codu 404 gorerik.
+            yani resource cant be found!!!
+        - bunu duzeltmek ucun deye bilerik eyer status 200 deyilse reponse olma
+        veya resolve olma
+       ve network error olarsada ozu reject edecekdir
+
+    */
+    fetch('todos/faiks.json').then( response => {
+        // resolved
+        console.log('resolved: ',response);
+    }).catch( err => {
+        // rejected
+        console.log('rejected: ', err);
+    })
+
 
 
 </script>

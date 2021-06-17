@@ -156,11 +156,23 @@ ama yaxsi gorunmur buna hell yolu promises novbeti dersde var.
 * catch ise bir defe yazilir sonda ve butun retunler ucun ishleyir.
 * hansi endpointde errror var ise onun adi consolda yazilir.
 
-
-
     
     The Fetch API
+    simple way ( XMLHttpRequest alternative)
+
+* fetch() = XMLHttpRequest()
+* JS icinde native olaraq gomuludur
+* niye XMLHttpRequest oyrendik?
+    * cunki prosesin nece gercekleshdiyini bilmek lazimdir.
+* fetch() bize promise return edir
+  promise return edib deyirdi : resolve veya reject   
+
+* 1. fetchin data return response
     
+
+
+
+
     Async & Await
     
     
