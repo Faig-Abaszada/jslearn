@@ -45,6 +45,9 @@ ve city code getWeather-ye verildi getWeatherde
     
     
     Updating the UI
+
+* contains()
+* create elemetns with `` and append with innerHTML
     
     
     Destructuring
