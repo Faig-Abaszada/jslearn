@@ -1,7 +1,24 @@
 
 const apiKey = 'C5A1SfhvUXNbyF5VtwWiJWiPDxdYx73Y';
 
+//get weather information
+const getWeather = async (id) => {
 
+    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    // buradaki id 'Current Conditions'-da teleb olunandir
+    // api key ise teleb olunan query-dir
+    const query = `${id}?apikey=${key}`;
+
+    const response = await fetch(base + query);
+    const data = await  response.json();
+
+    // data[0] deyirik cunki helede geleden data array icindedir bize ise object lazimdir.
+    return data[0];
+}
+
+
+
+// get city information
 const getCity = async (city) => {
 
     /*
