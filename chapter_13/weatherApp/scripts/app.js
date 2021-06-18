@@ -14,7 +14,7 @@ const  updateCity = async (city) => {
     return {
         cityDets,
         weather
-    }
+    };
 
 }
 
@@ -27,5 +27,7 @@ cityForm.addEventListener('submit', (e) => {
     cityForm.reset();
 
     // updates ui with new city
-    updateCity(city);
+    updateCity(city)
+        .then(data =>  console.log(data))
+        .catch(err => console.log(err));
 })
