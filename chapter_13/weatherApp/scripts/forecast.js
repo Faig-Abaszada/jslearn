@@ -43,19 +43,21 @@ const getCity = async (city) => {
     return data[0];
 
 }
-// ve burada bize lazim olan shey keydir, consolda objecti acsaq key deyerini  goererik
-getCity('baku')
-    .then((data) => {
-        // console.log(data);
-        /* ve data bize sheherin codunu verir data.Key olaraq
-           bizde bu key ile hemin sheherin melumatlarini aldiq.
-           - return deyerken bu artiq promise return edir ve artiq biz .then() etmleiyik
 
-        */
-        return getWeather(data.Key);})
-    .then((data) => {
-        //buraddaki data artiq getWeather icindeki data[0]- dir
-        console.log(data);})
-    .catch((err) => {
-        console.log(err)
-    });
+//
+// // ve burada bi ze lazim olan shey keydir, consolda objecti acsaq key deyerini  goererik
+// getCity('baku')
+//     .then((data) => {
+//         // console.log(data);
+//         /* ve data bize sheherin codunu verir data.Key olaraq
+//            bizde bu key ile hemin sheherin melumatlarini aldiq.
+//            - return deyerken bu artiq promise return edir ve artiq biz .then() etmleiyik
+//
+//         */
+//         return getWeather(data.Key);})
+//     .then((data) => {
+//         //buraddaki data artiq getWeather icindeki data[0]- dir
+//         console.log(data);})
+//     .catch((err) => {
+//         console.log(err)
+//     });

@@ -37,7 +37,8 @@ ve city code getWeather-ye verildi getWeatherde
     
     Updating the Location
 
-* 
+* app.js - dom manipulation
+* forecast app-den once teyin olunub diqqet!!
          
     
     Object Shorthand Notation

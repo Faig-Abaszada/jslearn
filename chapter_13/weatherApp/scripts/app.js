@@ -2,7 +2,21 @@
 
  const cityForm = document.querySelector('form');
 
+const  updateCity = async (city) => {
+    // console.log(city);
 
+    // city code elde etdik
+    const cityDets = await getCity(city);
+    // city code verib weather elde etdik
+    const weather = await  getWeather(cityDets.Key);
+
+    // console.log(cityDets, weather);
+    return {
+        cityDets,
+        weather
+    }
+
+}
 
 cityForm.addEventListener('submit', (e) => {
     // prevent default action
@@ -13,5 +27,5 @@ cityForm.addEventListener('submit', (e) => {
     cityForm.reset();
 
     // updates ui with new city
-
+    updateCity(city);
 })
