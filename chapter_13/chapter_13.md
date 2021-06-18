@@ -30,10 +30,14 @@ Section 13: Project - Weather App
     
     Get Weather API Call
 
-* 
+* getCity cagrildigi yerde getWeather cagrildi
+ve city code getWeather-ye verildi getWeatherde 
+  melumatlari consola yazdi
     
     
     Updating the Location
+
+* 
          
     
     Object Shorthand Notation
