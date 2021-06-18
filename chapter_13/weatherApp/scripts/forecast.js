@@ -7,7 +7,7 @@ const getWeather = async (id) => {
     const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
     // buradaki id 'Current Conditions'-da teleb olunandir
     // api key ise teleb olunan query-dir
-    const query = `${id}?apikey=${key}`;
+    const query = `${id}?apikey=${apiKey}`;
 
     const response = await fetch(base + query);
     const data = await  response.json();
@@ -46,7 +46,16 @@ const getCity = async (city) => {
 // ve burada bize lazim olan shey keydir, consolda objecti acsaq key deyerini  goererik
 getCity('baku')
     .then((data) => {
-        console.log(data);
-    }).catch((err) => {
-    console.log(err)
-});
+        // console.log(data);
+        /* ve data bize sheherin codunu verir data.Key olaraq
+           bizde bu key ile hemin sheherin melumatlarini aldiq.
+           - return deyerken bu artiq promise return edir ve artiq biz .then() etmleiyik
+
+        */
+        return getWeather(data.Key);})
+    .then((data) => {
+        //buraddaki data artiq getWeather icindeki data[0]- dir
+        console.log(data);})
+    .catch((err) => {
+        console.log(err)
+    });
