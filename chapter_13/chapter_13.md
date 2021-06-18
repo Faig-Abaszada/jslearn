@@ -63,6 +63,9 @@ atiriqsa bu zaman bunu ist ede bilerik.
     
     
     Weather Icons & images
+
+* setAttribute()
+* isDaytime
          
     
     Ternary Operator

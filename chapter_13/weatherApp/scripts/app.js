@@ -12,6 +12,9 @@ const updateUI = (data) => {
     // const cityDets = data.cityDets;
     // const weather = data.weather;
 
+    // bezi melumatlari
+    console.log(data);
+
     // destructure data
     const { cityDets, weather } = data;
 
@@ -24,6 +27,19 @@ const updateUI = (data) => {
                 <span>&deg;${weather.Temperature.Metric.Unit }</span>
             </div>
     `
+    // update the night/day & icon images
+    const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
+    icon.setAttribute('src', iconSrc);
+    // console.log(icon);
+
+    let timeSrc = null;
+    if (weather.IsDayTime) {
+        timeSrc = 'img/day.svg';
+    } else {
+        timeSrc = 'img/night.svg';
+    }
+    time.setAttribute('src', timeSrc);
+
     // remove d-none class
     if (card.classList.contains('d-none')) {
          card.classList.remove('d-none');
