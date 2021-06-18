@@ -57,6 +57,9 @@ ve city code getWeather-ye verildi getWeatherde
 
   // destructure data
   const { cityDets, weather } = data;
+
+* eyer eyni objectden birden cox data cixardib eyni object adi ile deyishkene
+atiriqsa bu zaman bunu ist ede bilerik.
     
     
     Weather Icons & images
