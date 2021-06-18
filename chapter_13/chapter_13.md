@@ -51,6 +51,12 @@ ve city code getWeather-ye verildi getWeatherde
     
     
     Destructuring
+
+*  const cityDets = data.cityDets;
+   const weather = data.weather;
+
+  // destructure data
+  const { cityDets, weather } = data;
     
     
     Weather Icons & images
