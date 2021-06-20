@@ -69,3 +69,6 @@ atiriqsa bu zaman bunu ist ede bilerik.
          
     
     Ternary Operator
+
+* const result = condition ? 'value 1' : 'value 2'; 
+* if  sonra else kimi if ?-dir , else :-dir
