@@ -10,6 +10,43 @@
 <body>
 
 <script>
+// store data in local storage
+
+localStorage.setItem('name', 'faik');
+localStorage.setItem('age', 26);
+/* outpu:
+ - consolda localStorage yazsaq bize LS icinde 2  sey oldugu gorulur
+ - number qeyd etdiyimiz value ise consolda LS icinde
+  string olaraq qeyd edilib cunki LS yalniz string value isteyir.
+ - LS-a icindekilere hemde baxmaq olar Application menusunda
+ - value bir defe LS-a yazildisa daha resresh filanda deyer her zaman hemin
+ endpointde qalir yani sehifeye yeniden user terk edib qayitsada
+  melumatlari itmir!
+*/
+
+
+
+// get data from local storage
+/*
+ - consola yazdigimiz deyer sehife refresh olunan itmir .
+ - en sonda setItem olunan data LS-de qalar digeri siliner.
+ - eyer setItem emri verilirse ve yazilirsa sonra update olunub sonra
+ yene yazilirsa bu zmana deyerlerin ikiside gorunur
+ */
+
+let name = localStorage.getItem('name');
+console.log(name);
+
+
+// updating data
+/*
+ - ilk tein olunan adi deyisdik
+ - name deyishkenine yeniden yeni deyeri atdiq
+ - LS.name = 'sjbdj'- da ola biler bu
+ */
+localStorage.setItem('name', 'abaszada');
+name = localStorage.getItem('name');
+console.log(name);
 
 
 
