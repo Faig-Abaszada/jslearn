@@ -67,6 +67,25 @@ console.log(bookName);
 
 
 
+//  Stringifying & Parsing Data
+/*
+  - todos complex datani yani array-i stringe cevirib
+        LS-e atmaq lazimdir.
+  - consolda baxmaq lazimdir.
+  - outputda gorerikki butun array icindeki objectler JSON olaraq stringlesibler.
+ */
+const todos = [
+    { text: 'finish course', author: 'faik' },
+    { text: 'start vue', author: 'faik' },
+    { text: 'start 5 project realy!!!', author: 'faik' },
+]
+// console.log(JSON.stringify(todos ));
+// application-da baxa bilersen
+localStorage.setItem('todos', JSON.stringify(todos ));
+const storedTodos = localStorage.getItem('todos');
+// ve oturduyumuz datani istifade etmek istesek bu zaman json.parse edirik
+console.log(JSON.parse(storedTodos));
+
 
 
 

@@ -39,6 +39,14 @@ Section 14: Local Storage
 
     Stringifying & Parsing Data
  
+* string olaraq data veririk dedik bes complex data olaraq
+ misaulcun array vermek istesek ne edek?
+* complex datani once stringe cevir sonra LS-e gonder veya yaz
+* JSON.stringify(todos ) 
+
+
+
+
 
     Updating the Weather App
  
