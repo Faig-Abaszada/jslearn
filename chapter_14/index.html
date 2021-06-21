@@ -51,9 +51,19 @@ console.log(name);
 
 
 
+// Delete LS item
+/*
+ - output null verecekdir cunki ls-den silindi
+ - localStorage.clear() - butun LS-i temizleyir.
+*/
+localStorage.setItem('book', 'stefan zweig');
+localStorage.removeItem('book');
+
+let bookName =  localStorage.getItem('book');
+console.log(bookName);
 
 
-
+// localStorage.clear();
 
 
 

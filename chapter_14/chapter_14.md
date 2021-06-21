@@ -32,6 +32,10 @@ Section 14: Local Storage
 
     Deleting Storage Data
 
+* removeItem() - remove single item
+* localStorage.clear() - remove all LS
+ 
+
 
     Stringifying & Parsing Data
  
