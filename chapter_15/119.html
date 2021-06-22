@@ -13,17 +13,38 @@
 
 
 <script>
+    /*
+        - metod yaradildi icinde usere aid property istifade edildi
+        - hemin userin metodu cagrildiqda property ile ishlenmish datani goreceyik
+    */
     class User {
         constructor(username, email) {
             // setup properties
             this.username = username;
             this.email = email;
         }
+        login() {
+            console.log(`${this.username} just logged in `);
+        }
+        logout() {
+            console.log(`${this.username} just logged out `);
+        }
     }
-    const userOne = ne  w User('Faik', 'faikdesktop@gmail.com');
+    const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('Ali', 'ali@gmail.com');
 
+    // userleri consolda expand etdikde proto-sunda method olaraq login ve
+    // logoutlari gore bilerik.
     console.log(userOne, userTwo);
+
+    userTwo.login();
+    userTwo.logout();
+
+    /*
+    - Method Chaining
+    - lakin bu ishlemeyecekdir cunki login return olunmur.
+    */
+    userOne.login().logout();
 
 
 </script>
