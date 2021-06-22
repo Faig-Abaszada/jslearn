@@ -33,10 +33,9 @@ Section 15: Object Oriented JavaScript
 
         Object Literal Recap
 
-* 
+* create user constructor and create objects easy
 
 
-        
         Classes
         
         
