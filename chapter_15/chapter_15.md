@@ -66,7 +66,7 @@ We could say we want a new white car or new yellow car or new green car.
 Then we're setting the value of this to be the object inside here.
 And then we finally call the user constructor so that when we call that we're taking the value this
 which is the new object and applying this property to it, which is now Mario.
-
+ 
         
         
         Class Methods & Method Chaining
