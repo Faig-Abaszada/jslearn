@@ -14,14 +14,20 @@
 
 <script>
 class User {
-    constructor() {
+    constructor(username, email) {
         // setup properties
-        this.username = 'Faik';
+        this.username = username;
+        this.email = email;
     }
 }
-
-const userOne = new User();
-const userTwo = new User();
+/*
+The instance refers to the individual object that we actually
+ create using the class.
+ */
+//  bu shekilde object yaratdiqda deyirik :
+//  biz user class-nin instance-ni yaradiriq.
+const userOne = ne  w User('Faik', 'faikdesktop@gmail.com');
+const userTwo = new User('Ali', 'ali@gmail.com');
 
 console.log(userOne, userTwo);
 
