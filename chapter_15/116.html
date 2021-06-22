@@ -14,6 +14,37 @@
 
 <script>
 
+    // TRADITIONAL WAY OF CREATE OBJECT
+    /*
+     - BU user objectini yaratdiq ama userTwo yaratmaq istesek
+        yene eynen userOne kimi obj yaradib icindeki tekrarlari yene yazmaliyiq
+     - yani ikinci user ucun eyni prosesi etmeliyik
+
+     - kod tekrarligi cox olur bu sekilde yazildiqda userone uertwo
+     */
+    const userOne = {
+        username: 'Faik Abaszada',
+        email: 'faikdesktop@gmail.com',
+        login() {
+            console.log('the user logged in');
+        },
+        logout() {
+            console.log('the user logged out');
+        }
+    }
+    const userTwo = {
+        username: 'Ali huseynli',
+        email: 'alihuseynli@gmail.com',
+        login() {
+            console.log('the user logged in');
+        },
+        logout() {
+            console.log('the user logged out');
+        }
+    }
+    console.log(userOne.email, userOne.username);
+    console.log(userTwo.email, userTwo.username);
+
 
 
 

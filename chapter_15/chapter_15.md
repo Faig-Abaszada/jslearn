@@ -24,13 +24,17 @@ Section 15: Object Oriented JavaScript
         ** JavaScript takes that primitive value and it wraps 
           it temporarily in a wrapper object.
         * JavaScript muveqqeti olaraq objecte cevirir veya objecte sariyir.
-
-        Object Literal Recap
+          
         * new String('Faik'); - it creates new "string wrapper" object ( stringi objecte sariyan )
             * bunu her defe biz new string demesekde eslinde arxa fonda bu olay donur. 
             * ve indi consolda expand olunan string gore bilerik , 
                hansiki proto ve length-a sahibdir
-              
+
+
+        Object Literal Recap
+
+* 
+
 
         
         Classes
