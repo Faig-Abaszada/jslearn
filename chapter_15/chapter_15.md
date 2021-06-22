@@ -37,6 +37,22 @@ Section 15: Object Oriented JavaScript
 
 
         Classes
+        Classes.png
+
+* A class is ike a blueprint for an object 
+    ( it describes how one should be made)
+*  Classes2.png - de butun yellow red carlarin eyni property ve metodlari var 
+* each user could have a unique email and a unique username.
+**  So that blueprint for the car maps out all of these properties and its functionality and all cars created
+using this blueprint would have those things.
+Now, that's not to say that every car should be completely identical.
+Some of the properties could be unique to each car, for example, the color of it, some could be red
+or this green or this blue, etc. But they still all have a color property.
+So when we use this blueprint to create cars, we could specify some options like the color.
+We could say we want a new white car or new yellow car or new green car.
+* burun masinlarin eyni property ve functionalligi 
+  var ama bezilerinin unique deyerleri ola biler meselen 5 masin var eyni 
+  model eyni gostericilerde ama rengleri ferqlidir. 
         
         
         Class Constructors
