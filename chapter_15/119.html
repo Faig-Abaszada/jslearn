@@ -22,12 +22,21 @@
             // setup properties
             this.username = username;
             this.email = email;
+            this.score = 0;
         }
         login() {
             console.log(`${this.username} just logged in `);
+            return this;
         }
         logout() {
             console.log(`${this.username} just logged out `);
+            return this;
+        }
+        incScore() {
+            this.score += 1;
+            console.log(`${this.username} has a score of ${this.score}`);
+            // bunu yazdiq cunki metod chain etmek isteyirik.
+            return this;
         }
     }
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
@@ -42,9 +51,13 @@
 
     /*
     - Method Chaining
-    - lakin bu ishlemeyecekdir cunki login return olunmur.
+    - userOne.login().logout() - lakin bu ishlemeyecekdir cunki login return olunmur.
+    - userOne.incScore().incScore(); - buda ishkemeyecekdir.
+    - ishlemesi ucun return this; etmek lazimdir.
     */
     userOne.login().logout();
+    userOne.incScore().incScore();
+    userOne.login().logout().incScore();
 
 
 </script>

@@ -70,6 +70,9 @@ which is the new object and applying this property to it, which is now Mario.
         
         
         Class Methods & Method Chaining
+
+* return this; - Class icinde return this etmekle sonra method chain ede bilirik.
+
         
         
         Class Inheritance (subclasses)
