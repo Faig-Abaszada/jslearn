@@ -13,9 +13,22 @@
 
 
 <script>
+class User {
+    constructor() {
+        // setup properties
+        this.username = 'Faik';
+    }
+}
 
+const userOne = new User();
+const userTwo = new User();
 
+console.log(userOne, userTwo);
 
+// the "new" keyword.
+// 1 - it creates a new empty object {}.
+// 2 - it binds the value of "this" to the new empty object.
+// 3 - it calls the constructor function to "build" the object.
 
 
 </script>

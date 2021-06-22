@@ -56,6 +56,17 @@ We could say we want a new white car or new yellow car or new green car.
         
         
         Class Constructors
+
+* class User {
+  constructor() {
+  }
+  }
+
+** And now when we say user one is a new user object, we're creating a new blank object.
+Then we're setting the value of this to be the object inside here.
+And then we finally call the user constructor so that when we call that we're taking the value this
+which is the new object and applying this property to it, which is now Mario.
+
         
         
         Class Methods & Method Chaining
