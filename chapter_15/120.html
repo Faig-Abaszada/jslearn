@@ -36,7 +36,9 @@
 
     class Admin extends User {
          deleteUser(user) {
-
+            users = users.filter((u) => {
+                return u.username !== user.username;
+            });
          }
     }
 
@@ -52,6 +54,7 @@
 
     console.log(userOne, userAdmin);
 
+    // let ile etdik cunki deleteUser icinde update edeceyik ona gore
     let users = [userOne, userTwo];
     console.log(users);
 
