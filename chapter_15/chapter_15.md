@@ -111,7 +111,27 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
         
         
         Constructors (under the hood)
-        
+
+**   I did mention that this class syntax was just a bit of syntactic sugar because JavaScript as a language
+    doesn't actually have classes built into it.
+    Instead, it uses a prototype model to implement the same kind of behavior.
+    Now, the class keyword was just introduced more recently into the language as a way to emulate the
+    idea of classes in JavaScript, much like they're used in other programming languages.
+    But the class syntax right here is just a thin layer of abstraction over the prototype model, which
+* kecen derde dedik ki, class syntax sadece syntactic sugar-dir , cunki Javascriptde eslinde classes yoxdur.
+  burdaki class sadece prototype model istifade edilerek class goruntusune sahibdir. class keyword tezelikce
+  JSe elave edilib  ki class ideasini jsde emulate etsinler , diger proggimg dillerindeki kimi.
+  ve uzun sozun qisasi burdaki class syntax sadece prototype modeli üzərində incə bir abstraksiya təbəqəsidir.
+* ve nece ishleyir ? class syntaxinin altinda ne ishleyir baxaq!!!
+    * 
+
+
+
+
+
+
+
+
         
         Prototype Model
              
