@@ -34,16 +34,19 @@
         }
     }
 
+    class Admin extends User {
+
+    }
+
+
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
-    const userTwo = new User('Ali', 'ali@gmail.com');
+    userOne.login();
 
+    const  userTwo = new Admin('Hasan', 'hasan@gmail.com');
+    userTwo.login();
+
+    // consol
     console.log(userOne, userTwo);
-
-    userOne.login().logout();
-    userOne.incScore().incScore();
-    userOne.login().logout().incScore();
-
-
 </script>
 
 </body>

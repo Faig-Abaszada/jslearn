@@ -87,7 +87,10 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
    yeni class yaratmaq lazimdeyil bu yerde 'extends' ist edilir. yani adi userde
    zaten olan sheyleri yeniden admin ucun yaratmaqa ehtiyac yoxdur. extends ile 
    hamisini kopyalayib oz metod ve propertyleride elave ede bilceyik.
-*   
+
+* !!! bu admin objectinin deyiskenini ekrana yazdiqda icindeki metodlar
+ adi userden ferqli olara proto ve proto yani 2ci proto icindedir? niye?
+  bunlari novbeti derse bilceyik!!!
   
 
         
