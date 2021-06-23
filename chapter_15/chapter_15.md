@@ -76,6 +76,20 @@ which is the new object and applying this property to it, which is now Mario.
         
         
         Class Inheritance (subclasses)
+
+* class inheritance . subclasses olaraqda taninir.
+* class newClassName extends oldClassName {} 
+* extends ile diger class-in butun funksionalligini ve property , method-larini
+  ozunde copyalayir 
+
+*  misalcun Admin useri yaratmaq lazimdir ve adi user ile eyni funksionalliga sahibdir
+ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
+   yeni class yaratmaq lazimdeyil bu yerde 'extends' ist edilir. yani adi userde
+   zaten olan sheyleri yeniden admin ucun yaratmaqa ehtiyac yoxdur. extends ile 
+   hamisini kopyalayib oz metod ve propertyleride elave ede bilceyik.
+*   
+  
+
         
         
         Super( )
