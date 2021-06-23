@@ -96,20 +96,16 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
 * elave property ve methodlari nece elave edek?
     *  deleteUser(user) {) direkt olaraq class icinde yaziriq
     * !!! ama hele property elave etmemisik.
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
         Super( )
+
+* oz propertylerimizi daxil etmek ucun admin class icinde contructor acmaliyiq ama
+*   class Admin extends User { } - icinde constructor() {  }- acarsag eyer
+    * admin userini cagrdiqda artiq admin icindki contructor run olacagdiq adi
+    userin icindeki constructordaki propertyler bura gelmeyecekdir. 
+    * bunun ucun eynen adi userdeki parameterleri burda constructora veririk.
+    
         
         
         Constructors (under the hood)
