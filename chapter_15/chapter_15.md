@@ -94,8 +94,8 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
   
 
 * elave property ve methodlari nece elave edek?
-    * 
-    
+    *  deleteUser(user) {) direkt olaraq class icinde yaziriq
+    * !!! ama hele property elave etmemisik.
 
 
 
@@ -106,8 +106,9 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
 
 
 
-        
-        
+
+
+
         Super( )
         
         
