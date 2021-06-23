@@ -105,7 +105,9 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
     * admin userini cagrdiqda artiq admin icindki contructor run olacagdiq adi
     userin icindeki constructordaki propertyler bura gelmeyecekdir. 
     * bunun ucun eynen adi userdeki parameterleri burda constructora veririk.
-    
+    * ama admin clasinda constructora adi userin constructor parameterlerini
+    versekde bunu class icinde bildirmeliyikki bu paramaterler adi userden gelenderldir
+      * bunun ucun super() - istifade edirik. 
         
         
         Constructors (under the hood)

@@ -35,6 +35,10 @@
     }
 
     class Admin extends User {
+        constructor(username, email) {
+            // super ile artiq adi userin propertylerini bura getirdik.
+            super(username, email);
+        }
         deleteUser(user) {
             users = users.filter((u) => {
                 return u.username !== user.username;
