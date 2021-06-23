@@ -35,18 +35,36 @@
     }
 
     class Admin extends User {
+         deleteUser(user) {
 
+         }
     }
 
 
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     userOne.login();
 
-    const  userTwo = new Admin('Hasan', 'hasan@gmail.com');
+    const userTwo = new User('ali', 'ali@gmail.com');
     userTwo.login();
 
-    // consol
-    console.log(userOne, userTwo);
+    const  userAdmin = new Admin('Admin', 'hasan@gmail.com');
+    userAdmin.login();
+
+    console.log(userOne, userAdmin);
+
+    let users = [userOne, userTwo];
+    console.log(users);
+
+    // deleting userTwo
+    userAdmin.deleteUser(userTwo);
+
+    // see user deleted or not
+    console.log(users);
+
+
+
+
+
 </script>
 
 </body>

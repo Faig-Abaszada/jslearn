@@ -93,6 +93,19 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
   bunlari novbeti derse bilceyik!!!
   
 
+* elave property ve methodlari nece elave edek?
+    * 
+    
+
+
+
+
+
+
+
+
+
+
         
         
         Super( )
