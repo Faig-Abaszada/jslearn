@@ -28,12 +28,27 @@
     //     }
     // }
 
+    /*
+     - User(){} - eslinde constructordur
+     - eslinde new User ile etdikdede "{}" create edir ve ona this verir User icinde
+    */
+    // normal funskiyadir eynile classda bu kimi ishleyir sadece class uzde class kimi gorunur.
+     function User(username, email) {
+
+         // ve bu deyerleri yeni object daxilinde teyin etmish oluruq.
+         this.username = username;
+         this.email = email;
+     }
 
 
+    /*
+     - User('Faik', 'faikdesktop@gmail.com'); -bu constructor functiondur
+     - User() dedikde eslinde functionu call edirik.
+    */
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('ali', 'ali@gmail.com');
 
-
+    console.log(userOne, userTwo);
 
 
 
