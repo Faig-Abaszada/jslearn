@@ -38,6 +38,10 @@
          // ve bu deyerleri yeni object daxilinde teyin etmish oluruq.
          this.username = username;
          this.email = email;
+         // metod elave etmek
+         this.login = function () {
+             console.log(`${this.username} has logged in `);
+         }
      }
 
 
@@ -49,7 +53,7 @@
     const userTwo = new User('ali', 'ali@gmail.com');
 
     console.log(userOne, userTwo);
-
+    console.log(userOne.login());
 
 
 </script>
