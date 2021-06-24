@@ -131,6 +131,8 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
 
         
         Prototype Model
+
+* 
              
         
         Prototypal Inheritance
