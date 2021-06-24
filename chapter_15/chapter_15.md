@@ -123,14 +123,11 @@ ama elave olaraq admin user delete ve add etmek funksiylari var bunun ucun
   JSe elave edilib  ki class ideasini jsde emulate etsinler , diger proggimg dillerindeki kimi.
   ve uzun sozun qisasi burdaki class syntax sadece prototype modeli üzərində incə bir abstraksiya təbəqəsidir.
 * ve nece ishleyir ? class syntaxinin altinda ne ishleyir baxaq!!!
-    * 
-
-
-
-
-
-
-
+    * kodlarda...
+    
+* ve xulase bu usul ile constructorda method veya functionlar yaratdiq 
+ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
+  
 
         
         Prototype Model
