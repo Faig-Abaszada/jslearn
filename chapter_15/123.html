@@ -16,6 +16,12 @@
     function User(username, email) {
         this.username = username;
         this.email = email;
+        /*
+         - this.login-ni direkt olaraq User(){ icinde  } yaratdigimiz ucun consolda 'login' metodunu
+           __proto__ icinde yox bir basa property sirasinda goruruk ama biz bunu prototype icinde teyin etmeliyik
+           buda protot ype model adlanir.
+         - class ile ise  method yaratdigimizda ise onlari proto property icinde qoyurdu .
+        */
         this.login = function () {
             console.log(`${this.username} has logged in `);
         }

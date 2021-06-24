@@ -132,7 +132,13 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
         
         Prototype Model
 
-* 
+* Every Object in JavaScript as a prototype.
+* Prototypes contain all the methods for that object type.
+
+
+
+
+
              
         
         Prototypal Inheritance
