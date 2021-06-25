@@ -60,6 +60,14 @@
     */
     Admin.prototype = Object.create(User.prototype);
 
+    /*
+     - !!!ama own method olduguna gore bu 1ci level proto altinda gorunur
+     - inheritance olanlar ise 2ci proto altindadir (inheritance yani Userden copy olanlar).
+    */
+    Admin.prototype.deleteUser = function () {
+        // delete a user
+    }
+
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('ali', 'ali@gmail.com');
     const userAdmin = new Admin('Admin', 'admin@gmail.com', 'frontenddeveloper');
