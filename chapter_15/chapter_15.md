@@ -189,8 +189,14 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
 
 * Admin user yaratmaq istedikde Class ile extend istifade etmishdik ama 
 prototype model-de ise bunu nece ederik.
-  * 
-             
+  
+* Butun bunlar class keywordu ile olanlarin eslinde arxada nece
+  ishledikleridir. Bunlarin evezie her zaman Classes ishledirik sadece nece 
+  arxada nece ishlediklerini bilmekde fayda var her zaman meselen 
+  debuggingde lazim ola biler veya her zaman her developer class- i istifade etmir 
+  bunu bilmek lazimdirki  qarsiniz cixanda bilesiz.
+  
+
         
         Built-in Objects
         
