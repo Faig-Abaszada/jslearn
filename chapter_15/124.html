@@ -36,10 +36,13 @@
         icindekileri bize verecekdir. yani icindekileri Admin-nin icine qoyacaqdir
             - admin icinde this deyersek bu admini isare edecekdir
             - user.call(this)- dedikde ise bu user icindekileri isare edecekdir.
-        - this 1ci argument idi 2ci argumentler ise value-dir
+        - this 1ci argument idi 2ci argumentler ise User-e gedecek argumentlerdir
+        - bir sozle this constructoru ishare edir , digerleri ise argumentleridr.
+        - call() = super() kimidir.
+        - bu usulla adi user icindeki propertyleti admin-nin icinde getirdik.
         */
-        // this ile user argumentleri user-e gedecekdir cagrildiginda
-        User.call(this);
+
+        User.call(this, username, email);
     }
 
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
