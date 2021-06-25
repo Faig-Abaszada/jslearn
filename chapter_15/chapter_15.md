@@ -196,6 +196,9 @@ prototype model-de ise bunu nece ederik.
   debuggingde lazim ola biler veya her zaman her developer class- i istifade etmir 
   bunu bilmek lazimdirki  qarsiniz cixanda bilesiz.
   
+* call(this)
+* Object.create()
+* User.prototype.login = function() {}
 
         
         Built-in Objects
