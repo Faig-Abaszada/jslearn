@@ -24,7 +24,7 @@
     - class ile olanda super() istifade edirdik ama burda bu kecerli deyil
     -
    */
-    function Admin(username, email) {
+    function Admin(username, email, job) {
         /*
         - adi userin icindekileri bura getirmekden otru new User() deyirik  ve
           argumentlerimiz burda new usere veririk ama bu shekilde ede bilmerik cunki
@@ -43,12 +43,14 @@
         */
 
         User.call(this, username, email);
+        this.job = job;
     }
 
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('ali', 'ali@gmail.com');
+    const userAdmin = new Admin('Admin', 'admin@gmail.com', 'frontenddeveloper');
 
-    console.log(userOne, userTwo);
+    console.log(userOne, userTwo, userAdmin);
 
 
 </script>
