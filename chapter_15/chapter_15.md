@@ -132,11 +132,18 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
         
         Prototype Model
 
-* Every Object in JavaScript as a prototype.
+* Every Object in JavaScript has a prototype.
 * Prototypes contain all the methods for that object type.
-
-
-
+* class olmadan once bu usul istifade olunurdu.
+* normalda butun metodlarimiz proto icinde olmalidir
+    * bu classlarla proto icinde olur 
+    * ama normal class-siz variant ile metodlarimiz
+        prototypelar sirasinda olur eyer metodu direkt cosntructor icinde versek. 
+* umumiyyetle metodlari istifade edende 
+    * misalcun array objectinde filter istifade ededne
+      nums.__proto__.filter()- demirik bunun evezine nums.filter()- deyirik 
+      cunki zaten butun metodlar proto propterysinin altindadir deye bunlar
+      evvelceden bele teyin olunub. 
 
 
              
