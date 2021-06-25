@@ -168,9 +168,18 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
     * new array deyildiyi zaman Yani buradaki Proto array tpini işaret ederek,
       hey, kullanabileceğiniz yöntemlerin depolandığı yer array prototype-dir.
       yani yani array tipi gedib array prototype icindeki metodlara baxacaq
-      ve date tipide gedib date prototype icindeki metodlara bxacaqdir.
+      ve date tipide gedib date prototype icindeki metodlara baxacaqdir.
       
 * ama meselen 'length' metodu arrayin ozunde store olunub bu istisnadir.
+
+* eyni sheyler bizim objectler ucunde kecerlidir.
+    * misalcun User prototype 
+        * login vs logput - butun userlere aiddir 
+        * neceki, filter() vs sort() butun arraylere aiddir
+        
+* User metodunu User Prototype-ina nece teyin edek?
+    *
+
 
         Prototypal Inheritance
              
