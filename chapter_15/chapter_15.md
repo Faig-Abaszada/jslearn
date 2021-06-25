@@ -222,3 +222,6 @@ prototype model-de ise bunu nece ederik.
         
         
         Making a Forecast Class (weather app)
+
+* weahtherapp folderine baxmaq lazimdir
+* async functionName(){}
