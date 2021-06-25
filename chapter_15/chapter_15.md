@@ -202,6 +202,23 @@ prototype model-de ise bunu nece ederik.
 
         
         Built-in Objects
+
+* numsArray yaradib consolda __proto__-nu expand etsek new Array(1,2,3,4,5)
+    * proto icinde ennn sonda yenede __proto__: Object- i  gorerik ama bu ise Object-e ishare edir!!! 
+    * new Object() - in sahib oldugu metodlara arrayde hemcinin inheritance edir. 
+    * belelikle JSDe her object type hemde object type-a inheritance-dri yani objectin metodlarinida miras alir.
+* daha bir example
+    * new XMLHttpRequest -> proto chaining-e fikir verek her proto expandan sonra yenisi var 
+        * __proto__ : XMLHttpRequest
+        * __proto__ : XMLHttpRequestEventTarget
+        * __proto__ : EventTarget
+        * __proto__ : Object
+        
+    * Her shey nehayetinde finalda Objectden inheritance olur .  meslen:  Admin  __proto__ : User  -> __proto__ : Object 
+
+
+
+
         
         
         Making a Forecast Class (weather app)
