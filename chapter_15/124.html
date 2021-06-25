@@ -41,10 +41,24 @@
         - call() = super() kimidir.
         - bu usulla adi user icindeki propertyleti admin-nin icinde getirdik.
         */
+        /*
+         - oz propertimizide elave etdik Admin-e ama bizim burda metodlarimiz yoxdur
+          yani adi user icindeki propertyleri cagirdiq ama metodlari yox
+
+        */
 
         User.call(this, username, email);
         this.job = job;
     }
+    /*
+    - Object.create(User.prototype); - bunun sayesinde userdeki metodalri bura
+    copy etdik
+    - ve ishin maraqli terefi eyer consola bu admin userine baxsaq
+    grorurkki Admin Objecti __proto__ :  "User" - ishare edir.
+    ve ikinci __proto__ nu expand etsek metodlari gore bilerik
+    - buda adlanir two level proto hansiki enheriting zamani bu meydana gelir.
+    */
+    Admin.prototype = Object.create(User.prototype);
 
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('ali', 'ali@gmail.com');
