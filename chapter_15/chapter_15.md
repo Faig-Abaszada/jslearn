@@ -186,6 +186,10 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
 
 
         Prototypal Inheritance
+
+* Admin user yaratmaq istedikde Class ile extend istifade etmishdik ama 
+prototype model-de ise bunu nece ederik.
+  * 
              
         
         Built-in Objects

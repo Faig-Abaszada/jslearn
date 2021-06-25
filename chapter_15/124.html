@@ -9,13 +9,43 @@
 </head>
 <body>
 
-
-
-
 <script>
+    function User(username, email) {
+        this.username = username;
+        this.email = email;
+    }
+    User.prototype.login = function () {
+        console.log(`${this.username} has logged in `);
+        return this;
+    }
+   /*
+    - yeni admin user yaratdiq ama isterikki adi userin propertyleri
+    - buradada olsun.
+    - class ile olanda super() istifade edirdik ama burda bu kecerli deyil
+    -
+   */
+    function Admin(username, email) {
+        /*
+        - adi userin icindekileri bura getirmekden otru new User() deyirik  ve
+          argumentlerimiz burda new usere veririk ama bu shekilde ede bilmerik cunki
+          bu yeni object yaradir halbuki biz artiq new User deyib yaratmisiq
+          new User(username, email);
+        - biz user objectini call etmeliyik :
+        - User.call() - call ile user objectidini call ediriki ve icindedede
+        - User.call(this) - this deyirik cunki  this bize User constructor
+        icindekileri bize verecekdir. yani icindekileri Admin-nin icine qoyacaqdir
+            - admin icinde this deyersek bu admini isare edecekdir
+            - user.call(this)- dedikde ise bu user icindekileri isare edecekdir.
+        - this 1ci argument idi 2ci argumentler ise value-dir
+        */
+        // this ile user argumentleri user-e gedecekdir cagrildiginda
+        User.call(this);
+    }
 
+    const userOne = new User('Faik', 'faikdesktop@gmail.com');
+    const userTwo = new User('ali', 'ali@gmail.com');
 
-
+    console.log(userOne, userTwo);
 
 
 </script>
