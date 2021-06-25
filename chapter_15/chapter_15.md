@@ -169,14 +169,18 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
       hey, kullanabileceğiniz yöntemlerin depolandığı yer array prototype-dir.
       yani yani array tipi gedib array prototype icindeki metodlara baxacaq
       ve date tipide gedib date prototype icindeki metodlara baxacaqdir.
-      
+    * !!!!! nums- consolda expand etsek goruruk > __proto__ : Array() bu o demekdirki 
+    bu array prototype-i isare edir!!!
+    * array prototype-i gormek ucun Array.prototype yaza bilersen consolda   
+    * User objectimizi User.prototype yazsaq gorerikki 
+    USer altinda sadece constructor var classlardaki kimi constructor ve prototype yoxdur.x
+
 * ama meselen 'length' metodu arrayin ozunde store olunub bu istisnadir.
 
 * eyni sheyler bizim objectler ucunde kecerlidir.
     * misalcun User prototype 
         * login vs logput - butun userlere aiddir 
-        * neceki, filter() vs sort() butun arraylere aiddir
-        
+        * neceki, filter() vs sort() butun arraylere aiddir     
 * User metodunu User Prototype-ina nece teyin edek?
     *
 

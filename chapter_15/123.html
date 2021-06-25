@@ -22,15 +22,22 @@
            buda protot ype model adlanir.
          - class ile ise  method yaratdigimizda ise onlari proto property icinde qoyurdu .
         */
-        this.login = function () {
-            console.log(`${this.username} has logged in `);
-        }
+        // this.login = function () {
+        //     console.log(`${this.username} has logged in `);
+        // }
     }
+    // artiq metodumuz proto altindadir.
+    User.prototype.login = function () {
+        console.log(`${this.username} has logged in `);
+        // bu metod chainin ucundur login().logout()
+        return this;
+    }
+
     const userOne = new User('Faik', 'faikdesktop@gmail.com');
     const userTwo = new User('ali', 'ali@gmail.com');
 
     console.log(userOne, userTwo);
-    console.log(userOne.login());
+    // console.log(userOne.login());
 
 
 </script>
