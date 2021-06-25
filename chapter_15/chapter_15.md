@@ -131,23 +131,47 @@ ama daha yaxsi usul 'prototype model'-dir. sonraki dersde baxiriq
 
         
         Prototype Model
+        sekil : __proto__.png
 
 * Every Object in JavaScript has a prototype.
 * Prototypes contain all the methods for that object type.
+  
 * class olmadan once bu usul istifade olunurdu.
-* normalda butun metodlarimiz proto icinde olmalidir
-    * bu classlarla proto icinde olur 
-    * ama normal class-siz variant ile metodlarimiz
-        prototypelar sirasinda olur eyer metodu direkt cosntructor icinde versek. 
 * umumiyyetle metodlari istifade edende 
     * misalcun array objectinde filter istifade ededne
       nums.__proto__.filter()- demirik bunun evezine nums.filter()- deyirik 
       cunki zaten butun metodlar proto propterysinin altindadir deye bunlar
-      evvelceden bele teyin olunub. 
+      evvelceden bele teyin olunub.   
 
+* normalda butun metodlarimiz proto icinde olmalidir
+    * bu classlarla proto icinde olur
+    * ama normal class-siz variant ile metodlarimiz
+      prototypelar sirasinda olur eyer metodu direkt cosntructor icinde versek.
 
-             
-        
+* Date Prototype
+    * getDay()
+    * getMonth()
+    * getYear()
+* Array Prototype
+    * sort()
+    * filter()
+    * forEach()
+    
+* sekilde baxsaq bunu anlayiriq.
+    * eyer new array dediyimzde bunda eyni metodlar islenirse
+    bu zaman artiq bu metodlari her array icinde store etmek lazim deyil
+      bununcun butun array metodlari central place olan 
+      'array prototype' icinde store edilmishdir
+      yaniki zaten bu metodalr butun arraylere aiddir central idea olmasi
+      en uygun variantdir. 
+* sekilde deyir: 
+    * new array deyildiyi zaman Yani buradaki Proto array tpini işaret ederek,
+      hey, kullanabileceğiniz yöntemlerin depolandığı yer array prototype-dir.
+      yani yani array tipi gedib array prototype icindeki metodlara baxacaq
+      ve date tipide gedib date prototype icindeki metodlara bxacaqdir.
+      
+* ama meselen 'length' metodu arrayin ozunde store olunub bu istisnadir.
+
         Prototypal Inheritance
              
         
