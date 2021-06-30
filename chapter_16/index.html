@@ -17,8 +17,7 @@
   <div class="container my-5">
     <h2>Recipes</h2>
     <ul>
-      <li>Mushroom pie</li>
-      <li>Veg curry</li>
+
     </ul>
     <form>
       <label for="recipe">Add a new recipe:</label>
@@ -53,8 +52,37 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
+  // database ile elaqemiz bu contstant icindedir artiq
 </script>
     <script>
+        const list = document.querySelector('ul');
+
+        const addRecipe = (recipe) => {
+            let html = `
+                 <li>
+                    <div>${recipe.title}</div>
+                 </li>
+            `;
+
+            list.innerHTML += html;
+        }
+
+        /*
+         - collectionlar icinde recipes-i secdik
+         - her bir documente .docs dyerek acces olduq
+         - her bir documunet icindeki dataya ise .data() ile acces olduq
+        */
+        db.collection('recipes').get().then((snapshot) => {
+            // console.log(snapshot.docs);
+            // console.log(snapshot.docs[0].data());
+            snapshot.docs.forEach(doc => {
+                // console.log(doc.data());
+                addRecipe(doc.data());
+            });
+
+        }).catch((err) => {
+            console.log(err);
+        });
 
 
 
