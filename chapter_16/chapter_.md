@@ -40,6 +40,12 @@ Section 16: Databases (Firebase)
 
         129. Connecting to Firestore
 
+* apiKey - identifier kimidir hara kim tefeinden qosulacagini bildirir.
+* config {}
+* firebase.initializeApp(firebaseConfig); - 
+
+
+
 
         130. Getting Collections
 
