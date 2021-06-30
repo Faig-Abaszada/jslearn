@@ -25,6 +25,18 @@ Section 16: Databases (Firebase)
 
         128. Firebase & Firestore
 
+* Daha cox melumat ucun youtube kanalina bax.
+* Firebase is backend as service
+* Firebase-de project yaratdiqdan sonra Databa-e klikledikde seni Firestora atir 
+* Cloud Firestore - yenidir
+* Realtime Database - kohnedir
+* Firebase 
+    * Collection
+    * Document (id)
+    * Document inner
+
+
+
 
         129. Connecting to Firestore
 
