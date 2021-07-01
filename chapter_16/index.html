@@ -28,6 +28,7 @@
         </div>
       </div>
     </form>
+      <button>unsubscribe from changes</button>
   </div>
 
 
@@ -57,6 +58,7 @@
     <script>
         const list = document.querySelector('ul');
         const form = document.querySelector('form');
+        const button = document.querySelector('button');
 
         const addRecipe = (recipe, id) => { // id-ni qebul edib // li icinde data-id olaraq veririk // inspect edib idni li icinde gormek lazimdir
             let time = recipe.created_at.toDate();
@@ -99,7 +101,7 @@
         }
 
         // new version get document for real-time listeners
-        db.collection('recipes').onSnapshot(snapshot => {
+        const unsub = db.collection('recipes').onSnapshot(snapshot => {
             /*
              - her sefer collection deyiskdikde firestore bu koleksiyonun anlık görüntüsünü alır snaphot-a verir.
              - consolda icinde olanlar docs icinde documentler ve proto icinde docChanges var baxnaq lazimdir.
@@ -118,7 +120,7 @@
                     deleteRecipe(doc.id);
                 }
             })
-        })
+        });
 
         /*
          1. when submitted form
@@ -157,8 +159,10 @@
             }
         })
 
-
-
+        // unsub from database changes
+        button.addEventListener('click', () => {
+            unsub();
+        });
 
 
 

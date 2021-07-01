@@ -80,3 +80,5 @@ listener sayesinde edirik.
 
 
         134. Unsubscribing
+
+* Real-Time Listener ozelliyini aradan qaldirdi
