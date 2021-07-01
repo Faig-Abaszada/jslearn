@@ -64,10 +64,9 @@ Section 16: Databases (Firebase)
 
         132. Deleting Documents
 
-*
-*
-*
-*
+* db.collection('recipes').doc(id).delete()
+* !!!! ama realtime olaraq islinenin ekrandan 
+silindiyini gostermir ama db-den silinib .
 
 
 
