@@ -77,17 +77,28 @@
          - her bir documunet icindeki dataya ise .data() ile acces olduq
         */
         // get documents
-        db.collection('recipes').get().then((snapshot) => {
-            // console.log(snapshot.docs);
-            // console.log(snapshot.docs[0].data());
-            snapshot.docs.forEach(doc => {
-                // console.log(doc.data());
-                addRecipe(doc.data(), doc.id); // hansini delete edeceyimizi id argument gondermekle deyirik
-            });
+        // db.collection('recipes').get().then((snapshot) => {
+        //     // console.log(snapshot.docs);
+        //     // console.log(snapshot.docs[0].data());
+        //     snapshot.docs.forEach(doc => {
+        //         // console.log(doc.data());
+        //         addRecipe(doc.data(), doc.id); // hansini delete edeceyimizi id argument gondermekle deyirik
+        //     });
+        //
+        // }).catch((err) => {
+        //     console.log(err);
+        // });
+        // new version get document for real-time listeners
+        db.collection('recipes').onSnapshot(snapshot => {
+            /*
+             - her sefer collection deyiskdikde firestore bu koleksiyonun anlık görüntüsünü alır snaphot-a verir.
+             - consolda icinde olanlar docs icinde documentler ve proto icinde docChanges var baxnaq lazimdir.
+             - her deyisiklikde bu callback icinde ne bas verirse burda biz bunu goruruk.
 
-        }).catch((err) => {
-            console.log(err);
-        });
+            */
+            // console.log(snapshot);
+            console.log(snapshot.docChanges());
+        })
 
         /*
          1. when submitted form

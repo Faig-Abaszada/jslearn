@@ -72,6 +72,9 @@ silindiyini gostermir ama db-den silinib .
 
         133. Real-time Listeners
 
+* proto -> docChanges()- dbde butun deyilikleri bize gosterir
+* onSnapshot(snapshot => {});
+* her desyisiklikde yeni bir snapshot goruruk
 
 
         134. Unsubscribing
