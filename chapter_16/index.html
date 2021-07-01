@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>chapter_16 vs Databases</title>
+    <style>
+    .container{
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container my-5">
+    <h2>Recipes</h2>
+    <ul>
+
+    </ul>
+    <form>
+      <label for="recipe">Add a new recipe:</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="recipe" required>
+        <div class="input-group-append">
+          <input type="submit" value="add" class="btn btn-outline-secondary">
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8knFTig-PU4ukYi3y9xXMPBKsSHM5kAY",
+    authDomain: "jslearn-5421c.firebaseapp.com",
+    projectId: "jslearn-5421c",
+    storageBucket: "jslearn-5421c.appspot.com",
+    messagingSenderId: "881975059270",
+    appId: "1:881975059270:web:7471d9dbd61e5bfaed7b47"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  // database ile elaqemiz bu contstant icindedir artiq
+</script>
+    <script>
+        const list = document.querySelector('ul');
+
+        const addRecipe = (recipe) => {
+            let time = recipe.created_at.toDate();
+            let html = `
+                 <li>
+                    <div>${recipe.title}</div>
+                    <div>${time}</div>
+                 </li>
+            `;
+
+            list.innerHTML += html;
+        }
+
+        /*
+         - collectionlar icinde recipes-i secdik
+         - her bir documente .docs dyerek acces olduq
+         - her bir documunet icindeki dataya ise .data() ile acces olduq
+        */
+        db.collection('recipes').get().then((snapshot) => {
+            // console.log(snapshot.docs);
+            // console.log(snapshot.docs[0].data());
+            snapshot.docs.forEach(doc => {
+                // console.log(doc.data());
+                addRecipe(doc.data());
+            });
+
+        }).catch((err) => {
+            console.log(err);
+        });
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
