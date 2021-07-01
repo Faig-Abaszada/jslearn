@@ -49,6 +49,10 @@ Section 16: Databases (Firebase)
 
         130. Getting Collections
 
+* datani fetch etdik promises istifade etdik
+* bu datani addrecipe funksiyasina verdik
+* funksiya datani ekrana yazdi 
+
 
 
         131. Saving Documents
