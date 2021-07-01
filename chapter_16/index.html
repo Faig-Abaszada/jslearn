@@ -56,6 +56,7 @@
 </script>
     <script>
         const list = document.querySelector('ul');
+        const form = document.querySelector('form');
 
         const addRecipe = (recipe) => {
             let time = recipe.created_at.toDate();
@@ -74,6 +75,7 @@
          - her bir documente .docs dyerek acces olduq
          - her bir documunet icindeki dataya ise .data() ile acces olduq
         */
+        // get documents
         db.collection('recipes').get().then((snapshot) => {
             // console.log(snapshot.docs);
             // console.log(snapshot.docs[0].data());
@@ -86,7 +88,27 @@
             console.log(err);
         });
 
-
+        /*
+         1. when submitted form
+         2. created new date
+         3. created js recipe object
+         4. db.collectionda recipeni add etdik
+        */
+        // add documents
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const now = new Date();
+            const recipe = {
+                title: form.recipe.value,
+                created_at: firebase.firestore.Timestamp.fromDate(now),
+            }
+            // asynchorene-dir
+            db.collection('recipes').add(recipe).then(() => {
+                console.log('recipe added');
+            }).catch((err) => {
+                console.log(err);
+            });
+        })
 
 
 

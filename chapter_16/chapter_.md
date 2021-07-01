@@ -57,8 +57,17 @@ Section 16: Databases (Firebase)
 
         131. Saving Documents
 
+* collectiona documenti add etdik
+* ama add etdikden sonra document sehifede gorunmiur
+* ama refresh etsek gorunur eslinde.
+
 
         132. Deleting Documents
+
+*
+*
+*
+*
 
 
 
