@@ -58,10 +58,10 @@
         const list = document.querySelector('ul');
         const form = document.querySelector('form');
 
-        const addRecipe = (recipe) => {
+        const addRecipe = (recipe, id) => { // id-ni qebul edib // li icinde data-id olaraq veririk
             let time = recipe.created_at.toDate();
             let html = `
-                 <li>
+                 <li data-id="${id}">
                     <div>${recipe.title}</div>
                     <div>${time}</div>
                     <button class="btn btn-danger btn-sm my-2 ">delete</button>
@@ -82,7 +82,7 @@
             // console.log(snapshot.docs[0].data());
             snapshot.docs.forEach(doc => {
                 // console.log(doc.data());
-                addRecipe(doc.data());
+                addRecipe(doc.data(), doc.id); // hansini delete edeceyimizi id argument gondermekle deyirik
             });
 
         }).catch((err) => {
@@ -116,6 +116,7 @@
             // console.log(e);
             if (e.target.tagName === 'BUTTON') {
             // bu if icinde buttona klikledik sil deyirik ama hansi document idlini silmeyi hardan bilecek?!!
+
             }
         })
 
