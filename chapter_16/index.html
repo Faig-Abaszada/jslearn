@@ -88,6 +88,16 @@
         // }).catch((err) => {
         //     console.log(err);
         // });
+
+        const deleteRecipe = (id) => {
+            const recipes = document.querySelectorAll('li');
+            recipes.forEach(recipe => {
+                if (recipe.getAttribute('data-id') === id) {
+                    recipe.remove();
+                }
+            })
+        }
+
         // new version get document for real-time listeners
         db.collection('recipes').onSnapshot(snapshot => {
             /*
@@ -97,7 +107,17 @@
 
             */
             // console.log(snapshot);
-            console.log(snapshot.docChanges());
+            // console.log(snapshot.docChanges());
+            snapshot.docChanges().forEach((change) => {
+                // console.log(change);
+                const doc = change.doc;
+                // console.log(doc);
+                if (change.type === 'added') {
+                    addRecipe(doc.data(), doc.id);
+                } else if (change.type === 'removed') {
+                    deleteRecipe(doc.id);
+                }
+            })
         })
 
         /*

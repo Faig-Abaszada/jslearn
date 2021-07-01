@@ -75,6 +75,8 @@ silindiyini gostermir ama db-den silinib .
 * proto -> docChanges()- dbde butun deyilikleri bize gosterir
 * onSnapshot(snapshot => {});
 * her desyisiklikde yeni bir snapshot goruruk
+* UI da neyi gosterib gostermeyeciyimizi realtime
+listener sayesinde edirik.
 
 
         134. Unsubscribing
