@@ -57,6 +57,8 @@ instance icindeki propertyleride istifade edib object
     
     
     143. Formatting the Dates
+
+* distanceInWordsToNow
     
     
     144. Sending New Chats
