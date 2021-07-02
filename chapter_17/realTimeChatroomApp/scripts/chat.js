@@ -26,7 +26,7 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.chats
+        this.chats // cunki bu listener setup olunanda ilk getChats()- call olunur .!!!!! ve sonra otagimiz update olunur. ve belelikde biz helede ilk room-u goruruk
             .where('room', '==', this.room) // split rooms
             .orderBy('created_at')
             .onSnapshot(snapshot => {
