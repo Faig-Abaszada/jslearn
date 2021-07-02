@@ -43,9 +43,13 @@ instance icindeki propertyleride istifade edib object
     * 1.porperty name to access, misalcun bizde 'room'-dir.
     * 2. '==',  triple equal istifade etmirik.
     * 3. this.room
+* orderBy('created_at); - siralayir ama gerek firestorddan index create edesen    
     
     
     141. Updating the Room & Username
+
+*
+
     
     
     142. Creating a ChatUI Class

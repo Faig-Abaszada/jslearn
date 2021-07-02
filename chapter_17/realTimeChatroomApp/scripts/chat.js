@@ -27,7 +27,8 @@ class Chatroom  {
     }
     getChats(callback) {
         this.chats
-            .where('room', '==', this.room)
+            .where('room', '==', this.room) // split rooms
+            .orderBy('created_at')
             .onSnapshot(snapshot => {
                 snapshot.docChanges().forEach(change => {
                    if (change.type === 'added') {
@@ -36,6 +37,13 @@ class Chatroom  {
                    }
                 });
         });
+    }
+    updateUsername(username) {
+        this.username = username;
+    }
+    updateRoom(room) {
+        this.room = room; // updateRoom call olunarken verilen argument propertyde room-u update edecek.
+        console.log('room updated');
     }
 }
 
@@ -54,3 +62,4 @@ const chatroom = new Chatroom('music', 'faik');
 chatroom.getChats((data) => {
     console.log(data);
 });
+chatroom.updateRoom('gaming');
