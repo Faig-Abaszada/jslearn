@@ -26,7 +26,7 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.chats // bu problemi hell etmek ucun realtime listener-i unsubscribe etmek lazimdir
+        this.chats // bu problemi hell etmek ucun realtime listener-i unsubscribe etmek lazimdir cunki helede inital deyere qulaq asir ve bu this.cats funksiya return edir
             .where('room', '==', this.room) // split rooms
             .orderBy('created_at')
             .onSnapshot(snapshot => {
