@@ -45,10 +45,10 @@ class Chatroom  {
     /*
      - burada room-u update etsekde getChats-da biz helede initial room-u goruruk
     */
-    updateRoom(room) {
-        this.room = room; // ve this.unsub etdikde burada room-u update edecek ve ddaha listen etmeyecek
+    updateRoom(room) { // bu updateRoom yalniz propertyni update edib listeningi ise unsub etmekdir.
+        this.room = room;
         console.log('room updated');
-        if (this.unsub) { // eyer unsub setup olunubsa unsub calisacaq. bunu etdikde ama hemde yeni room-dada listen olunmur.
+        if (this.unsub) {
             this.unsub();
         }
     }
@@ -70,3 +70,6 @@ chatroom.getChats((data) => {
     console.log(data);
 });
 chatroom.updateRoom('gaming');
+chatroom.getChats((data) => { //davami olaraq getChats-i yeniden call etmeliyik.
+    console.log(data);
+});
