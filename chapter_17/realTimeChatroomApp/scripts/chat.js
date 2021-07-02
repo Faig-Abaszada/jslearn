@@ -9,6 +9,7 @@ class Chatroom  {
         this.room = room;
         this.username = username;
         this.chats = db.collection('chats');
+        this.unsub;
     }
     async addChat(message) { // metod 1 , async-dir
         // format a chat object
@@ -26,8 +27,8 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.chats // bu problemi hell etmek ucun realtime listener-i unsubscribe etmek lazimdir cunki helede inital deyere qulaq asir ve bu this.cats funksiya return edir
-            .where('room', '==', this.room) // split rooms
+        this.unsub = this.chats // ve unsub call oldugunda changes unsubscribe olunur. ve
+            .where('room', '==', this.room)
             .orderBy('created_at')
             .onSnapshot(snapshot => {
                 snapshot.docChanges().forEach(change => {
@@ -45,8 +46,11 @@ class Chatroom  {
      - burada room-u update etsekde getChats-da biz helede initial room-u goruruk
     */
     updateRoom(room) {
-        this.room = room; // updateRoom call olunarken verilen argument propertyde room-u update edecek.
+        this.room = room; // ve this.unsub etdikde burada room-u update edecek ve ddaha listen etmeyecek
         console.log('room updated');
+        if (this.unsub) { // eyer unsub setup olunubsa unsub calisacaq. bunu etdikde ama hemde yeni room-dada listen olunmur.
+            this.unsub();
+        }
     }
 }
 
