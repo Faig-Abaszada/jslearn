@@ -27,6 +27,10 @@ class Chatroom  {
     }
 }
 
+/*
+ - new chatroom ile clasimizin instancesini yaratdiq ve room , username-ni verdik
+ - verdikden sonra chatroom.addChat() deyerek metodu cagirib mesajimizi yazdiq
+ */
 const chatroom = new Chatroom('gaming', 'faik');
 
 chatroom.addChat('hello everyone').then(() => {
