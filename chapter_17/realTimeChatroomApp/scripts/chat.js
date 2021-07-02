@@ -41,6 +41,9 @@ class Chatroom  {
     updateUsername(username) {
         this.username = username;
     }
+    /*
+     - burada room-u update etsekde getChats-da biz helede initial room-u goruruk
+    */
     updateRoom(room) {
         this.room = room; // updateRoom call olunarken verilen argument propertyde room-u update edecek.
         console.log('room updated');
@@ -51,7 +54,7 @@ class Chatroom  {
  - new chatroom ile clasimizin instancesini yaratdiq ve room , username-ni verdik
  - verdikden sonra chatroom.addChat() deyerek metodu cagirib mesajimizi yazdiq
  */
-const chatroom = new Chatroom('music', 'faik');
+const chatroom = new Chatroom('music', 'faik'); // buradaki room-u goruruk helede
 
 // chatroom.addChat('hello everyone').then(() => {
 //     console.log('chat added');
