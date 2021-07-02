@@ -3,14 +3,14 @@
 // updating the username
 // updating the room
 
-
+// this responsible for managing all of the chatroom data
 class Chatroom  {
     constructor(room, username) {
         this.room = room;
         this.username = username;
         this.chats = db.collection('chats');
     }
-    async addChat(message) {
+    async addChat(message) { // metod 1 , async-dir
         // format a chat object
         const now = new Date();
         // making a chat object data comes from Chatroom class
@@ -25,6 +25,16 @@ class Chatroom  {
         // cox ehtimal return responsa ehtiyac olmayacaq, bu chainin ucundur
         return response;
     }
+    getChats(callback) {
+        this.chats.onSnapshot(snapshot => {
+            snapshot.docChanges().forEach(change => {
+               if (change.type === 'added') {
+                   // update the ui
+                   callback(change.doc.data());
+               }
+            });
+        });
+    }
 }
 
 /*
@@ -33,8 +43,12 @@ class Chatroom  {
  */
 const chatroom = new Chatroom('gaming', 'faik');
 
-chatroom.addChat('hello everyone').then(() => {
-    console.log('chat added');
-}).catch(err => {
-    console.log(err);
+// chatroom.addChat('hello everyone').then(() => {
+//     console.log('chat added');
+// }).catch(err => {
+//     console.log(err);
+// });
+
+chatroom.getChats((data) => {
+    console.log(data);
 });

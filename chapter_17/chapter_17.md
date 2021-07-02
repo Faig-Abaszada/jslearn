@@ -28,6 +28,10 @@ instance icindeki propertyleride istifade edib object
     
     
     139. Setting up a Real-time Listener
+
+* onSnapshot(snapshot =>   ::::!!!!!!!  RealTime SetUp
+* change.doc.data()
+* change.type === 'added'
     
     
     140. Complex Queries
