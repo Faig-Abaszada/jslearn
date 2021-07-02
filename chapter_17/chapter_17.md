@@ -20,7 +20,10 @@ cunki firestore collectionu tapmadiqda hemin collectiona yaradir
     
     138. Chatroom Class & Adding Chats
 
-* 
+* Class, class metod: addChat, 
+* messaji addChat-a gonderdik ama addChat class
+instance icindeki propertyleride istifade edib object
+  icinde db-ye gonderdi.
     
     
     
