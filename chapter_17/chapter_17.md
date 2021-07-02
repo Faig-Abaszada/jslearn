@@ -35,6 +35,14 @@ instance icindeki propertyleride istifade edib object
     
     
     140. Complex Queries
+
+* her deyisiklikle biz butun documentleri aliriq
+    ferq elemir hansi otaqdayiq filan
+* her otaga aid documentleri cagirmaga baxacagiq.  
+* where() 3 argument alir.
+    * 1.porperty name to access, misalcun bizde 'room'-dir.
+    * 2. '==',  triple equal istifade etmirik.
+    * 3. this.room
     
     
     141. Updating the Room & Username

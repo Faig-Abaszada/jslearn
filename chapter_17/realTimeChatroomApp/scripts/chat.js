@@ -26,13 +26,15 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.chats.onSnapshot(snapshot => {
-            snapshot.docChanges().forEach(change => {
-               if (change.type === 'added') {
-                   // update the ui
-                   callback(change.doc.data());
-               }
-            });
+        this.chats
+            .where('room', '==', this.room)
+            .onSnapshot(snapshot => {
+                snapshot.docChanges().forEach(change => {
+                   if (change.type === 'added') {
+                       // update the ui
+                       callback(change.doc.data());
+                   }
+                });
         });
     }
 }
@@ -41,7 +43,7 @@ class Chatroom  {
  - new chatroom ile clasimizin instancesini yaratdiq ve room , username-ni verdik
  - verdikden sonra chatroom.addChat() deyerek metodu cagirib mesajimizi yazdiq
  */
-const chatroom = new Chatroom('gaming', 'faik');
+const chatroom = new Chatroom('music', 'faik');
 
 // chatroom.addChat('hello everyone').then(() => {
 //     console.log('chat added');
