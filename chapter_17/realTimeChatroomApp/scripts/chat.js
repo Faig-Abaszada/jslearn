@@ -69,7 +69,23 @@ const chatroom = new Chatroom('music', 'faik'); // buradaki room-u goruruk heled
 chatroom.getChats((data) => {
     console.log(data);
 });
-chatroom.updateRoom('gaming');
-chatroom.getChats((data) => { //davami olaraq getChats-i yeniden call etmeliyik.
-    console.log(data);
-});
+
+
+
+
+
+setTimeout(() => {
+    chatroom.updateRoom('gaming');
+    chatroom.updateUsername('AliDev');
+    chatroom.getChats((data) => { //davami olaraq getChats-i yeniden call etmeliyik.
+        console.log(data);
+    });
+    chatroom.addChat('hello');
+}, 3000);
+
+
+
+
+
+
+
