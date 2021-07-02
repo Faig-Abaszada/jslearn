@@ -26,7 +26,7 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.chats // cunki bu listener setup olunanda ilk getChats()- call olunur .!!!!! ve sonra otagimiz update olunur. ve belelikde biz helede ilk room-u goruruk
+        this.chats // bu problemi hell etmek ucun realtime listener-i unsubscribe etmek lazimdir
             .where('room', '==', this.room) // split rooms
             .orderBy('created_at')
             .onSnapshot(snapshot => {
