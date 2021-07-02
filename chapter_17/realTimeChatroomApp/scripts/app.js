@@ -1,4 +1,8 @@
-// dom queries
+
+
+
+
+
 const chatList = document.querySelector('.chat-list');
 
 // class instances

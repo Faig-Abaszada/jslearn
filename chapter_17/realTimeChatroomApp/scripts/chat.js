@@ -42,21 +42,11 @@ class Chatroom  {
         }
     }
 }
-const chatroom = new Chatroom('music', 'faik');
-
-chatroom.getChats((data) => {
-    console.log(data);
-});
-
-setTimeout(() => {
-    chatroom.updateRoom('gaming');
-    chatroom.updateUsername('AliDev');
-    chatroom.getChats((data) => {
-        console.log(data);
-    });
-    chatroom.addChat('hello');
-}, 3000);
-
+// const chatroom = new Chatroom('music', 'faik');
+//
+// chatroom.getChats((data) => {
+//     console.log(data);
+// });
 
 
 
