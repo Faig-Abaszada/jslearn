@@ -41,6 +41,9 @@ newNameForm.addEventListener('submit', e => {
 // class instances
 const chatUI = new ChatUI(chatList); // dom-dan gelen li- taglaridir
 const chatroom = new Chatroom('gaming', 'shaun');
+// ama bir problem var her defe app acilanda burdaki default ^ shaun ve gamingler devreye girir ve bizim update etdiyimiz
+// deyer sifirlanib olur shaun initila value gelir yani.
+
 
 // get chats & render
 chatroom.getChats(data => chatUI.render(data));
