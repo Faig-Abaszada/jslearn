@@ -3,8 +3,8 @@ Section 18: More ES6 Features
 
     Spread & Rest
 
-* Rest - argumentleri array icinde saxlayir
-* Spread - arraydakileri individual olaraq export edir
+* Rest - argumentleri array icinde saxlayir, indvidual to array
+* Spread - arraydakileri individual olaraq export edir, array to individual
 
          
     
@@ -13,6 +13,7 @@ Section 18: More ES6 Features
 * new Set(varArrayName); - > array icinde tekrarlar varsa inlari array icinden silir verir.
 * once arrayi set-e salib dogru datani saxliyib sonra 'spread' ist edib arraya ceviririk
 * [...new Set(namesArray)];
+* mutleq cevirmek lazimdir cunki set uzerinde push etmek array metodalri ist etmek olmur.
     
     
     Symbols
