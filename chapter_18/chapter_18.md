@@ -12,6 +12,7 @@ Section 18: More ES6 Features
 
 * new Set(varArrayName); - > array icinde tekrarlar varsa inlari array icinden silir verir.
 * once arrayi set-e salib dogru datani saxliyib sonra 'spread' ist edib arraya ceviririk
+* [...new Set(namesArray)];
     
     
     Symbols
