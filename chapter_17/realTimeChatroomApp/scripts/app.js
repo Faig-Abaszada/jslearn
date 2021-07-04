@@ -11,7 +11,9 @@ newChatForm.addEventListener('submit', e => {
     e.preventDefault();
     const message = newChatForm.message.value.trim();
 
-    Chatroom.addChat(message);
+    Chatroom.addChat(message) // ve unutmayaqki addChat()- bir async funcdir ve asynler her zaman promise return edir buna gore .then ist etmeliyik
+        .then(() => { newChatForm.reset() })
+        .catch(err => console.log(err))
 
 });
 
