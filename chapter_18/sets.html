@@ -14,9 +14,11 @@
 const namesArray = ['ryu', 'chun-li', 'ryu', 'shaun'];
 console.log(namesArray);
 
-const namesSet = new Set(namesArray);
+const namesSet = new Set(namesArray); // once set icine qoyduq ki tekrarlari silsin
 console.log(namesSet); // consolda bax
 
+const uniqueNames = [...namesSet]; // sonra spread istifade etdikki datamizi arraye cevirek
+console.log(uniqueNames);
 
 
 
