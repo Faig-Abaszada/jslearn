@@ -7,6 +7,7 @@ const chatList = document.querySelector('.chat-list');
 const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMssg = document.querySelector('.update-mssg');
+const rooms = document.querySelector('.chat-rooms');
 
 // add new chat
 newChatForm.addEventListener('submit', e => {
@@ -35,6 +36,15 @@ newNameForm.addEventListener('submit', e => {
     setTimeout(() => { // settime out ile 3 san sonra yazini sildik ekrandan.
         updateMssg.innerHTML = '';
     }, 3000);
+})
+
+// update the chat room
+rooms.addEventListener('click', e => {
+    if (e.target.tagName === 'BUTTON') {
+        // ilk once rooma tikladiq chatlari silir sonra diger rooma aid chati ekrana yazacagiq
+        chatUI.clear();
+    }
+
 })
 
 // check localStorage for a name

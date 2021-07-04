@@ -5,6 +5,9 @@ class ChatUI {
     constructor(list){
         this.list = list;
     }
+    clear() {
+        this.list.innerHTML = '';
+    }
     /*
      - reder() metodu cagrildiqda html create edib sehifede gosterecek
      - reder-e verilen data - app.js icinde cagrilan getChats-dan gelen Callbackdir
