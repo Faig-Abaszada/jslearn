@@ -10,6 +10,8 @@ Section 18: More ES6 Features
     
     Sets
 
+* new Set(varArrayName); - > array icinde tekrarlar varsa inlari array icinden silir verir.
+
     
     
     Symbols
