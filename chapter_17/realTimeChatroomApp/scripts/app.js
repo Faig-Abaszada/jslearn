@@ -37,7 +37,7 @@ newNameForm.addEventListener('submit', e => {
         updateMssg.innerHTML = '';
     }, 3000);
 })
-
+// yeni Listener teyin edirik her klik olunanda
 // update the chat room
 rooms.addEventListener('click', e => {
     if (e.target.tagName === 'BUTTON') {
