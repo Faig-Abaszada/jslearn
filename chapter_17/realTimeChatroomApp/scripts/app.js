@@ -21,7 +21,7 @@ newChatForm.addEventListener('submit', e => {
 // update username
 newNameForm.addEventListener('submit', e => {
     e.preventDefault();
-    // update via chatroom
+
     const newName = newNameForm.name.value.trim();
 
     chatroom.updateUsername(name);
