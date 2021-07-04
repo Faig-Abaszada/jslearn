@@ -38,12 +38,23 @@ console.log(ages.has(30)); // true or false deyeri verir
 // console.log(ages.clear()); // butun icindekileri silir.
 
 
-
-
-
-
-
 console.log(ages);
+
+
+const ninjas = new Set([
+    {name : 'faik', age: 27},
+    {name : 'faik', age: 27},
+    {name : 'eli', age: 25},
+    {name : 'hasan', age: 25},
+]);
+
+ninjas.forEach(ninja => {
+    console.log(ninja.name, ninja.age);
+});
+
+console.log(ninjas);
+
+
 
 
 
