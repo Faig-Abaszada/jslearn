@@ -27,10 +27,24 @@
 const people = ['shaun', 'ryu', 'crystal'];
   // console.log(...people);
 const members = ['mario', 'faik', ...people] ;  // people-nide membersin icinde qoymus olduq
+  console.log(members);
 
 
 
-  // spread syntax (objects)
+  // spread syntax (objects) - object clonlamaq ve oz object propertylerini yazmaq olur
+const person = { name: 'faik', age: 30, job: 'net ninja' };
+const personClone = {...person, location: 'Baku'};
+
+  console.log(person, personClone);
+
+
+
+
+
+
+
+
+
 
 
 
