@@ -18,8 +18,8 @@
     - new Symbol - deyil sadece Symbol()-dir.
   */
 
-  const symbolOne = Symbol();
-  const symbolTwo = Symbol();
+  const symbolOne = Symbol('Hello i am there');
+  const symbolTwo = Symbol('Hello i am there');
 
   console.log('data type: ' + typeof symbolOne);
   console.log(symbolOne, symbolTwo);
@@ -27,7 +27,22 @@
   console.log(symbolOne === symbolTwo); //iki equal ilede netice false-dir cunki eyni deiller
 
 
+  const ninja = {};
+  ninja.age = 30;
+  ninja['belt'] = 'orange';
+  ninja['belt'] = 'black';  // burada ikinci 'belt' -black dedikde orangeni sildi ve betli black etdi
+  // eyer istesekki  black ile ikinci belt yaransin o zaman symbol ist ede bilerik!!!
 
+  ninja[symbolOne] = 'faik';
+  ninja[symbolTwo] = 'ali';
+  /*
+   when we add them as keys to an object it doesnt matter that they look identical , technicallay
+   they are not same thing
+   */
+
+
+
+  console.log(ninja);
 
 
 

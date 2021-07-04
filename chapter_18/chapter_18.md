@@ -28,4 +28,10 @@ Section 18: More ES6 Features
     Symbols
     identical but not the same 
 
-* 
+* object icinde iki username var ise username key-i symbol icinde versek usernameler eyni olsa bele 
+eslinde eyni deyiller ikiside unique-dir
+    * const symbolOne = Symbol('Hello i am there');
+    *   ninja[symbolOne] = 'faik';
+        ninja[symbolTwo] = 'ali';
+        * output :  Symbol('Hello i am there') : 'faik'
+                    Symbol('Hello i am there') : 'ali'
