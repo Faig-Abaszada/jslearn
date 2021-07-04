@@ -74,4 +74,6 @@ instance icindeki propertyleride istifade edib object
     
     
     147. Testing the App
+
+* dahada tekmillesdirmek ucun misalcun auth etmek ucun youtube  the net ninja-a baxa bilerik.
     
