@@ -18,7 +18,10 @@ Section 18: More ES6 Features
   ages.add(20);
     * yeni array yaradilirsa ve tez tez bunun icine item
       daxil olursa ve istesekki tekrar item olmasin  bu sekilde edirik
-
+* new Set uzerinde lentgh veya array metodlari ist ede bilmirik ama bezi metodlar ayrica var      
+    * ages.size - length kimidir
+    * ages.has(30)
+    ages.clear()- butun icindeki silir.
 
     
     Symbols
