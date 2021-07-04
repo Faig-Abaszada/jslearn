@@ -43,6 +43,7 @@ rooms.addEventListener('click', e => {
     if (e.target.tagName === 'BUTTON') {
         // ilk once rooma tikladiq chatlari silir sonra diger rooma aid chati ekrana yazacagiq
         chatUI.clear();
+        chatroom.updateRoom(e.target.getAttribute('id'));
     }
 
 })

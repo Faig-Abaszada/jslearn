@@ -18,7 +18,7 @@ class Chatroom  {
         return response;
     }
     getChats(callback) {
-        this.unsub = this.chats
+        this.unsub = this.chats // yeni otag deyismek lazim olanda bu current kohne roomu listeninin etmeyi dayandirir. unsub meselesi
             .where('room', '==', this.room)
             .orderBy('created_at')
             .onSnapshot(snapshot => {
