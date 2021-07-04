@@ -62,6 +62,8 @@ instance icindeki propertyleride istifade edib object
     
     
     144. Sending New Chats
+
+* inputdan deyeri db-ye gondermek
     
     
     145. Changing Username & Local Storage
