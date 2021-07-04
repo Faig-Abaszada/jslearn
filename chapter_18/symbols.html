@@ -11,6 +11,32 @@
 
 
 <script>
+  /*
+    - butun data novlerini gormusuk ve sonuncu data novu primitive data type Symbol() -idi
+    - bu data novunun esas xususiyyeti Symbol()- dir.
+      - iki symbol bir birine beraber ola bilmez !!!
+    - new Symbol - deyil sadece Symbol()-dir.
+  */
+
+  const symbolOne = Symbol();
+  const symbolTwo = Symbol();
+
+  console.log('data type: ' + typeof symbolOne);
+  console.log(symbolOne, symbolTwo);
+
+  console.log(symbolOne === symbolTwo); //iki equal ilede netice false-dir cunki eyni deiller
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

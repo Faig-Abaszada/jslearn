@@ -26,3 +26,6 @@ Section 18: More ES6 Features
 
     
     Symbols
+    identical but not the same 
+
+* 
