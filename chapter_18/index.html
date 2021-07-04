@@ -12,7 +12,7 @@
 
 <script>
   // rest parameter :
-  const double = (...nums) => {
+  const double = (...nums) => { // buda spread kimidir ama bu argumentleri tek bir array icinde bize verir spread ise arrayi split edir.
     console.log(nums)
     return nums.map(num => num*2);
   }
@@ -23,8 +23,9 @@
   console.log(result);
 
 
-  // spread syntax (arrays)
-
+  // spread syntax (arrays) - her bir array itemini individual edir
+const people = ['shaun', 'ryu', 'crystal'];
+  console.log(...people);
 
 
 
