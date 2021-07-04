@@ -43,7 +43,8 @@ rooms.addEventListener('click', e => {
     if (e.target.tagName === 'BUTTON') {
         // ilk once rooma tikladiq chatlari silir sonra diger rooma aid chati ekrana yazacagiq
         chatUI.clear();
-        chatroom.updateRoom(e.target.getAttribute('id'));
+        chatroom.updateRoom(e.target.getAttribute('id')); // room-u update vermekle propertydeki roomu deyisdik
+        chatroom.getChats( chat => { chatUI.render(chat) }); // burdaki chat - getChat icindeki cagrilan  callback(change.doc.data()); -dir chat -> datadir yani.
     }
 
 })
