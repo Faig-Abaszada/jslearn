@@ -32,6 +32,7 @@ class Chatroom  {
     }
     updateUsername(username) {
         this.username = username;
+        localStorage.setItem('username', username); // consolda aplication icine baxsaq username-in localstoragede oldugunu gorerik.
     }
 
     updateRoom(room) {

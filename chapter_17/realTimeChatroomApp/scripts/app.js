@@ -37,10 +37,12 @@ newNameForm.addEventListener('submit', e => {
     }, 3000);
 })
 
+// check localStorage for a name
+const username = localStorage.username ? localStorage.username : 'anonym :';
 
 // class instances
 const chatUI = new ChatUI(chatList); // dom-dan gelen li- taglaridir
-const chatroom = new Chatroom('gaming', 'shaun');
+const chatroom = new Chatroom('gaming', username);
 // ama bir problem var her defe app acilanda burdaki default ^ shaun ve gamingler devreye girir ve bizim update etdiyimiz
 // deyer sifirlanib olur shaun initila value gelir yani. ve bunun ucun local storage ist etmeliyik
 
