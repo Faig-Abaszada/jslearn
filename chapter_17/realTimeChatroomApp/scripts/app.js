@@ -40,6 +40,10 @@ newNameForm.addEventListener('submit', e => {
 // check localStorage for a name
 const username = localStorage.username ? localStorage.username : 'anonym :';
 
+/*
+    Consolda chatroom yaz chatroom instancesine bax username : anonym olaraq gorunecek.
+ */
+
 // class instances
 const chatUI = new ChatUI(chatList); // dom-dan gelen li- taglaridir
 const chatroom = new Chatroom('gaming', username);
